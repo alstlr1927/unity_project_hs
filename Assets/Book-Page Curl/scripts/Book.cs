@@ -71,6 +71,10 @@ public class Book : MonoBehaviour {
 
     void Start()
     {
+        Init();
+    }
+
+    void Init() {
         if (!canvas) canvas=GetComponentInParent<Canvas>();
         if (!canvas) Debug.LogError("Book should be a child to canvas");
 
@@ -95,7 +99,6 @@ public class Book : MonoBehaviour {
 
         ShadowLTR.rectTransform.sizeDelta = new Vector2(pageWidth, shadowPageHeight);
         ShadowLTR.rectTransform.pivot = new Vector2(0, (pageWidth / 2) / shadowPageHeight);
-
     }
 
     private void CalcCurlCriticalPoints()
@@ -448,16 +451,19 @@ public class Book : MonoBehaviour {
             onFinish();
     }
 
-    public void ClickRightPage() {
-
+    public void SetHide() {
+        gameObject.SetActive(false);
     }
 
-    public void ClickLeftPage() {
-        
+    public void SetView() {
+        gameObject.SetActive(true);
+        currentPage = 0;
+        Init();
     }
 
     public void FlipRightPage()
     {
+        if (gameObject.activeSelf == false) return;
         if (currentPage >= TotalPageCount) return;
         float frameTime = PageFlipTime / AnimationFramesCount;
         float xc = (EndBottomRight.x + EndBottomLeft.x) / 2;
@@ -470,6 +476,7 @@ public class Book : MonoBehaviour {
 
     public void FlipLeftPage()
     {
+        if (gameObject.activeSelf == false) return;
         if (currentPage <= 0) return;
         float frameTime = PageFlipTime / AnimationFramesCount;
         float xc = (EndBottomRight.x + EndBottomLeft.x) / 2;
