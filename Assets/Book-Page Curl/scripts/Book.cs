@@ -101,6 +101,23 @@ public class Book : MonoBehaviour {
         ShadowLTR.rectTransform.pivot = new Vector2(0, (pageWidth / 2) / shadowPageHeight);
     }
 
+    // check file type
+    bool IsImage(string path)
+    {
+        string ext = System.IO.Path.GetExtension(path).ToLower();
+        switch (ext)
+        {
+            case ".png":
+            case ".jpg":
+            case ".jpeg":
+            case ".bmp":
+            case ".gif":
+            case ".tga":
+                return true;
+        }
+        return false;
+    }
+
     private void CalcCurlCriticalPoints()
     {
         sb = new Vector3(0, -BookPanel.rect.height / 2);
@@ -459,6 +476,15 @@ public class Book : MonoBehaviour {
         gameObject.SetActive(true);
         currentPage = 0;
         Init();
+    }
+
+    public void FlipRightMultiPage(int page) {
+        page = 3;
+        if (page > 0) {
+            for (int i = 0; i < page; i++) {
+                FlipRightPage();
+            }
+        }
     }
 
     public void FlipRightPage()
