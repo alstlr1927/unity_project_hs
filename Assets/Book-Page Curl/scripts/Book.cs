@@ -22,8 +22,8 @@ public class Book : MonoBehaviour {
     public bool enableShadowEffect=true;
     //represent the index of the sprite shown in the right page
     public int currentPage = 0;
-    public float PageFlipTime = 1;
-    public int AnimationFramesCount = 40;
+    public float PageFlipTime = 0.01f;
+    public int AnimationFramesCount = 30;
     public int TotalPageCount
     {
         get { return bookPages.Length; }
@@ -453,7 +453,7 @@ public class Book : MonoBehaviour {
 
     public void SetHide() {
         gameObject.SetActive(false);
-    }
+    } 
 
     public void SetView() {
         gameObject.SetActive(true);
@@ -468,7 +468,7 @@ public class Book : MonoBehaviour {
         float frameTime = PageFlipTime / AnimationFramesCount;
         float xc = (EndBottomRight.x + EndBottomLeft.x) / 2;
         float xl = ((EndBottomRight.x - EndBottomLeft.x) / 2) * 0.9f;
-        //float h =  ControledBook.Height * 0.5f;
+        //float h =  Height * 0.5f;
         float h = Mathf.Abs(EndBottomRight.y) * 0.9f;
         float dx = (xl)*2 / AnimationFramesCount;
         StartCoroutine(FlipRTL(xc, xl, h, frameTime, dx));
@@ -481,7 +481,7 @@ public class Book : MonoBehaviour {
         float frameTime = PageFlipTime / AnimationFramesCount;
         float xc = (EndBottomRight.x + EndBottomLeft.x) / 2;
         float xl = ((EndBottomRight.x - EndBottomLeft.x) / 2) * 0.9f;
-        //float h =  ControledBook.Height * 0.5f;
+        //float h =  Height * 0.5f;
         float h = Mathf.Abs(EndBottomRight.y) * 0.9f;
         float dx = (xl) * 2 / AnimationFramesCount;
         StartCoroutine(FlipLTR(xc, xl, h, frameTime, dx));
