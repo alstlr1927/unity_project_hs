@@ -24,6 +24,7 @@ public class Book : MonoBehaviour {
     public int currentPage = 0;
     public float PageFlipTime = 0.01f;
     public int AnimationFramesCount = 30;
+    public bool check = true;
     public int TotalPageCount
     {
         get { return bookPages.Length; }
@@ -385,6 +386,21 @@ public class Book : MonoBehaviour {
                 TweenForward();
         }
     }
+    public void MultiReleasePage()
+    {
+        if (pageDragging)
+        {
+            pageDragging = false;
+            float distanceToLeft = Vector2.Distance(c, ebl);
+            float distanceToRight = Vector2.Distance(c, ebr);
+            if (distanceToRight < distanceToLeft && mode == FlipMode.RightToLeft)
+                TweenBack();
+            else if (distanceToRight > distanceToLeft && mode == FlipMode.LeftToRight)
+                TweenBack();
+            else
+                TweenForward();
+        }
+    }
     Coroutine currentCoroutine;
     void UpdateSprites()
     {
@@ -398,12 +414,34 @@ public class Book : MonoBehaviour {
         else
         currentCoroutine = StartCoroutine(TweenTo(ebr, 0.15f, () => { Flip(); }));
     }
+    public void MultiTweenForward()
+    {
+        if(mode== FlipMode.RightToLeft)
+        currentCoroutine = StartCoroutine(TweenTo(ebl, 0.15f, () => { MultiFlip(); }));
+        else
+        currentCoroutine = StartCoroutine(TweenTo(ebr, 0.15f, () => { MultiFlip(); }));
+    }
     void Flip()
     {
         if (mode == FlipMode.RightToLeft)
             currentPage += 2;
         else
             currentPage -= 2;
+        LeftNext.transform.SetParent(BookPanel.transform, true);
+        Left.transform.SetParent(BookPanel.transform, true);
+        LeftNext.transform.SetParent(BookPanel.transform, true);
+        Left.gameObject.SetActive(false);
+        Right.gameObject.SetActive(false);
+        Right.transform.SetParent(BookPanel.transform, true);
+        RightNext.transform.SetParent(BookPanel.transform, true);
+        UpdateSprites();
+        Shadow.gameObject.SetActive(false);
+        ShadowLTR.gameObject.SetActive(false);
+        if (OnFlip != null)
+            OnFlip.Invoke();
+    }
+    void MultiFlip()
+    {
         LeftNext.transform.SetParent(BookPanel.transform, true);
         Left.transform.SetParent(BookPanel.transform, true);
         LeftNext.transform.SetParent(BookPanel.transform, true);
@@ -479,18 +517,35 @@ public class Book : MonoBehaviour {
     }
 
     public void FlipRightMultiPage(int page) {
-        page = 3;
-        if (page > 0) {
-            for (int i = 0; i < page; i++) {
-                FlipRightPage();
-            }
+        float frameTime = PageFlipTime / AnimationFramesCount;
+        float xc = (EndBottomRight.x + EndBottomLeft.x) / 2;
+        float xl = ((EndBottomRight.x - EndBottomLeft.x) / 2) * 0.9f;
+        //float h =  Height * 0.5f;
+        float h = Mathf.Abs(EndBottomRight.y) * 0.9f;
+        float dx = (xl)*2 / AnimationFramesCount;
+        if (currentPage > page) {
+            currentPage = page;
+            StartCoroutine(MultiFlipLTR(xc, xl, h, frameTime, dx));
+        } else {
+            currentPage = page;
+            StartCoroutine(MultiFlipRTL(xc, xl, h, frameTime, dx));
         }
+    }
+
+    IEnumerator delayTime(float time) {
+        Debug.Log("check = " + check);
+        yield return new WaitForSeconds(time);
+        check = true;
+        Debug.Log("check = " + check);
+        Debug.Log("time = " + Time.time);
     }
 
     public void FlipRightPage()
     {
         if (gameObject.activeSelf == false) return;
         if (currentPage >= TotalPageCount) return;
+        if (check == false) return;
+        check = false;
         float frameTime = PageFlipTime / AnimationFramesCount;
         float xc = (EndBottomRight.x + EndBottomLeft.x) / 2;
         float xl = ((EndBottomRight.x - EndBottomLeft.x) / 2) * 0.9f;
@@ -498,12 +553,16 @@ public class Book : MonoBehaviour {
         float h = Mathf.Abs(EndBottomRight.y) * 0.9f;
         float dx = (xl)*2 / AnimationFramesCount;
         StartCoroutine(FlipRTL(xc, xl, h, frameTime, dx));
+        StartCoroutine(delayTime(1f));
+        
     }
 
     public void FlipLeftPage()
     {
         if (gameObject.activeSelf == false) return;
         if (currentPage <= 0) return;
+        if (check == false) return;
+        check = false;
         float frameTime = PageFlipTime / AnimationFramesCount;
         float xc = (EndBottomRight.x + EndBottomLeft.x) / 2;
         float xl = ((EndBottomRight.x - EndBottomLeft.x) / 2) * 0.9f;
@@ -511,6 +570,7 @@ public class Book : MonoBehaviour {
         float h = Mathf.Abs(EndBottomRight.y) * 0.9f;
         float dx = (xl) * 2 / AnimationFramesCount;
         StartCoroutine(FlipLTR(xc, xl, h, frameTime, dx));
+        StartCoroutine(delayTime(1f));
     }
 
     IEnumerator FlipRTL(float xc, float xl, float h, float frameTime, float dx)
@@ -541,5 +601,37 @@ public class Book : MonoBehaviour {
             x += dx;
         }
         ReleasePage();
+    }
+
+    IEnumerator MultiFlipRTL(float xc, float xl, float h, float frameTime, float dx)
+    {
+        float x = xc + xl;
+        float y = (-h / (xl * xl)) * (x - xc) * (x - xc);
+
+        DragRightPageToPoint(new Vector3(x, y, 0));
+        for (int i = 0; i < AnimationFramesCount; i++)
+        {
+            y = (-h / (xl * xl)) * (x - xc) * (x - xc);
+            UpdateBookRTLToPoint(new Vector3(x, y, 0));
+            yield return new WaitForSeconds(frameTime);
+            x -= dx;
+        }
+        pageDragging = false;
+        MultiTweenForward();
+    }
+    IEnumerator MultiFlipLTR(float xc, float xl, float h, float frameTime, float dx)
+    {
+        float x = xc - xl;
+        float y = (-h / (xl * xl)) * (x - xc) * (x - xc);
+        DragLeftPageToPoint(new Vector3(x, y, 0));
+        for (int i = 0; i < AnimationFramesCount; i++)
+        {
+            y = (-h / (xl * xl)) * (x - xc) * (x - xc);
+            UpdateBookLTRToPoint(new Vector3(x, y, 0));
+            yield return new WaitForSeconds(frameTime);
+            x += dx;
+        }
+        pageDragging = false;
+        MultiTweenForward();
     }
 }
