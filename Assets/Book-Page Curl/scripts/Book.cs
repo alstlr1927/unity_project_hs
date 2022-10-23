@@ -24,6 +24,7 @@ public class Book : MonoBehaviour {
     public int currentPage = 0;
     public float PageFlipTime = 0.01f;
     public int AnimationFramesCount = 30;
+    public float AnimationSpeed = 0.01f;
     public bool check = true;
     public int TotalPageCount
     {
@@ -583,7 +584,7 @@ public class Book : MonoBehaviour {
         {
             y = (-h / (xl * xl)) * (x - xc) * (x - xc);
             UpdateBookRTLToPoint(new Vector3(x, y, 0));
-            yield return new WaitForSeconds(frameTime);
+            yield return new WaitForSeconds(AnimationSpeed);
             x -= dx;
         }
         ReleasePage();
@@ -597,7 +598,7 @@ public class Book : MonoBehaviour {
         {
             y = (-h / (xl * xl)) * (x - xc) * (x - xc);
             UpdateBookLTRToPoint(new Vector3(x, y, 0));
-            yield return new WaitForSeconds(frameTime);
+            yield return new WaitForSeconds(AnimationSpeed);
             x += dx;
         }
         ReleasePage();
