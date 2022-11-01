@@ -28,6 +28,7 @@ public class Book : MonoBehaviour {
     public bool check = true;
     public int TotalPageCount
     {
+        //get { return bookPages.Length; }
         get { return bookPages.Length; }
     }
     public Vector3 EndBottomLeft
@@ -71,6 +72,8 @@ public class Book : MonoBehaviour {
     //current flip mode
     FlipMode mode;
 
+    string[] testArr;
+
     void Start()
     {
         Init();
@@ -79,6 +82,14 @@ public class Book : MonoBehaviour {
     void Init() {
         if (!canvas) canvas=GetComponentInParent<Canvas>();
         if (!canvas) Debug.LogError("Book should be a child to canvas");
+
+        // testArr = new string[] {"Agreement_KOR/01.png", "Agreement_KOR/02.png", "Agreement_KOR/03.png", "Agreement_KOR/04.png"};
+        // bookPages = new Sprite[testArr.Length];
+
+        // for (int i = 0; i < testArr.Length; i++) {
+        //     bookPages[i] = GetSpritefromImage(Application.streamingAssetsPath + "/" + testArr[i]);
+        // }
+
 
         Left.gameObject.SetActive(false);
         Right.gameObject.SetActive(false);
@@ -103,21 +114,22 @@ public class Book : MonoBehaviour {
         ShadowLTR.rectTransform.pivot = new Vector2(0, (pageWidth / 2) / shadowPageHeight);
     }
 
-    // check file type
-    bool IsImage(string path)
-    {
-        string ext = System.IO.Path.GetExtension(path).ToLower();
-        switch (ext)
-        {
-            case ".png":
-            case ".jpg":
-            case ".jpeg":
-            case ".bmp":
-            case ".gif":
-            case ".tga":
-                return true;
+    public Sprite GetSpritefromImage(string imgPath) {
+        try {
+            //Converts desired path into byte array
+            byte[] pngBytes = System.IO.File.ReadAllBytes(imgPath);
+
+            //Creates texture and loads byte array data to create image
+            Texture2D tex = new Texture2D(2, 2);
+            tex.LoadImage(pngBytes);
+
+            //Creates a new Sprite based on the Texture2D
+            Sprite fromTex = Sprite.Create(tex, new Rect(0.0f, 0.0f, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100.0f);
+
+            return fromTex;
+        } catch (System.Exception) {
+            throw;
         }
-        return false;
     }
 
     private void CalcCurlCriticalPoints()
