@@ -9,11 +9,15 @@ using TMPro;
 public class BookController : MonoBehaviour, IDragHandler
 {
     public GameObject book;
-    
+    public GameObject bookShadow;
+    public GameObject bookbody;
     public GameObject scaleButtonKOR;
     public GameObject scaleButtonENG;
     public GameObject scaleButtonCHN;
 
+    private Transform bookOrigTransform;
+    private Transform bookTransform;
+    
     //public ProjectManager projectManager;
     // Start is called before the first frame update
     void Start()
@@ -23,17 +27,20 @@ public class BookController : MonoBehaviour, IDragHandler
 
     void Update()
     {
-        if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonKOR.transform.position) < 1.2) {
+        if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonKOR.transform.position) < 1.2)
+        {
             //projectManager.scale = 0;
             SceneManager.LoadScene("KoreanVer");
             Debug.Log("KOR");
         }
-        if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonENG.transform.position) < 1.2) {
+        if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonENG.transform.position) < 1.2)
+        {
             //projectManager.scale = 1;
             SceneManager.LoadScene("EnglishVer");
             Debug.Log("ENG");
         }
-        if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonCHN.transform.position) < 1.2) {
+        if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonCHN.transform.position) < 1.2)
+        {
             //projectManager.scale = 2;
             SceneManager.LoadScene("ChineseVer");
             Debug.Log("CHN");
@@ -43,8 +50,17 @@ public class BookController : MonoBehaviour, IDragHandler
         // Debug.Log("ENG" + Vector2.Distance(book.transform.position, scaleButtonENG.transform.position));
         // Debug.Log("CHN" + Vector2.Distance(book.transform.position, scaleButtonCHN.transform.position));
 
-        if(Input.GetMouseButton(0) == false) {
+        if (Input.GetMouseButton(0) == false)
+        {
             book.transform.position = Vector3.Lerp(book.transform.position, new Vector3(0, 0, 0), Time.deltaTime * 2f);
+            bookShadow.transform.localPosition = Vector3.Lerp(bookShadow.transform.localPosition, new Vector3(0, 0, 0), Time.deltaTime * 1.2f);
+            bookbody.transform.localScale = Vector3.Lerp(bookbody.transform.localScale, new Vector3(1, 1, 1), Time.deltaTime * 1.2f);
+            
+        }
+        else
+        {
+            bookShadow.transform.localPosition = Vector3.Lerp(bookShadow.transform.localPosition, new Vector3(100, -100, 0), Time.deltaTime * 1.2f);
+            bookbody.transform.localScale = Vector3.Lerp(bookbody.transform.localScale, new Vector3(1.1f, 1.1f, 1.1f), Time.deltaTime * 1.2f);
         }
     }
 
@@ -62,25 +78,33 @@ public class BookController : MonoBehaviour, IDragHandler
         if (Vector2.Distance(book.transform.position, scaleButtonKOR.transform.position) < 1.2)
         {
             scaleButtonKOR.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_01_on.png");
-        } else {
+        }
+        else
+        {
             scaleButtonKOR.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_01_off.png");
         }
         if (Vector2.Distance(book.transform.position, scaleButtonENG.transform.position) < 1.2)
         {
             scaleButtonENG.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_03_on.png");
-        } else {
+        }
+        else
+        {
             scaleButtonENG.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_03_off.png");
         }
         if (Vector2.Distance(book.transform.position, scaleButtonCHN.transform.position) < 1.2)
         {
             scaleButtonCHN.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_02_on.png");
-        } else {
+        }
+        else
+        {
             scaleButtonCHN.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_02_off.png");
         }
     }
 
-    public Sprite GetSpritefromImage(string imgPath) {
-        try {
+    public Sprite GetSpritefromImage(string imgPath)
+    {
+        try
+        {
             //Converts desired path into byte array
             byte[] pngBytes = System.IO.File.ReadAllBytes(imgPath);
 
@@ -92,7 +116,9 @@ public class BookController : MonoBehaviour, IDragHandler
             Sprite fromTex = Sprite.Create(tex, new Rect(0.0f, 0.0f, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100.0f);
 
             return fromTex;
-        } catch (System.Exception) {
+        }
+        catch (System.Exception)
+        {
             throw;
         }
     }
@@ -130,8 +156,9 @@ public class BookController : MonoBehaviour, IDragHandler
         // }
     }
 
-    private RaycastHit CastRay() {
-        Vector3 screenMousePosFar = new Vector3 (
+    private RaycastHit CastRay()
+    {
+        Vector3 screenMousePosFar = new Vector3(
             Input.mousePosition.x,
             Input.mousePosition.y,
             Camera.main.farClipPlane

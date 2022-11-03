@@ -41,7 +41,7 @@ public class SelecBook : MonoBehaviour
     }
 
     public void SetImage() {
-        if (isSelect) {
+        if (!isSelect) {
             switch (bookType) {
                 case BookType.Book1:
                     GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_01_off.png");

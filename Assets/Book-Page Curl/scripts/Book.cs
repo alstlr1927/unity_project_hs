@@ -17,6 +17,7 @@ public class Book : MonoBehaviour {
     [SerializeField]
     RectTransform BookPanel;
     public Sprite background;
+    public Sprite lastPage;
     public Sprite[] bookPages;
     public bool interactable=true;
     public bool enableShadowEffect=true;
@@ -331,9 +332,9 @@ public class Book : MonoBehaviour {
         Right.gameObject.SetActive(true);
         Right.transform.position = RightNext.transform.position;
         Right.transform.eulerAngles = new Vector3(0, 0, 0);
-        Right.sprite = (currentPage < bookPages.Length - 1) ? bookPages[currentPage + 1] : background;
+        Right.sprite = (currentPage < bookPages.Length - 1) ? bookPages[currentPage + 1] : lastPage;
 
-        RightNext.sprite = (currentPage < bookPages.Length - 2) ? bookPages[currentPage + 2] : background;
+        RightNext.sprite = (currentPage < bookPages.Length - 2) ? bookPages[currentPage + 2] : lastPage;
 
         LeftNext.transform.SetAsFirstSibling();
         if (enableShadowEffect) Shadow.gameObject.SetActive(true);
@@ -418,7 +419,7 @@ public class Book : MonoBehaviour {
     void UpdateSprites()
     {
         LeftNext.sprite= (currentPage > 0 && currentPage <= bookPages.Length) ? bookPages[currentPage-1] : background;
-        RightNext.sprite=(currentPage>=0 &&currentPage<bookPages.Length) ? bookPages[currentPage] : background;
+        RightNext.sprite=(currentPage>=0 &&currentPage<bookPages.Length) ? bookPages[currentPage] : lastPage;
     }
     public void TweenForward()
     {
