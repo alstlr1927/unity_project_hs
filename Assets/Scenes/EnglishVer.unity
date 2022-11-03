@@ -123,6 +123,82 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &280994858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 280994859}
+  - component: {fileID: 280994861}
+  - component: {fileID: 280994860}
+  m_Layer: 5
+  m_Name: Body (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &280994859
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280994858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4.0755525, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9104491925450063817}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 457.7, y: -1.2}
+  m_SizeDelta: {x: 668.5, y: 2024.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &280994860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280994858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 17f5e03cf76104dc289bbaccbac5f3ae, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &280994861
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280994858}
+  m_CullTransparentMesh: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +530,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8870967389239570993}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7326088700063262449}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetUnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8685668864380489698}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetUnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &83565221999612267
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -643,7 +755,7 @@ RectTransform:
   - {fileID: 7910512964955143336}
   - {fileID: 9060541220128862323}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -814,6 +926,42 @@ MonoBehaviour:
       - m_Target: {fileID: 5213954850750411602}
         m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
         m_MethodName: SetView
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8685668864380489698}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8870967389239570993}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetUnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7326088700063262449}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetUnSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1493,12 +1641,12 @@ RectTransform:
   - {fileID: 6013877950432855114}
   - {fileID: 6887397150290435214}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 461.5938, y: -2.7131}
-  m_SizeDelta: {x: 2476.8125, y: 1954.6}
+  m_AnchoredPosition: {x: 461.99997, y: -2.7}
+  m_SizeDelta: {x: 2404.6, y: 1789.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697708436196965305
 MonoBehaviour:
@@ -3820,7 +3968,7 @@ RectTransform:
   - {fileID: 8860875932469058234}
   - {fileID: 3049617237167860668}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3874,7 +4022,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b1bac3987b1ad064a80f72496ee46425, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dade6889fe006de4b9ff16ae693b2886, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4171,6 +4319,7 @@ GameObject:
   - component: {fileID: 917374634957228485}
   - component: {fileID: 3667575534822621415}
   - component: {fileID: 356777298524003123}
+  - component: {fileID: 8685668864380489698}
   m_Layer: 5
   m_Name: BookBtn03
   m_TagString: Untagged
@@ -4447,7 +4596,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -16.258759, y: -977.3}
-  m_SizeDelta: {x: 4431.4126, y: 5863.8}
+  m_SizeDelta: {x: 4194.4004, y: 5369.4004}
   m_Pivot: {x: 1, y: 0.35}
 --- !u!1 &1934833904897782098
 GameObject:
@@ -4807,7 +4956,7 @@ RectTransform:
   - {fileID: 1615354062673823691}
   - {fileID: 2748685328805375921}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5175,8 +5324,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 80f390acf6eaf45cbbc221d78d182731, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5238,7 +5387,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5710,8 +5859,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 87b222ec795dd45d2bd90d5e60e1be90, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5732,10 +5881,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 3840, y: 2160}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -6691,7 +6840,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6793,8 +6942,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b753755bfa79749baa9e807317402d13, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7066,7 +7215,7 @@ RectTransform:
   m_Children:
   - {fileID: 640875337310901227}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -7219,7 +7368,7 @@ RectTransform:
   - {fileID: 1965091532442677017}
   - {fileID: 4047263004754272029}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7459,6 +7608,8 @@ MonoBehaviour:
   BookPanel: {fileID: 4730252783882965978}
   background: {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
   bookPages:
+  - {fileID: 21300000, guid: 274831e066fff4d2fbf688e15fc6c516, type: 3}
+  - {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
   - {fileID: 21300000, guid: 1b9d5ac0323e74529b5042d597dd5a64, type: 3}
   - {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
   - {fileID: 21300000, guid: 312cf8c9c668a4044a8679a01b0b536e, type: 3}
@@ -7532,7 +7683,7 @@ RectTransform:
   - {fileID: 8116060445518794645}
   - {fileID: 6841455468885000533}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7927,8 +8078,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: aa9817adb5f2c4d1c8b02366126f04d1, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8388,7 +8539,7 @@ RectTransform:
   m_Children:
   - {fileID: 4664554221346490176}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8678,6 +8829,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7326088700063262449}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8870967389239570993}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetUnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8685668864380489698}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetUnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &4047263004754272029
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8850,7 +9037,7 @@ RectTransform:
   m_Children:
   - {fileID: 4397947279059935318}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8966,7 +9153,7 @@ RectTransform:
   - {fileID: 4758294310539822586}
   - {fileID: 5243585714841920500}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9235,11 +9422,11 @@ RectTransform:
   m_Children:
   - {fileID: 8307738358776675341}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -901.81, y: 328}
+  m_AnchoredPosition: {x: -1029.5, y: 317}
   m_SizeDelta: {x: 250, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4331949648687491130
@@ -9484,8 +9671,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1841.3645, y: -977.29987}
-  m_SizeDelta: {x: 1238.4062, y: 2933.0984}
-  m_Pivot: {x: 0, y: 0.21110888}
+  m_SizeDelta: {x: 1202.3, y: 2757.2832}
+  m_Pivot: {x: 0, y: 0.21802258}
 --- !u!1 &4449909103021130458
 GameObject:
   m_ObjectHideFlags: 0
@@ -10318,12 +10505,12 @@ RectTransform:
   - {fileID: 5820962392298522893}
   - {fileID: 5569351112709708628}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 461.59375, y: -2.7131}
-  m_SizeDelta: {x: 2476.8125, y: 1954.6}
+  m_AnchoredPosition: {x: 461.99997, y: -2.7}
+  m_SizeDelta: {x: 2404.6, y: 1789.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4740634889503438378
 GameObject:
@@ -10704,6 +10891,7 @@ GameObject:
   - component: {fileID: 6862148781475317556}
   - component: {fileID: 2348372999496055952}
   - component: {fileID: 4041241118162110122}
+  - component: {fileID: 7326088700063262449}
   m_Layer: 5
   m_Name: BookBtn02
   m_TagString: Untagged
@@ -11559,7 +11747,7 @@ RectTransform:
   - {fileID: 2553441495403926909}
   - {fileID: 549289157408934076}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11864,7 +12052,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -16.258759, y: -977.3}
-  m_SizeDelta: {x: 1238.4062, y: 5863.8}
+  m_SizeDelta: {x: 1202.3, y: 5369.4004}
   m_Pivot: {x: 0, y: 0.12}
 --- !u!114 &5496162327355033778
 MonoBehaviour:
@@ -11886,7 +12074,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b1bac3987b1ad064a80f72496ee46425, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dade6889fe006de4b9ff16ae693b2886, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12839,12 +13027,12 @@ RectTransform:
   - {fileID: 486834086388379409}
   - {fileID: 5004433299585001902}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -136.8265, y: -10.568}
-  m_SizeDelta: {x: 1000.4355, y: 1698.9}
+  m_AnchoredPosition: {x: -241.3, y: -15.7}
+  m_SizeDelta: {x: 791.4, y: 1451.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6000301655677296139
 MonoBehaviour:
@@ -12986,7 +13174,7 @@ RectTransform:
   - {fileID: 1616133850680150372}
   - {fileID: 1424762320152698000}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13234,7 +13422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13774,7 +13962,7 @@ RectTransform:
   m_Children:
   - {fileID: 719086665618014860}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13935,12 +14123,12 @@ RectTransform:
   - {fileID: 8340268537035104660}
   - {fileID: 1146987032513186370}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -136.8265, y: -10.568}
-  m_SizeDelta: {x: 1000.4355, y: 1698.9}
+  m_AnchoredPosition: {x: -241.3, y: -15.7}
+  m_SizeDelta: {x: 791.4, y: 1451.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6476720184215281420
 GameObject:
@@ -14066,7 +14254,7 @@ RectTransform:
   m_Children:
   - {fileID: 4888529040896695611}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -14094,12 +14282,12 @@ RectTransform:
   - {fileID: 7295993927080153034}
   - {fileID: 2323546217534494941}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 461.5938, y: -2.7131}
-  m_SizeDelta: {x: 2476.8125, y: 1954.6}
+  m_AnchoredPosition: {x: 462, y: -2.7}
+  m_SizeDelta: {x: 2404.6, y: 1789.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6607720741890031128
 MonoBehaviour:
@@ -15573,6 +15761,7 @@ GameObject:
   - component: {fileID: 3040193340328156107}
   - component: {fileID: 8870967389239570992}
   - component: {fileID: 76845176721419380}
+  - component: {fileID: 8870967389239570993}
   m_Layer: 5
   m_Name: BookBtn01
   m_TagString: Untagged
@@ -15660,7 +15849,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15782,13 +15971,27 @@ RectTransform:
   m_Children:
   - {fileID: 964172147304950140}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -901.81, y: 0}
+  m_AnchoredPosition: {x: -1029.5, y: 0}
   m_SizeDelta: {x: 250, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7326088700063262449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4896597080728761754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d316b29494318411b9ebf7570997b1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelect: 0
+  bookType: 1
 --- !u!222 &7327976966433113451
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16066,7 +16269,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -492, y: -0.0007324219}
+  m_AnchoredPosition: {x: -492, y: -0.00061035156}
   m_SizeDelta: {x: 984, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7457165440602242979
@@ -16851,8 +17054,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9025977638977398816}
   m_HandleRect: {fileID: 4937927411113823258}
   m_Direction: 2
-  m_Value: 1.0000013
-  m_Size: 0.7584375
+  m_Value: 1.000001
+  m_Size: 0.64803576
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16995,8 +17198,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 602.011, y: -977.3001}
-  m_SizeDelta: {x: 1238.4062, y: 2933.0984}
-  m_Pivot: {x: 1, y: 0.21110888}
+  m_SizeDelta: {x: 1202.3, y: 2757.2832}
+  m_Pivot: {x: 1, y: 0.21802258}
 --- !u!114 &7954263139686115107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17079,7 +17282,7 @@ RectTransform:
   m_Children:
   - {fileID: 6348283705920875073}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -17654,12 +17857,12 @@ RectTransform:
   - {fileID: 2017278926412901344}
   - {fileID: 2958627114793949573}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -136.8265, y: -10.568}
-  m_SizeDelta: {x: 1000.4355, y: 1698.9}
+  m_AnchoredPosition: {x: -241.3, y: -15.7}
+  m_SizeDelta: {x: 791.4, y: 1451.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8484106505738690547
 CanvasRenderer:
@@ -17816,7 +18019,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1b9d5ac0323e74529b5042d597dd5a64, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 274831e066fff4d2fbf688e15fc6c516, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18158,13 +18361,27 @@ RectTransform:
   m_Children:
   - {fileID: 6093397310553988586}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -901.81, y: -328}
+  m_AnchoredPosition: {x: -1029.5, y: -317}
   m_SizeDelta: {x: 250, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8685668864380489698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723909754887996633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d316b29494318411b9ebf7570997b1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelect: 0
+  bookType: 2
 --- !u!222 &8694441079441474275
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18505,8 +18722,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4492b43f1019a4ec38c9367c3df7652d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -18515,6 +18732,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8870967389239570993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7187760601531568995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d316b29494318411b9ebf7570997b1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelect: 1
+  bookType: 0
 --- !u!222 &8878873542223430725
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18990,7 +19221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19093,6 +19324,7 @@ RectTransform:
   m_Children:
   - {fileID: 8866348732822892461}
   - {fileID: 1769866421590014838}
+  - {fileID: 280994859}
   - {fileID: 4730252783882965978}
   - {fileID: 695745127204824662}
   - {fileID: 6546275005793751058}
