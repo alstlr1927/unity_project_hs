@@ -530,6 +530,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8870967389239570993}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7326088700063262449}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetUnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8685668864380489698}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetUnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &83565221999612267
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -890,6 +926,42 @@ MonoBehaviour:
       - m_Target: {fileID: 5213954850750411602}
         m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
         m_MethodName: SetView
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8685668864380489698}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8870967389239570993}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetUnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7326088700063262449}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetUnSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4247,6 +4319,7 @@ GameObject:
   - component: {fileID: 917374634957228485}
   - component: {fileID: 3667575534822621415}
   - component: {fileID: 356777298524003123}
+  - component: {fileID: 8685668864380489698}
   m_Layer: 5
   m_Name: BookBtn03
   m_TagString: Untagged
@@ -5314,7 +5387,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6767,7 +6840,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8747,6 +8820,42 @@ MonoBehaviour:
       - m_Target: {fileID: 5213954850750411602}
         m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7326088700063262449}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8870967389239570993}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetUnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8685668864380489698}
+        m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
+        m_MethodName: SetUnSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10782,6 +10891,7 @@ GameObject:
   - component: {fileID: 6862148781475317556}
   - component: {fileID: 2348372999496055952}
   - component: {fileID: 4041241118162110122}
+  - component: {fileID: 7326088700063262449}
   m_Layer: 5
   m_Name: BookBtn02
   m_TagString: Untagged
@@ -15651,6 +15761,7 @@ GameObject:
   - component: {fileID: 3040193340328156107}
   - component: {fileID: 8870967389239570992}
   - component: {fileID: 76845176721419380}
+  - component: {fileID: 8870967389239570993}
   m_Layer: 5
   m_Name: BookBtn01
   m_TagString: Untagged
@@ -15867,6 +15978,20 @@ RectTransform:
   m_AnchoredPosition: {x: -1029.5, y: 0}
   m_SizeDelta: {x: 250, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7326088700063262449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4896597080728761754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d316b29494318411b9ebf7570997b1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelect: 0
+  bookType: 1
 --- !u!222 &7327976966433113451
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18243,6 +18368,20 @@ RectTransform:
   m_AnchoredPosition: {x: -1029.5, y: -317}
   m_SizeDelta: {x: 250, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8685668864380489698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723909754887996633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d316b29494318411b9ebf7570997b1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelect: 0
+  bookType: 2
 --- !u!222 &8694441079441474275
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18593,6 +18732,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8870967389239570993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7187760601531568995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d316b29494318411b9ebf7570997b1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelect: 1
+  bookType: 0
 --- !u!222 &8878873542223430725
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19068,7 +19221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
