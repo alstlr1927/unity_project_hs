@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/KoreanVer.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/EnglishVer.unity
-    guid: 05213dfb2f2a140378207a138331da42
-  - enabled: 1
-    path: Assets/Scenes/ChineseVer.unity
-    guid: a0dcf67a529d64e848e0026ad19ca66e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

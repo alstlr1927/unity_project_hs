@@ -17,12 +17,14 @@ public class BookController : MonoBehaviour, IDragHandler
 
     private Transform bookOrigTransform;
     private Transform bookTransform;
-    
+    private Vector3 defaultPos;
+
     //public ProjectManager projectManager;
     // Start is called before the first frame update
     void Start()
     {
         //projectManager = GameObject.Find("ProjectManager").GetComponent<ProjectManager>();
+        defaultPos = book.transform.localPosition;
     }
 
     void Update()
@@ -50,26 +52,36 @@ public class BookController : MonoBehaviour, IDragHandler
         // Debug.Log("ENG" + Vector2.Distance(book.transform.position, scaleButtonENG.transform.position));
         // Debug.Log("CHN" + Vector2.Distance(book.transform.position, scaleButtonCHN.transform.position));
 
+
         if (Input.GetMouseButton(0) == false)
         {
-            book.transform.position = Vector3.Lerp(book.transform.position, new Vector3(0, 0, 0), Time.deltaTime * 2f);
-            bookShadow.transform.localPosition = Vector3.Lerp(bookShadow.transform.localPosition, new Vector3(0, 0, 0), Time.deltaTime * 1.2f);
-            bookbody.transform.localScale = Vector3.Lerp(bookbody.transform.localScale, new Vector3(1, 1, 1), Time.deltaTime * 1.2f);
-            
+            book.transform.localPosition = Vector3.Lerp(book.transform.localPosition, defaultPos, Time.deltaTime * 1.2f);
+            bookShadow.transform.localPosition = Vector3.Lerp(bookShadow.transform.localPosition, defaultPos, Time.deltaTime * 1.2f);
+            bookbody.transform.localScale = Vector3.Lerp(bookbody.transform.localScale, new Vector3(1f, 1f, 1f), Time.deltaTime * 1.2f);
         }
         else
         {
             bookShadow.transform.localPosition = Vector3.Lerp(bookShadow.transform.localPosition, new Vector3(100, -100, 0), Time.deltaTime * 1.2f);
             bookbody.transform.localScale = Vector3.Lerp(bookbody.transform.localScale, new Vector3(1.1f, 1.1f, 1.1f), Time.deltaTime * 1.2f);
         }
+
+        // if (Input.GetMouseButton(0) == false)
+        // {
+        //     book.transform.position = Vector3.Lerp(book.transform.position, new Vector3(0, 0, 0), Time.deltaTime * 2f);
+        //     bookShadow.transform.localPosition = Vector3.Lerp(bookShadow.transform.localPosition, new Vector3(0, 0, 0), Time.deltaTime * 1.2f);
+        //     bookbody.transform.localScale = Vector3.Lerp(bookbody.transform.localScale, new Vector3(1, 1, 1), Time.deltaTime * 1.2f);
+
+        // }
+        // else
+        // {
+        //     bookShadow.transform.localPosition = Vector3.Lerp(bookShadow.transform.localPosition, new Vector3(100, -100, 0), Time.deltaTime * 1.2f);
+        //     bookbody.transform.localScale = Vector3.Lerp(bookbody.transform.localScale, new Vector3(1.1f, 1.1f, 1.1f), Time.deltaTime * 1.2f);
+        // }
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        //book.transform.position += (Vector3)eventData.delta;           
-        Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(book.transform.position).z);
-        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
-        book.transform.position = worldPosition;
+        book.transform.position += (Vector3)eventData.delta;
 
         // Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(book.transform.position).z);
         // Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
@@ -156,26 +168,4 @@ public class BookController : MonoBehaviour, IDragHandler
         // }
     }
 
-    private RaycastHit CastRay()
-    {
-        Vector3 screenMousePosFar = new Vector3(
-            Input.mousePosition.x,
-            Input.mousePosition.y,
-            Camera.main.farClipPlane
-        );
-
-        Vector3 screenMousePosNear = new Vector3(
-            Input.mousePosition.x,
-            Input.mousePosition.y,
-            Camera.main.nearClipPlane
-        );
-
-        Vector3 worldMousePosFar = Camera.main.ScreenToWorldPoint(screenMousePosFar);
-        Vector3 worldMousePosNear = Camera.main.ScreenToWorldPoint(screenMousePosNear);
-
-        RaycastHit hit;
-        Physics.Raycast(worldMousePosNear, worldMousePosFar - worldMousePosNear, out hit);
-
-        return hit;
-    }
 }
