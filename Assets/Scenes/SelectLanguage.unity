@@ -1415,3 +1415,4 @@ MonoBehaviour:
   scaleButtonKOR: {fileID: 1450499252}
   scaleButtonENG: {fileID: 880302979}
   scaleButtonCHN: {fileID: 123911466}
+  distance: 100

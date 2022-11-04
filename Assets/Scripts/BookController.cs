@@ -14,6 +14,7 @@ public class BookController : MonoBehaviour, IDragHandler
     public GameObject scaleButtonKOR;
     public GameObject scaleButtonENG;
     public GameObject scaleButtonCHN;
+    public float distance;
 
     private Transform bookOrigTransform;
     private Transform bookTransform;
@@ -29,19 +30,19 @@ public class BookController : MonoBehaviour, IDragHandler
 
     void Update()
     {
-        if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonKOR.transform.position) < 1.2)
+        if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonKOR.transform.position) < distance)
         {
             //projectManager.scale = 0;
             SceneManager.LoadScene("KoreanVer");
             Debug.Log("KOR");
         }
-        if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonENG.transform.position) < 1.2)
+        if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonENG.transform.position) < distance)
         {
             //projectManager.scale = 1;
             SceneManager.LoadScene("EnglishVer");
             Debug.Log("ENG");
         }
-        if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonCHN.transform.position) < 1.2)
+        if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonCHN.transform.position) < distance)
         {
             //projectManager.scale = 2;
             SceneManager.LoadScene("ChineseVer");
@@ -82,12 +83,15 @@ public class BookController : MonoBehaviour, IDragHandler
     public void OnDrag(PointerEventData eventData)
     {
         book.transform.position += (Vector3)eventData.delta;
+        
 
         // Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(book.transform.position).z);
         // Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
         // book.transform.position = worldPosition;             
 
-        if (Vector2.Distance(book.transform.position, scaleButtonKOR.transform.position) < 1.2)
+        Debug.Log(Vector2.Distance(book.transform.position, scaleButtonKOR.transform.position));        
+
+        if (Vector2.Distance(book.transform.position, scaleButtonKOR.transform.position) < distance)
         {
             scaleButtonKOR.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_01_on.png");
         }
@@ -95,7 +99,7 @@ public class BookController : MonoBehaviour, IDragHandler
         {
             scaleButtonKOR.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_01_off.png");
         }
-        if (Vector2.Distance(book.transform.position, scaleButtonENG.transform.position) < 1.2)
+        if (Vector2.Distance(book.transform.position, scaleButtonENG.transform.position) < distance)
         {
             scaleButtonENG.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_03_on.png");
         }
@@ -103,7 +107,7 @@ public class BookController : MonoBehaviour, IDragHandler
         {
             scaleButtonENG.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_03_off.png");
         }
-        if (Vector2.Distance(book.transform.position, scaleButtonCHN.transform.position) < 1.2)
+        if (Vector2.Distance(book.transform.position, scaleButtonCHN.transform.position) < distance)
         {
             scaleButtonCHN.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_02_on.png");
         }
