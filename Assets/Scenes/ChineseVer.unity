@@ -240,7 +240,7 @@ RectTransform:
   - {fileID: 487826905}
   - {fileID: 776185044}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -824,6 +824,7 @@ GameObject:
   - component: {fileID: 280994859}
   - component: {fileID: 280994861}
   - component: {fileID: 280994860}
+  - component: {fileID: 280994862}
   m_Layer: 5
   m_Name: Body (1)
   m_TagString: Untagged
@@ -889,6 +890,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280994858}
   m_CullTransparentMesh: 1
+--- !u!114 &280994862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280994858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e7c1b7f31c67439e9b34f14a34b2a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &298814112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2272,7 +2285,7 @@ RectTransform:
   - {fileID: 1123164458}
   - {fileID: 275445430}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4115,6 +4128,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677184871}
   m_CullTransparentMesh: 1
+--- !u!1 &1691094381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1691094382}
+  - component: {fileID: 1691094385}
+  - component: {fileID: 1691094384}
+  - component: {fileID: 1691094383}
+  m_Layer: 5
+  m_Name: Body (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1691094382
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691094381}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0002975, y: 1.0002975, z: 1.0002975}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9104491925450063817}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 507.09998, y: 6.7}
+  m_SizeDelta: {x: 2825.8, y: 1415.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1691094383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691094381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e7c1b7f31c67439e9b34f14a34b2a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1691094384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691094381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 17f5e03cf76104dc289bbaccbac5f3ae, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1691094385
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691094381}
+  m_CullTransparentMesh: 1
 --- !u!1 &1708817300
 GameObject:
   m_ObjectHideFlags: 0
@@ -4146,7 +4248,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4828,7 +4930,7 @@ RectTransform:
   - {fileID: 1015167646}
   - {fileID: 362562758}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5464,7 +5566,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1983841095}
         m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
         m_MethodName: SetView
         m_Mode: 1
@@ -5476,7 +5578,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 104323885}
         m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
         m_MethodName: SetHide
         m_Mode: 1
@@ -5488,7 +5590,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 856649573}
         m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
         m_MethodName: SetHide
         m_Mode: 1
@@ -5527,6 +5629,30 @@ MonoBehaviour:
       - m_Target: {fileID: 8685668864380489698}
         m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
         m_MethodName: SetUnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 280994862}
+        m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
+        m_MethodName: SetView
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1691094383}
+        m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
+        m_MethodName: SetHide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5601,7 +5727,7 @@ RectTransform:
   - {fileID: 7910512964955143336}
   - {fileID: 9060541220128862323}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5708,7 +5834,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1983841095}
         m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
         m_MethodName: SetHide
         m_Mode: 1
@@ -5720,7 +5846,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 104323885}
         m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
         m_MethodName: SetHide
         m_Mode: 1
@@ -5732,7 +5858,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 856649573}
         m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
         m_MethodName: SetView
         m_Mode: 1
@@ -5771,6 +5897,30 @@ MonoBehaviour:
       - m_Target: {fileID: 7326088700063262449}
         m_TargetAssemblyTypeName: SelecBook, Assembly-CSharp
         m_MethodName: SetUnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 280994862}
+        m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
+        m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1691094383}
+        m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
+        m_MethodName: SetView
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6115,7 +6265,7 @@ RectTransform:
   - {fileID: 6013877950432855114}
   - {fileID: 6887397150290435214}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6226,8 +6376,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -70.596985, y: -101.54999}
-  m_SizeDelta: {x: 1238.4062, y: 2933.0984}
-  m_Pivot: {x: 0, y: 0.21110888}
+  m_SizeDelta: {x: 1202.3, y: 2757.2832}
+  m_Pivot: {x: 0, y: 0.21802258}
 --- !u!222 &971503361152210837
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6347,7 +6497,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3c47abcf3fb3d12408efe3073b2e379f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6805,7 +6955,7 @@ RectTransform:
   - {fileID: 8860875932469058234}
   - {fileID: 3049617237167860668}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7196,7 +7346,7 @@ RectTransform:
   - {fileID: 1615354062673823691}
   - {fileID: 2748685328805375921}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8178,7 +8328,7 @@ RectTransform:
   m_Children:
   - {fileID: 640875337310901227}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -8275,7 +8425,7 @@ RectTransform:
   - {fileID: 1965091532442677017}
   - {fileID: 4047263004754272029}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8448,7 +8598,7 @@ RectTransform:
   - {fileID: 8116060445518794645}
   - {fileID: 6841455468885000533}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8923,7 +9073,7 @@ RectTransform:
   m_Children:
   - {fileID: 4664554221346490176}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9108,7 +9258,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1983841095}
         m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
         m_MethodName: SetHide
         m_Mode: 1
@@ -9120,7 +9270,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 104323885}
         m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
         m_MethodName: SetView
         m_Mode: 1
@@ -9132,7 +9282,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 856649573}
         m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
         m_MethodName: SetHide
         m_Mode: 1
@@ -9180,6 +9330,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 280994862}
+        m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
+        m_MethodName: SetView
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1691094383}
+        m_TargetAssemblyTypeName: ScrollView, Assembly-CSharp
+        m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &4047263004754272029
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9214,7 +9388,7 @@ RectTransform:
   m_Children:
   - {fileID: 4397947279059935318}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9274,7 +9448,7 @@ RectTransform:
   - {fileID: 4758294310539822586}
   - {fileID: 5243585714841920500}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9415,7 +9589,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9593,7 +9767,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 238.49512, y: -105.37775}
-  m_SizeDelta: {x: 4431.4126, y: 5863.8}
+  m_SizeDelta: {x: 4194.4004, y: 5369.4004}
   m_Pivot: {x: 1, y: 0.12}
 --- !u!224 &4645710878223425560
 RectTransform:
@@ -9707,7 +9881,7 @@ RectTransform:
   - {fileID: 5820962392298522893}
   - {fileID: 5569351112709708628}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10208,7 +10382,7 @@ RectTransform:
   - {fileID: 2553441495403926909}
   - {fileID: 549289157408934076}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10293,7 +10467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dade6889fe006de4b9ff16ae693b2886, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1d396c4db8454003b2e831d11868a1f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10654,7 +10828,7 @@ RectTransform:
   - {fileID: 1616133850680150372}
   - {fileID: 1424762320152698000}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11127,7 +11301,7 @@ RectTransform:
   m_Children:
   - {fileID: 719086665618014860}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11268,7 +11442,7 @@ RectTransform:
   m_Children:
   - {fileID: 4888529040896695611}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11296,12 +11470,12 @@ RectTransform:
   - {fileID: 7295993927080153034}
   - {fileID: 2323546217534494941}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 462, y: -2.7}
-  m_SizeDelta: {x: 2404.6, y: 1789.8}
+  m_AnchoredPosition: {x: 479.85, y: 3.5}
+  m_SizeDelta: {x: 2440.3, y: 1223.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6607720741890031128
 MonoBehaviour:
@@ -11692,7 +11866,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 238.49512, y: -106.38922}
-  m_SizeDelta: {x: 1238.4062, y: 5863.8}
+  m_SizeDelta: {x: 1202.3, y: 5369.4004}
   m_Pivot: {x: 0.000000020489097, y: 0.12}
 --- !u!114 &7179039897263111769
 MonoBehaviour:
@@ -11907,7 +12081,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12077,8 +12251,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 70.596985, y: -101.53998}
-  m_SizeDelta: {x: 1238.4062, y: 2933.0984}
-  m_Pivot: {x: 1, y: 0.21110888}
+  m_SizeDelta: {x: 1202.3, y: 2757.2832}
+  m_Pivot: {x: 1, y: 0.21802258}
 --- !u!114 &7750069193420099213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12258,7 +12432,7 @@ RectTransform:
   m_Children:
   - {fileID: 6348283705920875073}
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12561,7 +12735,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9104491925450063817}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12887,6 +13061,7 @@ RectTransform:
   - {fileID: 8866348732822892461}
   - {fileID: 1769866421590014838}
   - {fileID: 280994859}
+  - {fileID: 1691094382}
   - {fileID: 4730252783882965978}
   - {fileID: 695745127204824662}
   - {fileID: 6546275005793751058}
