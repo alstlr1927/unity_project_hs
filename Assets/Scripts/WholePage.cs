@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class ButtonEvent : MonoBehaviour
+public class WholePage : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,10 +16,11 @@ public class ButtonEvent : MonoBehaviour
         
     }
 
-    public void ClickHomeBtn() {
-        // go to scene
-        SceneManager.LoadScene("SelectLanguage");
-    }
+    public void SetHide() {
+        gameObject.SetActive(false);
+    } 
 
-    
+    public void SetView() {
+        gameObject.SetActive(true);
+    } 
 }

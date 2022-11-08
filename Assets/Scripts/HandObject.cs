@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class ButtonEvent : MonoBehaviour
+public class HandObject : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,13 +13,8 @@ public class ButtonEvent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Vector2 pos = new Vector2(608.00f, 399.86f);
+        // transform.position smooth move to pos
+        // transform.position = Vector2.Lerp(transform.position, pos, Time.deltaTime * 1.2f);
     }
-
-    public void ClickHomeBtn() {
-        // go to scene
-        SceneManager.LoadScene("SelectLanguage");
-    }
-
-    
 }
