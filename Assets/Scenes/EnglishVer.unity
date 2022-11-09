@@ -591,7 +591,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -636,7 +636,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C \uC9C0\uB3C4 \uC81C1\uB3C4\uC758 8"
+  m_Text: MAP 1-8
 --- !u!222 &69035588
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -716,7 +716,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 32
+  m_Text: 19
 --- !u!222 &73613493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -969,14 +969,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 68
+          m_IntArgument: 42
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1014,7 +1014,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C3\uC870 \uD574\uC124"
+  m_Text: 3. EXPLANATION
 --- !u!222 &110074822
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1106,7 +1106,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 112305004}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3424486591358542361}
+        m_TargetAssemblyTypeName: Book, Assembly-CSharp
+        m_MethodName: FlipRightMultiPage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &112305004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,7 +1152,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C\uBAA9"
+  m_Text: TITLE
 --- !u!222 &112305005
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1851,7 +1863,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 03
+  m_Text: 04
 --- !u!222 &184997467
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2142,7 +2154,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -2187,7 +2199,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uC9C0\uB3C43"
+  m_Text: MAP 3 (SUBHEADING)
 --- !u!222 &248772831
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2444,7 +2456,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -2489,7 +2501,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C \uC9C0\uB3C4 \uC81C3\uB3C4"
+  m_Text: MAP 3
 --- !u!222 &269252945
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2982,7 +2994,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -3027,7 +3039,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C\uC9C0\uB3C4 \uC81C5\uB3C4\uC758 3"
+  m_Text: MAP 5-3
 --- !u!222 &330753029
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3543,14 +3555,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 74
+          m_IntArgument: 46
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3588,7 +3600,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C5\uC870 \uC801\uC2ED\uC790\uC0AC\uC758 \uBC29\uBB38"
+  m_Text: 5. RED CROSS VISITATION
 --- !u!222 &369629403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3668,7 +3680,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 34
+  m_Text: 21
 --- !u!222 &369717683
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3898,7 +3910,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 389982550}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3424486591358542361}
+        m_TargetAssemblyTypeName: Book, Assembly-CSharp
+        m_MethodName: FlipRightMultiPage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &389982550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3932,7 +3956,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC11C\uC5B8\n"
+  m_Text: PREAMBLE
 --- !u!222 &389982551
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4012,7 +4036,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 41
+  m_Text: 26
 --- !u!222 &391253174
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4185,7 +4209,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -4230,7 +4254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C \uC9C0\uB3C4 \uC81C1\uB3C4\uC758 4"
+  m_Text: MAP 1-4
 --- !u!222 &410832715
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4668,7 +4692,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 06
+  m_Text: 04
 --- !u!222 &477356923
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4761,7 +4785,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -4806,7 +4830,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C\uC9C0\uB3C4 \uC81C5\uB3C4\uC758 7"
+  m_Text: MAP 5-7
 --- !u!222 &491311004
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5109,7 +5133,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -5154,7 +5178,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C \uC9C0\uB3C4 \uC81C1\uB3C4\uC758 1"
+  m_Text: MAP 1-1
 --- !u!222 &510471859
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5413,14 +5437,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 30
+          m_IntArgument: 18
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5449,7 +5473,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -5458,7 +5482,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2E4. \uC911\uB9BD\uAD6D \uAC10\uB3C5 \uC704\uC6D0\uD68C"
+  m_Text: C. NEUTRAL NATIONS SUPERVISORY COMMISSION
 --- !u!222 &526370900
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5551,7 +5575,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -5596,7 +5620,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C \uC9C0\uB3C4 \uC81C1\uB3C4\uC758 7"
+  m_Text: MAP 1-7
 --- !u!222 &527610935
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6286,7 +6310,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 40
+  m_Text: 25
 --- !u!222 &556089284
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6470,7 +6494,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -6515,7 +6539,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C\uC9C0\uB3C4 \uC81C5\uB3C4\uC758 6"
+  m_Text: MAP 5-6
 --- !u!222 &582480096
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6926,14 +6950,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 76
+          m_IntArgument: 50
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6971,7 +6995,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C9\uC870 \uBC1C\uD45C"
+  m_Text: 9. PUBLACATION
 --- !u!222 &647333944
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7146,7 +7170,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -7191,7 +7215,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C\uC9C0\uB3C4 \uC81C5\uB3C4\uC758 8"
+  m_Text: MAP 5-8
 --- !u!222 &655055887
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7422,7 +7446,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -7467,7 +7491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uC9C0\uB3C41"
+  m_Text: MAP 1 (SUBHEADING)
 --- !u!222 &662768282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7942,7 +7966,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -7987,7 +8011,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C\uBAA9"
+  m_Text: TITLE
 --- !u!222 &746129958
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8067,7 +8091,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 06
+  m_Text: 04
 --- !u!222 &751695333
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8465,7 +8489,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 42
+  m_Text: 26
 --- !u!222 &828020273
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8558,7 +8582,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -8603,7 +8627,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C\uC9C0\uB3C4 \uC81C5\uB3C4\uC758 4"
+  m_Text: MAP 5-4
 --- !u!222 &830994253
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8790,7 +8814,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 34
+  m_Text: 21
 --- !u!222 &854814320
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8870,7 +8894,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 41
+  m_Text: 26
 --- !u!222 &858155950
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9308,7 +9332,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 39
+  m_Text: 25
 --- !u!222 &881222795
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9483,14 +9507,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 76
+          m_IntArgument: 48
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9519,7 +9543,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -9528,8 +9552,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C8\uC870 \uC911\uB9BD\uAD6D \uC1A1\uD658 \uC704\uC6D0\uD68C\uB97C
-    \uC704\uD55C \uBCF4\uAE09"
+  m_Text: 8. LOGISTICAL SUPPORT FOR THE NEUTRAL NATIONS REPATRIATION COMMISSION
 --- !u!222 &889006739
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9622,7 +9645,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -9667,7 +9690,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C \uC9C0\uB3C4 \uC81C1\uB3C4\uC758 9"
+  m_Text: MAP 1-9
 --- !u!222 &889084125
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9888,14 +9911,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 22
+          m_IntArgument: 14
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9933,7 +9956,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB098. \uAD70\uC0AC \uC815\uC804 \uC704\uC6D0\uD68C"
+  m_Text: B. MILITARY ARMISTICE COMMISSION
 --- !u!222 &901913801
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10013,7 +10036,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 39
+  m_Text: 24
 --- !u!222 &915109180
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10341,9 +10364,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '02
-
-'
+  m_Text: 03
 --- !u!222 &962725027
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10471,7 +10492,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 963829770}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3424486591358542361}
+        m_TargetAssemblyTypeName: Book, Assembly-CSharp
+        m_MethodName: FlipRightMultiPage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &963829770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10496,7 +10529,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -10505,8 +10538,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C2\uC870 \uD3C9\uD654 \uBC0F \uC815\uC804\uC758 \uAD6C\uCCB4\uC801
-    \uC870\uCE58"
+  m_Text: "ARTICLE 2 CONCRETE ARRANGEMENTS\n FOR CEASE-FIRE AND ARMISTICE"
 --- !u!222 &963829771
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10802,7 +10834,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 973686973}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3424486591358542361}
+        m_TargetAssemblyTypeName: Book, Assembly-CSharp
+        m_MethodName: FlipRightMultiPage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &973686973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10827,7 +10871,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -10836,8 +10880,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C1\uC870 \uAD70\uC0AC \uBD84\uACC4\uC120\uACFC \uBE44\uBB34\uC7A5
-    \uC9C0\uB300"
+  m_Text: ARTICLE 1 MILITARY DEMARCATION LINE AND DEMILITARIZED ZONE
 --- !u!222 &973686974
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11092,14 +11135,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 74
+          m_IntArgument: 48
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11128,7 +11171,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -11137,7 +11180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C7\uC870 \uC804\uC7C1 \uD3EC\uB85C\uB97C \uC704\uD55C \uBCF4\uAE09"
+  m_Text: 7. LOGISTICAL SUPPORT FOR PRISONERS OF WAR
 --- !u!222 &1045995016
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11217,7 +11260,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 03
+  m_Text: 04
 --- !u!222 &1051222725
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11310,7 +11353,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4891147957339800066}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -11355,7 +11398,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C3\uC870"
+  m_Text: ARTICLE 3
 --- !u!222 &1074871347
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11435,7 +11478,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 35
+  m_Text: 22
 --- !u!222 &1101260183
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11746,7 +11789,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -11791,7 +11834,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C \uC9C0\uB3C4 \uC81C2\uB3C4"
+  m_Text: MAP 2
 --- !u!222 &1137725773
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11975,7 +12018,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -12020,7 +12063,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C \uC9C0\uB3C4 \uC81C1\uB3C4\uC758 6"
+  m_Text: MAP 1-6
 --- !u!222 &1189589117
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12113,7 +12156,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -12158,7 +12201,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uC9C0\uB3C44"
+  m_Text: MAP 4 (SUBHEADING)
 --- !u!222 &1194342250
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12413,14 +12456,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 64
+          m_IntArgument: 40
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12458,7 +12501,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C1\uC870 \uCD1D\uCE59"
+  m_Text: 1. GENERAL
 --- !u!222 &1222156926
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12710,14 +12753,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 8
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12755,7 +12798,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uAC00. \uCD1D\uCE59"
+  m_Text: A. GENERAL
 --- !u!222 &1303487847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12986,7 +13029,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -13031,7 +13074,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C\uC9C0\uB3C4 \uC81C5\uB3C4\uC758 1"
+  m_Text: MAP 5-1
 --- !u!222 &1314157536
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13317,7 +13360,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 36
+  m_Text: 22
 --- !u!222 &1343750074
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13657,14 +13700,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 60
+          m_IntArgument: 36
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13693,7 +13736,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -13702,8 +13745,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C4\uC870 \uC30D\uBC29 \uAD00\uACC4 \uC815\uBD80\uB4E4\uC5D0\uC758
-    \uAC74\uC758"
+  m_Text: "ARTICLE 4 RECOMMENDATION TO THE \nGOVERMENTS CONCERNED"
 --- !u!222 &1372009900
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14121,7 +14163,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 32
+  m_Text: 19
 --- !u!222 &1425837382
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14296,14 +14338,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 76
+          m_IntArgument: 50
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -14341,7 +14383,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C10\uC870 \uC774\uB3D9"
+  m_Text: 10. MOVEMENT
 --- !u!222 &1453878458
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14434,7 +14476,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4891147957339800066}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -14479,7 +14521,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C1\uC870\n"
+  m_Text: ARTICLE 1
 --- !u!222 &1468822825
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14710,7 +14752,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -14755,7 +14797,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC9C0\uB3C4\uBAA9\uB85D"
+  m_Text: INDEX
 --- !u!222 &1470662348
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15142,14 +15184,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 60
+          m_IntArgument: 36
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -15187,7 +15229,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C5\uC870 \uBD80\uCE59"
+  m_Text: ARTICLE 5 MISCELLANEOUS
 --- !u!222 &1496989400
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15418,7 +15460,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -15463,7 +15505,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uC9C0\uB3C45"
+  m_Text: MAP 5 (SUBHEADING)
 --- !u!222 &1543758701
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16136,7 +16178,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -16181,7 +16223,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C \uC9C0\uB3C4 \uC81C1\uB3C4\uC758 3"
+  m_Text: MAP 1-3
 --- !u!222 &1567061618
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16274,14 +16316,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 66
+          m_IntArgument: 42
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -16310,7 +16352,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -16319,7 +16361,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C2\uC870 \uC804\uC7C1 \uD3EC\uB85C\uC758 \uAD00\uB9AC"
+  m_Text: "2. CUSTODY OF PRISONERS \nOF WAR"
 --- !u!222 &1576454183
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16399,7 +16441,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 04
+  m_Text: 05
 --- !u!222 &1577343301
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16492,7 +16534,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -16537,7 +16579,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C \uC9C0\uB3C4 \uC81C1\uB3C4\uC758 2"
+  m_Text: MAP 1-2
 --- !u!222 &1584963019
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17031,7 +17073,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 23
+  m_Text: 14
 --- !u!222 &1642150985
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17794,14 +17836,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4891147957339800066}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17839,7 +17881,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCC38\uC11D\uC790"
+  m_Text: PRESENT
 --- !u!222 &1723907428
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17932,14 +17974,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4891147957339800066}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17977,7 +18019,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C2\uC870"
+  m_Text: ARTICLE 2
 --- !u!222 &1732456800
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18297,14 +18339,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4891147957339800066}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18342,7 +18384,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C4\uC870"
+  m_Text: ARTICLE 4
 --- !u!222 &1749963241
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18435,7 +18477,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -18480,7 +18522,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uC9C0\uB3C42"
+  m_Text: MAP 2 (SUBHEADING)
 --- !u!222 &1763456475
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18711,14 +18753,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 42
+          m_IntArgument: 26
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18747,7 +18789,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -18756,7 +18798,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C3\uC870 \uC804\uC7C1 \uD3EC\uB85C\uC5D0 \uAD00\uD55C \uC870\uCE58"
+  m_Text: ARTICLE 3 ARRANGEMENTS RELATING TO PRISONERS OF WAR
 --- !u!222 &1772450356
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19085,7 +19127,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -19130,7 +19172,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C \uC9C0\uB3C4 \uC81C4\uB3C4"
+  m_Text: MAP 4
 --- !u!222 &1807423736
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19525,14 +19567,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 74
+          m_IntArgument: 46
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -19570,7 +19612,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C6\uC870 \uC2E0\uBB38\uBCF4\uB3C4"
+  m_Text: 6. PRESS COVERAGE
 --- !u!222 &1811908665
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19650,7 +19692,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 39
+  m_Text: 24
 --- !u!222 &1817842665
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19743,14 +19785,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 72
+          m_IntArgument: 44
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -19788,7 +19830,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C4\uC870 \uC804\uC7C1 \uD3EC\uB85C\uC758 \uCC98\uB9AC"
+  m_Text: 4. DISPOSITION OF PRISONERS OF WAR
 --- !u!222 &1827542259
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19881,14 +19923,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 76
+          m_IntArgument: 50
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -19926,7 +19968,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C11\uC870 \uC808\uCC28\uC5D0 \uAD00\uD55C \uC0AC\uD56D"
+  m_Text: 11. PROCEDURAL MATTERS
 --- !u!222 &1832846140
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20101,7 +20143,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -20146,7 +20188,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C\uC9C0\uB3C4 \uC81C5\uB3C4\uC758 9"
+  m_Text: MAP 5-9
 --- !u!222 &1844699283
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20323,7 +20365,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -20368,7 +20410,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C\uC9C0\uB3C4 \uC81C5\uB3C4\uC758 2"
+  m_Text: MAP 5-2
 --- !u!222 &1866762352
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20853,7 +20895,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -20898,7 +20940,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C \uC9C0\uB3C4 \uC81C1\uB3C4\uC758 5"
+  m_Text: MAP 1-5
 --- !u!222 &1974579671
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21134,9 +21176,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '01
-
-'
+  m_Text: 02
 --- !u!222 &1988983197
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21229,7 +21269,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -21274,7 +21314,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C\uC9C0\uB3C4 \uC81C5\uB3C4\uC758 10"
+  m_Text: MAP 5-10
 --- !u!222 &1994800071
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21354,7 +21394,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 17
+  m_Text: 10
 --- !u!222 &2002635113
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21447,14 +21487,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4891147957339800066}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -21492,7 +21532,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC81C5\uC870"
+  m_Text: ARTICLE 5
 --- !u!222 &2008305577
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21572,7 +21612,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 13
+  m_Text: 08
 --- !u!222 &2008339700
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21983,7 +22023,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 02
+  m_Text: 03
 --- !u!222 &2052288561
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22063,7 +22103,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 38
+  m_Text: 23
 --- !u!222 &2068284821
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22156,7 +22196,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5719263473069921139}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
@@ -22201,7 +22241,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCCA8\uBD80\uD55C\uC9C0\uB3C4 \uC81C5\uB3C4\uC758 5"
+  m_Text: MAP 5-5
 --- !u!222 &2080174312
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22281,7 +22321,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 01
+  m_Text: 02
 --- !u!222 &2098759270
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22374,14 +22414,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3424486591358542361}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: FlipRightMultiPage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 64
+          m_IntArgument: 40
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -22419,8 +22459,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBD80\uB85D \uC911\uB9BD\uAD6D \uC1A1\uD658 \uC704\uC6D0\uD68C \uC9C1\uAD8C\uC758
-    \uBC94\uC704"
+  m_Text: ANNEX
 --- !u!222 &2102723718
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24389,7 +24428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1537, y: -946}
+  m_AnchoredPosition: {x: -1822, y: -946}
   m_SizeDelta: {x: 144, y: 144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1564574967040021904
@@ -25167,7 +25206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &2652335952727017866
 GameObject:
   m_ObjectHideFlags: 0
@@ -29076,7 +29115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &6831923402419233622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29613,7 +29652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &7360710589099273987
 CanvasRenderer:
   m_ObjectHideFlags: 0
