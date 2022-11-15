@@ -680,7 +680,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 650, y: -40}
+  m_AnchoredPosition: {x: 650, y: -84.999985}
   m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73613492
@@ -4656,7 +4656,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 650, y: -40}
+  m_AnchoredPosition: {x: 650, y: -90}
   m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &477356922
@@ -5391,7 +5391,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 80}
+  m_SizeDelta: {x: 700, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526370898
 MonoBehaviour:
@@ -5473,7 +5473,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -5482,7 +5482,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: C. NEUTRAL NATIONS SUPERVISORY COMMISSION
+  m_Text: "C. NEUTRAL NATIONS \nSUPERVISORY COMMISSION"
 --- !u!222 &526370900
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6274,7 +6274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 650, y: -40}
+  m_AnchoredPosition: {x: 650, y: -85.00004}
   m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &556089283
@@ -9296,7 +9296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 650, y: -40}
+  m_AnchoredPosition: {x: 650, y: -64.99996}
   m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &881222794
@@ -9461,7 +9461,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 80}
+  m_SizeDelta: {x: 700, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &889006737
 MonoBehaviour:
@@ -9543,7 +9543,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -9552,7 +9552,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 8. LOGISTICAL SUPPORT FOR THE NEUTRAL NATIONS REPATRIATION COMMISSION
+  m_Text: "8. LOGISTICAL SUPPORT FOR THE \nNEUTRAL NATIONS \nREPATRIATION COMMISSION"
 --- !u!222 &889006739
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10447,7 +10447,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 80}
+  m_SizeDelta: {x: 700, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &963829769
 MonoBehaviour:
@@ -10529,7 +10529,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -10538,7 +10538,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "ARTICLE 2 CONCRETE ARRANGEMENTS\n FOR CEASE-FIRE AND ARMISTICE"
+  m_Text: "ARTICLE 2 CONCRETE \nARRANGEMENTS FOR CEASE-\nFIRE AND ARMISTICE"
 --- !u!222 &963829771
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10789,7 +10789,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 80}
+  m_SizeDelta: {x: 700, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &973686972
 MonoBehaviour:
@@ -10871,7 +10871,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -10880,7 +10880,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ARTICLE 1 MILITARY DEMARCATION LINE AND DEMILITARIZED ZONE
+  m_Text: "ARTICLE 1 MILITARY \nDEMARCATION LINE AND \nDEMILITARIZED ZONE"
 --- !u!222 &973686974
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11089,7 +11089,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 80}
+  m_SizeDelta: {x: 700, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045995014
 MonoBehaviour:
@@ -11171,7 +11171,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -11442,7 +11442,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 650, y: -40}
+  m_AnchoredPosition: {x: 650, y: -70.00001}
   m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101260182
@@ -13654,7 +13654,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 80}
+  m_SizeDelta: {x: 700, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1372009898
 MonoBehaviour:
@@ -13736,7 +13736,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -13745,7 +13745,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "ARTICLE 4 RECOMMENDATION TO THE \nGOVERMENTS CONCERNED"
+  m_Text: "ARTICLE 4 RECOMMENDATION \nTO THE GOVERMENTS \nCONCERNED"
 --- !u!222 &1372009900
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16270,7 +16270,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 80}
+  m_SizeDelta: {x: 700, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576454181
 MonoBehaviour:
@@ -16352,7 +16352,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -17037,7 +17037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 650, y: -40}
+  m_AnchoredPosition: {x: 650, y: -80}
   m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1642150984
@@ -18707,7 +18707,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 80}
+  m_SizeDelta: {x: 700, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1772450354
 MonoBehaviour:
@@ -18789,7 +18789,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 67774db51ac154327967b4840c69da0a, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 3
@@ -18798,7 +18798,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ARTICLE 3 ARRANGEMENTS RELATING TO PRISONERS OF WAR
+  m_Text: "ARTICLE 3 \nARRANGEMENTS RELATING TO PRISONERS OF WAR"
 --- !u!222 &1772450356
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21358,7 +21358,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 650, y: -40}
+  m_AnchoredPosition: {x: 650, y: -65}
   m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2002635112
@@ -21987,7 +21987,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 650, y: -40}
+  m_AnchoredPosition: {x: 650, y: -89.999985}
   m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052288560
