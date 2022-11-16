@@ -44524,7 +44524,7 @@ MonoBehaviour:
   canvas: {fileID: 8989942469870008554}
   BookPanel: {fileID: 4730252783882965978}
   background: {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
-  lastPage: {fileID: 21300000, guid: b57f1fc85a54c47638403c6df9bb9417, type: 3}
+  lastPage: {fileID: 21300000, guid: 5588fdf0385314725abd36886f83a34c, type: 3}
   bookPages:
   - {fileID: 21300000, guid: 5c07937c6f5eb47eeb211e132b951c36, type: 3}
   - {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
@@ -46153,7 +46153,7 @@ MonoBehaviour:
   canvas: {fileID: 8989942469870008554}
   BookPanel: {fileID: 695745127204824662}
   background: {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
-  lastPage: {fileID: 21300000, guid: b57f1fc85a54c47638403c6df9bb9417, type: 3}
+  lastPage: {fileID: 21300000, guid: 5588fdf0385314725abd36886f83a34c, type: 3}
   bookPages:
   - {fileID: 21300000, guid: 3578792a5773a4571984f625d932650f, type: 3}
   - {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
