@@ -8,14 +8,13 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 using System;
 
-public class ShareManager : MonoBehaviour
+public class CHNShare : MonoBehaviour
 {
     GameObject sharePanel;
     private const string SENDER_EMAIL = "krwarmap@gmail.com";
     private const string SENDER_PASSWORD = "wisfxvdhxdldrmjv";
     string imageName = "";
     int bookNum = 0;
-    public GameObject textArea;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +37,6 @@ public class ShareManager : MonoBehaviour
     }
 
     public void offSharePanel() {
-        textArea.GetComponent<TMPro.TMP_InputField>().text = "";
         sharePanel.SetActive(false);
     }
 
@@ -59,28 +57,8 @@ public class ShareManager : MonoBehaviour
         }
     }
 
-    public void ConfirmButtomTouchedFunc() {
-        string email = textArea.GetComponent<TMPro.TMP_InputField>().text;
-        Debug.Log(email);
-
-        if (email.Length != 0) {
-            if (!Regex.IsMatch(email, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$")) {
-                Debug.Log("이메일 형식이 아닙니다.");
-                return;
-            } else {
-                SendEmail();
-            }
-        } else {
-            Debug.Log("이메일을 입력해주세요.");
-        }
-    }
-
-    public void SendEmail() {
-        Invoke("SendEmailFunc", 0.5f);
-    }
-
     public void SendEmailFunc() {
-        string email = textArea.GetComponent<TMPro.TMP_InputField>().text;
+        string email = "dnalstlr1927@icloud.com";
         MailMessage mail = new MailMessage();
         mail.From = new MailAddress(SENDER_EMAIL);
         mail.To.Add(email);
@@ -88,13 +66,13 @@ public class ShareManager : MonoBehaviour
         mail.Body = "전쟁기념관 정전협정문 공유메일";
 
         if (bookNum == 0) {
-            Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/KOR/" + imageName + ".png");
+            Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/CHN/" + imageName + ".png");
             mail.Attachments.Add(attachment);
         } else if (bookNum == 1) {
-            Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/KOR/" + imageName + ".png");
+            Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/CHN/" + imageName + ".png");
             mail.Attachments.Add(attachment);
         } else if (bookNum == 2) {
-            Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MapBook/KOR/" + imageName + ".png");
+            Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MapBook/CHN/" + imageName + ".png");
             mail.Attachments.Add(attachment);
         } else {
             return;
