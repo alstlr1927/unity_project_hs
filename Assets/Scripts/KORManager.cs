@@ -5,7 +5,8 @@ using UnityEngine;
 public class KORManager : MonoBehaviour
 {
     static int bookNum = 0;
-    bool isOpen = false;
+    bool isWholeOpen = false;
+    bool isGuideOpen = false;
 
     // Start is called before the first frame update
     void Start()
@@ -34,39 +35,51 @@ public class KORManager : MonoBehaviour
         book1.SetActive(false);
         book2.SetActive(false);
         book3.SetActive(false);
-        isOpen = false;
+        isWholeOpen = false;
     }
 
     public void OpenWholePage() {
-        if (!isOpen) {
+        if (!isWholeOpen) {
             if (bookNum == 0) {
                 GameObject book = GameObject.Find("ProjectManager").transform.Find("WholeBook1").gameObject;
                 book.SetActive(true);
-                isOpen = true;
+                isWholeOpen = true;
             } else if (bookNum == 1) {
                 GameObject book = GameObject.Find("ProjectManager").transform.Find("WholeBook2").gameObject;
                 book.SetActive(true);
-                isOpen = true;
+                isWholeOpen = true;
             } else if (bookNum == 2) {
                 GameObject book = GameObject.Find("ProjectManager").transform.Find("WholeBook3").gameObject;
                 book.SetActive(true);
-                isOpen = true;
+                isWholeOpen = true;
             }
         } else {
             if (bookNum == 0) {
                 GameObject book = GameObject.Find("ProjectManager").transform.Find("WholeBook1").gameObject;
                 book.SetActive(false);
-                isOpen = false;
+                isWholeOpen = false;
             } else if (bookNum == 1) {
                 GameObject book = GameObject.Find("ProjectManager").transform.Find("WholeBook2").gameObject;
                 book.SetActive(false);
-                isOpen = false;
+                isWholeOpen = false;
             } else if (bookNum == 2) {
                 GameObject book = GameObject.Find("ProjectManager").transform.Find("WholeBook3").gameObject;
                 book.SetActive(false);
-                isOpen = false;
+                isWholeOpen = false;
             }
         }
         
+    }
+
+    public void onOffGuide() {
+        if (isGuideOpen) {
+            GameObject guide = GameObject.Find("ProjectManager").transform.Find("Guide").gameObject;
+            guide.SetActive(false);
+            isGuideOpen = false;
+        } else {
+            GameObject guide = GameObject.Find("ProjectManager").transform.Find("Guide").gameObject;
+            guide.SetActive(true);
+            isGuideOpen = true;
+        }
     }
 }
