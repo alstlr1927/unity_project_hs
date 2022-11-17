@@ -544,10 +544,34 @@ public class Book : MonoBehaviour {
         float h = Mathf.Abs(EndBottomRight.y) * 0.9f;
         float dx = (xl)*2 / AnimationFramesCount;
         if (currentPage <= page) {  
-            if (currentPage == bookPages.Length - 2) return;  
-            sp = bookPages[currentPage + 2]; // 02
-            moveBeforeIdx = currentPage + 2; // 02
-            bookPages[currentPage + 2] = bookPages[page]; // b[2] = b [4]
+            if (currentPage == bookPages.Length - 2) return;
+            if (currentPage == page) {
+                sp = bookPages[currentPage + 2]; // 02
+                moveBeforeIdx = currentPage + 2; // 02
+                bookPages[currentPage + 2] = bookPages[page]; // b[2] = b [4]
+            } else {
+                // if (page - currentPage + 2 >= bookPages.Length) {
+                //     sp = bookPages[currentPage + 2]; // 02
+                //     moveBeforeIdx = currentPage + 2; // 02
+                //     bookPages[currentPage + 2] = bookPages[page]; // b[2] = b [4]
+                // } else {
+                //     sp = bookPages[page - currentPage + 2]; // 02
+                //     moveBeforeIdx = page - currentPage + 2; // 02
+                //     bookPages[page - currentPage + 2] = bookPages[page]; // b[2] = b [4]
+                // }
+                sp = bookPages[page + 2]; // 02
+                    moveBeforeIdx = page + 2; // 02
+                    bookPages[page + 2] = bookPages[page]; // b[2] = b [4]
+                // if (page + 2 > bookPages.Length) {
+                //     sp = bookPages[currentPage + 2]; // 02
+                //     moveBeforeIdx = currentPage + 2; // 02
+                //     bookPages[currentPage + 2] = bookPages[page];
+                // } else {
+                //     sp = bookPages[page + 2]; // 02
+                //     moveBeforeIdx = page + 2; // 02
+                //     bookPages[page + 2] = bookPages[page]; // b[2] = b [4]
+                // }
+            }
             Debug.Log("sp : " + sp.name);
             Debug.Log("moveBeforeIdx : " + moveBeforeIdx);
             Debug.Log("bookPages[currentPage + 2] : " + bookPages[currentPage + 2].name);

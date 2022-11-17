@@ -42092,7 +42092,7 @@ MonoBehaviour:
   canvas: {fileID: 8989942469870008554}
   BookPanel: {fileID: 4730252783882965978}
   background: {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
-  lastPage: {fileID: 21300000, guid: b57f1fc85a54c47638403c6df9bb9417, type: 3}
+  lastPage: {fileID: 21300000, guid: 5588fdf0385314725abd36886f83a34c, type: 3}
   bookPages:
   - {fileID: 21300000, guid: d9fb3aee88e8f4a0aa92f1ccdd3b8954, type: 3}
   - {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
@@ -42141,6 +42141,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 042e5049b77d24bb084110a874c1ed53, type: 3}
   - {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
   - {fileID: 21300000, guid: 9b05791357a604321a6ea77b3487e914, type: 3}
+  - {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
+  - {fileID: 21300000, guid: 5588fdf0385314725abd36886f83a34c, type: 3}
   - {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
   interactable: 1
   enableShadowEffect: 1
@@ -43691,7 +43693,7 @@ MonoBehaviour:
   canvas: {fileID: 8989942469870008554}
   BookPanel: {fileID: 695745127204824662}
   background: {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
-  lastPage: {fileID: 21300000, guid: b57f1fc85a54c47638403c6df9bb9417, type: 3}
+  lastPage: {fileID: 21300000, guid: 5588fdf0385314725abd36886f83a34c, type: 3}
   bookPages:
   - {fileID: 21300000, guid: 0e3bb0b2796be44adac2ddc8759c34a0, type: 3}
   - {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
@@ -43702,6 +43704,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 98b45f006b9064f23b204b5725a90d3b, type: 3}
   - {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
   - {fileID: 21300000, guid: 686b93bde542a425d8b7a70c16e8bf41, type: 3}
+  - {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
+  - {fileID: 21300000, guid: 5588fdf0385314725abd36886f83a34c, type: 3}
   - {fileID: 21300000, guid: 2f0f16612a57449b2b4b98ea29e41f2b, type: 3}
   interactable: 1
   enableShadowEffect: 1
@@ -44343,6 +44347,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c14b66cdfffcc4143936faf85f7709d9, type: 3}
   - {fileID: 21300000, guid: 67a26edbce7ce4c7285aeefcd3ecad84, type: 3}
   - {fileID: 21300000, guid: 7eae63b833e314e6aaa48ed2b8c0e22b, type: 3}
+  - {fileID: 21300000, guid: 67a26edbce7ce4c7285aeefcd3ecad84, type: 3}
+  - {fileID: 21300000, guid: 8cc65e651d6484684a3ead42d68bdb3e, type: 3}
   - {fileID: 21300000, guid: 67a26edbce7ce4c7285aeefcd3ecad84, type: 3}
   interactable: 1
   enableShadowEffect: 1
