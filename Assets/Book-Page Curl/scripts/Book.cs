@@ -19,6 +19,8 @@ public class Book : MonoBehaviour {
     public Sprite background;
     public Sprite lastPage;
     public Sprite[] bookPages;
+    Sprite sp;
+    int moveBeforeIdx;
     public bool interactable=true;
     public bool enableShadowEffect=true;
     //represent the index of the sprite shown in the right page
@@ -469,6 +471,7 @@ public class Book : MonoBehaviour {
         UpdateSprites();
         Shadow.gameObject.SetActive(false);
         ShadowLTR.gameObject.SetActive(false);
+        bookPages[moveBeforeIdx] = sp;
         if (OnFlip != null)
             OnFlip.Invoke();
     }
@@ -540,6 +543,19 @@ public class Book : MonoBehaviour {
         //float h =  Height * 0.5f;
         float h = Mathf.Abs(EndBottomRight.y) * 0.9f;
         float dx = (xl)*2 / AnimationFramesCount;
+        if (currentPage <= page) {  
+            if (currentPage == bookPages.Length - 2) return;  
+            sp = bookPages[currentPage + 2]; // 02
+            moveBeforeIdx = currentPage + 2; // 02
+            bookPages[currentPage + 2] = bookPages[page]; // b[2] = b [4]
+            Debug.Log("sp : " + sp.name);
+            Debug.Log("moveBeforeIdx : " + moveBeforeIdx);
+            Debug.Log("bookPages[currentPage + 2] : " + bookPages[currentPage + 2].name);
+            Debug.Log("bookPages[page] : " + bookPages[page].name);
+            Debug.Log("bookPages[currentPage] : " + bookPages[currentPage].name);
+            Debug.Log("page : " + page);
+        }
+
         if (currentPage > page) {
             currentPage = page;
             StartCoroutine(MultiFlipLTR(xc, xl, h, frameTime, dx));
@@ -633,6 +649,7 @@ public class Book : MonoBehaviour {
             yield return new WaitForSeconds(frameTime);
             x -= dx;
         }
+        yield return new WaitForSeconds(frameTime);
         pageDragging = false;
         MultiTweenForward();
     }
