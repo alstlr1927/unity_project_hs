@@ -321,6 +321,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &24797449
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,6 +980,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2556,6 +2580,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &96456488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3632,6 +3668,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &126161625
 GameObject:
   m_ObjectHideFlags: 0
@@ -4309,6 +4357,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &165343995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4735,6 +4795,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &187052611
 GameObject:
   m_ObjectHideFlags: 0
@@ -4962,6 +5034,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5795,6 +5879,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &247856926
 GameObject:
   m_ObjectHideFlags: 0
@@ -5984,6 +6080,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6321,6 +6429,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7007,6 +7127,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &294131921
 GameObject:
   m_ObjectHideFlags: 0
@@ -7196,6 +7328,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7524,6 +7668,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7897,6 +8053,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &356365253
 GameObject:
   m_ObjectHideFlags: 0
@@ -8216,6 +8384,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9073,6 +9253,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &380575438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9352,6 +9544,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9732,6 +9936,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &476391571
 GameObject:
   m_ObjectHideFlags: 0
@@ -9930,6 +10146,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &482325505
 GameObject:
   m_ObjectHideFlags: 0
@@ -10119,6 +10347,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10365,6 +10605,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11440,6 +11692,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12571,6 +12835,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &590929098
 GameObject:
   m_ObjectHideFlags: 0
@@ -12888,6 +13164,18 @@ MonoBehaviour:
       - m_Target: {fileID: 672826406}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13314,6 +13602,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13981,6 +14281,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &663988131
 GameObject:
   m_ObjectHideFlags: 0
@@ -14326,6 +14638,18 @@ MonoBehaviour:
       - m_Target: {fileID: 672826406}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15046,6 +15370,18 @@ MonoBehaviour:
       - m_Target: {fileID: 672826406}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16144,6 +16480,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &779838330
 GameObject:
   m_ObjectHideFlags: 0
@@ -16842,6 +17190,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17734,6 +18094,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19039,6 +19411,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &977765776
 GameObject:
   m_ObjectHideFlags: 0
@@ -19347,6 +19731,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21271,6 +21667,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1119576145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21607,6 +22015,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1122731902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21796,6 +22216,18 @@ MonoBehaviour:
       - m_Target: {fileID: 672826406}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22084,6 +22516,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22450,6 +22894,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1151322279
 GameObject:
   m_ObjectHideFlags: 0
@@ -22682,6 +23138,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23198,6 +23666,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24246,6 +24726,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1251906147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25087,6 +25579,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1312374737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25276,6 +25780,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26008,6 +26524,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1350023911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26206,6 +26734,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1350276881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26395,6 +26935,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26942,6 +27494,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1372164097
 GameObject:
   m_ObjectHideFlags: 0
@@ -27041,6 +27605,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27760,6 +28336,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1396580976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28048,6 +28636,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1427765425
 GameObject:
   m_ObjectHideFlags: 0
@@ -28227,6 +28827,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29403,6 +30015,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1532539165
 GameObject:
   m_ObjectHideFlags: 0
@@ -29748,6 +30372,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30151,6 +30787,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1625618433
 GameObject:
   m_ObjectHideFlags: 0
@@ -30250,6 +30898,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31197,7 +31857,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1687310910
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32109,6 +32769,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1716291365
 GameObject:
   m_ObjectHideFlags: 0
@@ -32374,6 +33046,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33154,6 +33838,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1744729083
 GameObject:
   m_ObjectHideFlags: 0
@@ -33671,6 +34367,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34942,6 +35650,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1808597360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35131,6 +35851,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1277495720}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -35457,7 +36189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1839716664
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35918,6 +36650,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36703,6 +37447,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1879672222
 GameObject:
   m_ObjectHideFlags: 0
@@ -37031,6 +37787,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38464,6 +39232,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2010505018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38743,6 +39523,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -39032,6 +39824,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -39453,6 +40257,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2048822060
 GameObject:
   m_ObjectHideFlags: 0
@@ -39856,6 +40672,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -40539,6 +41367,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2094532373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40818,6 +41658,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -41809,6 +42661,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331363763}
         m_TargetAssemblyTypeName: WholePage, Assembly-CSharp
         m_MethodName: SetHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 240939112}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: CloseWholePage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
