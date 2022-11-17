@@ -313,6 +313,8 @@ public class Book : MonoBehaviour {
     }
     public void DragRightPageToPoint(Vector3 point)
     {
+        Debug.Log("right");
+        Debug.Log(point);
         if (currentPage >= bookPages.Length) return;
         pageDragging = true;
         mode = FlipMode.RightToLeft;
@@ -348,6 +350,7 @@ public class Book : MonoBehaviour {
     }
     public void DragLeftPageToPoint(Vector3 point)
     {
+        Debug.Log("left");
         if (currentPage <= 0) return;
         pageDragging = true;
         mode = FlipMode.LeftToRight;
@@ -463,7 +466,7 @@ public class Book : MonoBehaviour {
         Right.gameObject.SetActive(false);
         Right.transform.SetParent(BookPanel.transform, true);
         RightNext.transform.SetParent(BookPanel.transform, true);
-        // UpdateSprites();
+        UpdateSprites();
         Shadow.gameObject.SetActive(false);
         ShadowLTR.gameObject.SetActive(false);
         if (OnFlip != null)
@@ -539,11 +542,9 @@ public class Book : MonoBehaviour {
         float dx = (xl)*2 / AnimationFramesCount;
         if (currentPage > page) {
             currentPage = page;
-            UpdateSprites();
             StartCoroutine(MultiFlipLTR(xc, xl, h, frameTime, dx));
         } else {
             currentPage = page;
-            UpdateSprites();
             StartCoroutine(MultiFlipRTL(xc, xl, h, frameTime, dx));
         }
     }
