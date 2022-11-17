@@ -463,7 +463,7 @@ public class Book : MonoBehaviour {
         Right.gameObject.SetActive(false);
         Right.transform.SetParent(BookPanel.transform, true);
         RightNext.transform.SetParent(BookPanel.transform, true);
-        UpdateSprites();
+        // UpdateSprites();
         Shadow.gameObject.SetActive(false);
         ShadowLTR.gameObject.SetActive(false);
         if (OnFlip != null)
@@ -539,9 +539,11 @@ public class Book : MonoBehaviour {
         float dx = (xl)*2 / AnimationFramesCount;
         if (currentPage > page) {
             currentPage = page;
+            UpdateSprites();
             StartCoroutine(MultiFlipLTR(xc, xl, h, frameTime, dx));
         } else {
             currentPage = page;
+            UpdateSprites();
             StartCoroutine(MultiFlipRTL(xc, xl, h, frameTime, dx));
         }
     }
