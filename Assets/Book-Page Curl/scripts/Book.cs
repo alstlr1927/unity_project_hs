@@ -537,6 +537,9 @@ public class Book : MonoBehaviour {
     }
 
     public void FlipRightMultiPage(int page) {
+        if(currentPage == page) {
+            return;
+        }
         float frameTime = PageFlipTime / AnimationFramesCount;
         float xc = (EndBottomRight.x + EndBottomLeft.x) / 2;
         float xl = ((EndBottomRight.x - EndBottomLeft.x) / 2) * 0.9f;
@@ -640,7 +643,7 @@ public class Book : MonoBehaviour {
         {
             y = (-h / (xl * xl)) * (x - xc) * (x - xc);
             UpdateBookRTLToPoint(new Vector3(x, y, 0));
-            yield return new WaitForSeconds(AnimationSpeed);
+            yield return new WaitForSeconds(frameTime);
             x -= dx;
         }
         ReleasePage();
@@ -654,7 +657,7 @@ public class Book : MonoBehaviour {
         {
             y = (-h / (xl * xl)) * (x - xc) * (x - xc);
             UpdateBookLTRToPoint(new Vector3(x, y, 0));
-            yield return new WaitForSeconds(AnimationSpeed);
+            yield return new WaitForSeconds(frameTime);
             x += dx;
         }
         ReleasePage();
