@@ -34,10 +34,12 @@ public class ShareManager : MonoBehaviour
     }
 
     public void onSharePanel() {
+        textArea.GetComponent<TMPro.TMP_InputField>().text = "";
         sharePanel.SetActive(true);
     }
 
     public void offSharePanel() {
+        CloseKeyboard();
         textArea.GetComponent<TMPro.TMP_InputField>().text = "";
         sharePanel.SetActive(false);
     }
@@ -122,6 +124,27 @@ public class ShareManager : MonoBehaviour
         {
             Debug.Log(e);
 
+        }
+    }
+
+    public void OnEmailInputAreaTouched() {
+        OnInputTouch();
+    }
+
+    public void OnInputTouch() {
+        if (System.Diagnostics.Process.GetProcessesByName("OSK").Length > 0) {
+            System.Diagnostics.Process.GetProcessesByName("OSK")[0].MainWindowHandle.ToInt32();
+        } else {
+            System.Diagnostics.Process.Start("OSK.exe");
+        }
+    }
+
+    public void CloseKeyboard() {
+        //OSK.exe dispose
+        System.Diagnostics.Process[] osk = System.Diagnostics.Process.GetProcessesByName("OSK");
+
+        foreach (System.Diagnostics.Process p in osk) {
+            p.Kill();
         }
     }
 }
