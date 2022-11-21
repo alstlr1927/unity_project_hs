@@ -10491,7 +10491,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 900}
+  m_SizeDelta: {x: 0, y: 1900}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &540242027
 MonoBehaviour:
@@ -10530,7 +10530,7 @@ MonoBehaviour:
   m_CellSize: {x: 550, y: 900}
   m_Spacing: {x: 100, y: 100}
   m_Constraint: 1
-  m_ConstraintCount: 5
+  m_ConstraintCount: 4
 --- !u!1 &544050155
 GameObject:
   m_ObjectHideFlags: 0
@@ -18926,7 +18926,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2333.9, y: -450}
+  m_AnchoredPosition: {x: 383.90002, y: -1450}
   m_SizeDelta: {x: 550, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &981112255
@@ -23837,7 +23837,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 346620425}
   m_HandleRect: {fileID: 346620424}
   m_Direction: 2
-  m_Value: 1.0000005
+  m_Value: 1.0000006
   m_Size: 0.5340336
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -41659,7 +41659,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 80f390acf6eaf45cbbc221d78d182731, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 013c7e7cf17864246abc238ddf762b61, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -42835,7 +42835,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aa9817adb5f2c4d1c8b02366126f04d1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a05ccc0ea3e09491c9116f269c4be4bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -46276,6 +46276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelect: 0
+  bookVer: ENG
   bookType: 1
 --- !u!1 &7355519366406620274
 GameObject:
@@ -46931,6 +46932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelect: 0
+  bookVer: ENG
   bookType: 2
 --- !u!1 &8728668307550472247
 GameObject:
@@ -47053,7 +47055,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4492b43f1019a4ec38c9367c3df7652d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5bbd8e8bda8d9423996710837c9bc92d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -47076,6 +47078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelect: 1
+  bookVer: ENG
   bookType: 0
 --- !u!222 &8878873542223430725
 CanvasRenderer:

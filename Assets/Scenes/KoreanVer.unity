@@ -11472,7 +11472,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 628795966}
   m_Direction: 2
   m_Value: 1.000001
-  m_Size: 0.722159
+  m_Size: 0.7221591
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -50544,6 +50544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelect: 0
+  bookVer: KOR
   bookType: 1
 --- !u!1 &7355519366406620274
 GameObject:
@@ -51337,6 +51338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelect: 0
+  bookVer: KOR
   bookType: 2
 --- !u!1 &8728668307550472247
 GameObject:
@@ -51482,6 +51484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelect: 1
+  bookVer: KOR
   bookType: 0
 --- !u!222 &8878873542223430725
 CanvasRenderer:

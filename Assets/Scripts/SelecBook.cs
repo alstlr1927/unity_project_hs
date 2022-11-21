@@ -5,6 +5,7 @@ using UnityEngine;
 public class SelecBook : MonoBehaviour
 {
     public bool isSelect = false;
+    public string bookVer;
 
     public enum BookType
     {
@@ -42,28 +43,80 @@ public class SelecBook : MonoBehaviour
 
     public void SetImage() {
         if (!isSelect) {
-            switch (bookType) {
-                case BookType.Book1:
-                    GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_01_off.png");
-                    break;
-                case BookType.Book2:
-                    GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_02_off.png");
-                    break;
-                case BookType.Book3:
-                    GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_03_off.png");
-                    break;
+            if (bookVer == "KOR") {
+                switch (bookType) {
+                    case BookType.Book1:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_01_off.png");
+                        break;
+                    case BookType.Book2:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_02_off.png");
+                        break;
+                    case BookType.Book3:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_03_off.png");
+                        break;
+                }
+            } else if (bookVer == "ENG") {
+                switch (bookType) {
+                    case BookType.Book1:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_01_off_en.png");
+                        break;
+                    case BookType.Book2:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_02_off_en.png");
+                        break;
+                    case BookType.Book3:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_03_off_en.png");
+                        break;
+                }
+            } else if (bookVer == "CHN") {
+                switch (bookType) {
+                    case BookType.Book1:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_01_off_ch.png");
+                        break;
+                    case BookType.Book2:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_02_off_ch.png");
+                        break;
+                    case BookType.Book3:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_03_off_ch.png");
+                        break;
+                }
             }
         } else {
-            switch (bookType) {
-                case BookType.Book1:
-                    GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_01_on.png");
-                    break;
-                case BookType.Book2:
-                    GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_02_on.png");
-                    break;
-                case BookType.Book3:
-                    GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_03_on.png");
-                    break;
+            if (bookVer == "KOR") {
+                switch (bookType) {
+                    case BookType.Book1:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_01_on.png");
+                        break;
+                    case BookType.Book2:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_02_on.png");
+                        break;
+                    case BookType.Book3:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_03_on.png");
+                        break;
+                }
+            } else if (bookVer == "ENG") {
+                switch (bookType) {
+                    case BookType.Book1:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_01_on_en.png");
+                        break;
+                    case BookType.Book2:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_02_on_en.png");
+                        break;
+                    case BookType.Book3:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_03_on_en.png");
+                        break;
+                }
+            } else if (bookVer == "CHN") {
+                switch (bookType) {
+                    case BookType.Book1:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_01_on_ch.png");
+                        break;
+                    case BookType.Book2:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_02_on_ch.png");
+                        break;
+                    case BookType.Book3:
+                        GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/menu_sub_03_on_ch.png");
+                        break;
+                }
             }
         } 
     }
