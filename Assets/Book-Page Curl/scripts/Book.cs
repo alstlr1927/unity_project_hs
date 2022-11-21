@@ -29,6 +29,7 @@ public class Book : MonoBehaviour {
     public int AnimationFramesCount = 30;
     public float AnimationSpeed = 0.01f;
     public bool check = true;
+    public bool isMultiFlip = true;
     public int TotalPageCount
     {
         //get { return bookPages.Length; }
@@ -537,9 +538,11 @@ public class Book : MonoBehaviour {
     }
 
     public void FlipRightMultiPage(int page) {
+        if (isMultiFlip == false) return;
         if(currentPage == page) {
             return;
         }
+        isMultiFlip = false;
         float frameTime = PageFlipTime / AnimationFramesCount;
         float xc = (EndBottomRight.x + EndBottomLeft.x) / 2;
         float xl = ((EndBottomRight.x - EndBottomLeft.x) / 2) * 0.9f;
@@ -586,9 +589,11 @@ public class Book : MonoBehaviour {
         if (currentPage > page) {
             currentPage = page;
             StartCoroutine(MultiFlipLTR(xc, xl, h, frameTime, dx));
+            StartCoroutine(delayMultiTime(1f));
         } else {
             currentPage = page;
             StartCoroutine(MultiFlipRTL(xc, xl, h, frameTime, dx));
+            StartCoroutine(delayMultiTime(1f));
         }
     }
 
@@ -596,6 +601,14 @@ public class Book : MonoBehaviour {
         Debug.Log("check = " + check);
         yield return new WaitForSeconds(time);
         check = true;
+        Debug.Log("check = " + check);
+        Debug.Log("time = " + Time.time);
+    }
+
+    IEnumerator delayMultiTime(float time) {
+        Debug.Log("check = " + check);
+        yield return new WaitForSeconds(time);
+        isMultiFlip = true;
         Debug.Log("check = " + check);
         Debug.Log("time = " + Time.time);
     }
