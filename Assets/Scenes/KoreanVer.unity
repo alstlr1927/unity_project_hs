@@ -46578,6 +46578,7 @@ MonoBehaviour:
   AnimationFramesCount: 60
   AnimationSpeed: 0.01
   check: 1
+  isMultiFlip: 1
   ClippingPlane: {fileID: 3627697348715091291}
   NextPageClip: {fileID: 1448676235851332968}
   Shadow: {fileID: 7706867663947062916}
@@ -48151,6 +48152,7 @@ MonoBehaviour:
   AnimationFramesCount: 60
   AnimationSpeed: 0.01
   check: 1
+  isMultiFlip: 1
   ClippingPlane: {fileID: 3509868599948633042}
   NextPageClip: {fileID: 5399116459838216615}
   Shadow: {fileID: 7524006878313337084}
@@ -48907,6 +48909,7 @@ MonoBehaviour:
   AnimationFramesCount: 60
   AnimationSpeed: 0.01
   check: 1
+  isMultiFlip: 1
   ClippingPlane: {fileID: 3631461188041502103}
   NextPageClip: {fileID: 3853320255671642690}
   Shadow: {fileID: 6607720741890031128}
