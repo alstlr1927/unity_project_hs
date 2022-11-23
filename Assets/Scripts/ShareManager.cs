@@ -11,21 +11,42 @@ using System;
 public class ShareManager : MonoBehaviour
 {
     GameObject sharePanel;
+    public GameObject domainDropDown;
     private const string SENDER_EMAIL = "krwarmap@gmail.com";
     private const string SENDER_PASSWORD = "wisfxvdhxdldrmjv";
     string imageName = "";
+    string domain = "daum.net";
     int bookNum = 0;
     public GameObject textArea;
+    public GameObject domainArea;
 
     // Start is called before the first frame update
     void Start()
     {
         sharePanel = GameObject.Find("ShareManager").transform.Find("SharePanel").gameObject;
+        domainDropDown = GameObject.Find("ShareManager").transform.Find("SharePanel").transform.Find("Domain").gameObject;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    void setDropDown(int option) {
+        if (option == 0) {
+            domain = "@daum.net";
+        } else if (option == 1) {
+            domain = "@gmail.com";
+        } else if (option == 2) {
+            domain = "@hanmail.net";
+        } else if (option == 3) {
+            domain = "@naver.com";
+        } else if (option == 4) {
+            domain = "@nate.com";
+        } else if (option == 5) {
+            domain = "";
+        }
         
     }
 
@@ -35,12 +56,14 @@ public class ShareManager : MonoBehaviour
 
     public void onSharePanel() {
         textArea.GetComponent<TMPro.TMP_InputField>().text = "";
+        domainArea.GetComponent<TMPro.TMP_InputField>().text = "";
         sharePanel.SetActive(true);
     }
 
     public void offSharePanel() {
         CloseKeyboard();
         textArea.GetComponent<TMPro.TMP_InputField>().text = "";
+        domainArea.GetComponent<TMPro.TMP_InputField>().text = "";
         sharePanel.SetActive(false);
     }
 
@@ -62,7 +85,12 @@ public class ShareManager : MonoBehaviour
     }
 
     public void ConfirmButtomTouchedFunc() {
-        string email = textArea.GetComponent<TMPro.TMP_InputField>().text;
+        string email = "";
+        if (domain == "") {
+
+        } else {
+            email = textArea.GetComponent<TMPro.TMP_InputField>().text;
+        }
         Debug.Log(email);
 
         if (email.Length != 0) {
@@ -146,5 +174,9 @@ public class ShareManager : MonoBehaviour
         foreach (System.Diagnostics.Process p in osk) {
             p.Kill();
         }
+    }
+
+    public void onValueChanged(int value) {
+        Debug.Log("value" + value);
     }
 }
