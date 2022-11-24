@@ -11,7 +11,7 @@ using System;
 public class ShareManager : MonoBehaviour
 {
     GameObject sharePanel;
-    public GameObject domainDropDown;
+    //public GameObject domainDropDown;
     private const string SENDER_EMAIL = "krwarmap@gmail.com";
     private const string SENDER_PASSWORD = "wisfxvdhxdldrmjv";
     string imageName = "";
@@ -19,34 +19,29 @@ public class ShareManager : MonoBehaviour
     int bookNum = 0;
     public GameObject textArea;
     public GameObject domainArea;
+    List<string> optionList = new List<string>();
+    int currentOption = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         sharePanel = GameObject.Find("ShareManager").transform.Find("SharePanel").gameObject;
-        domainDropDown = GameObject.Find("ShareManager").transform.Find("SharePanel").transform.Find("Domain").gameObject;
+        //domainDropDown = GameObject.Find("ShareManager").transform.Find("SharePanel").transform.Find("Domain").gameObject;
+
+        // optionList.Add("daum.net");
+        // optionList.Add("gmail.com");
+        // optionList.Add("hanmail.net");
+        // optionList.Add("naver.com");
+        // optionList.Add("nate.com");
+        // optionList.Add("직접 입력");
+        // domainDropDown.GetComponent<UnityEngine.UI.Dropdown>().AddOptions(optionList);
+        // domainDropDown.GetComponent<UnityEngine.UI.Dropdown>().value = currentOption;
+        // domainDropDown.GetComponent<UnityEngine.UI.Dropdown>().onValueChanged.AddListener(delegate {setDropDown(domainDropDown.GetComponent<UnityEngine.UI.Dropdown>().value);});
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void setDropDown(int option) {
-        if (option == 0) {
-            domain = "@daum.net";
-        } else if (option == 1) {
-            domain = "@gmail.com";
-        } else if (option == 2) {
-            domain = "@hanmail.net";
-        } else if (option == 3) {
-            domain = "@naver.com";
-        } else if (option == 4) {
-            domain = "@nate.com";
-        } else if (option == 5) {
-            domain = "";
-        }
         
     }
 
