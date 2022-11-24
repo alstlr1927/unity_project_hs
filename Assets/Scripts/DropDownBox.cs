@@ -49,7 +49,7 @@ public class DropDownBox : MonoBehaviour
         GameObject domainArea = GameObject.Find("ShareManager").transform.Find("SharePanel").transform.Find("CustomDomain").gameObject;
         domainArea.SetActive(false);
         this.gameObject.SetActive(true);
-        options.value = 0;
+        this.GetComponent<TMP_Dropdown>().value = 0;
         PlayerPrefs.SetInt(DROPDOWN_KEY, 0);
     }
 

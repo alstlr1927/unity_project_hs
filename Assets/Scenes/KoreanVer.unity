@@ -19564,15 +19564,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22400002, guid: 053194f778b93f94c864c5aebd674d4a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 22400002, guid: 053194f778b93f94c864c5aebd674d4a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 22400002, guid: 053194f778b93f94c864c5aebd674d4a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 22400002, guid: 053194f778b93f94c864c5aebd674d4a, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -34292,6 +34292,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textArea: {fileID: 1869806930}
   domainArea: {fileID: 1035692354}
+  canvas: {fileID: 4137552870012920201}
+  testest: {fileID: 578925345267024846, guid: 62f3e24dde1874a46b6dca0988b263cb, type: 3}
 --- !u!1 &1688149544
 GameObject:
   m_ObjectHideFlags: 0
@@ -51414,6 +51416,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textArea: {fileID: 0}
   domainArea: {fileID: 0}
+  canvas: {fileID: 0}
+  testest: {fileID: 0}
 --- !u!1 &6038208833395129095
 GameObject:
   m_ObjectHideFlags: 0

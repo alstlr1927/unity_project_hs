@@ -109,6 +109,16 @@ public class ShareManager : MonoBehaviour
         Invoke("SendEmailFunc", 0.5f);
     }
 
+    public void SendEmailENG() {
+        loadingPanel.SetActive(true);
+        Invoke("SendEmailFuncENG", 0.5f);
+    }
+
+    public void SendEmailCHN() {
+        loadingPanel.SetActive(true);
+        Invoke("SendEmailFuncCHN", 0.5f);
+    }
+
     public void SendEmailFunc() {
         string email = "";
         int option = PlayerPrefs.GetInt(DROPDOWN_KEY);
@@ -134,6 +144,7 @@ public class ShareManager : MonoBehaviour
         mail.Subject = "정전협정문";
         mail.Body = "전쟁기념관 정전협정문 공유메일";
 
+        Debug.Log("attach start");
         if (bookNum == 0) {
             Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/KOR/" + imageName + ".png");
             mail.Attachments.Add(attachment);
@@ -142,6 +153,68 @@ public class ShareManager : MonoBehaviour
             mail.Attachments.Add(attachment);
         } else if (bookNum == 2) {
             Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MapBook/KOR/" + imageName + ".png");
+            mail.Attachments.Add(attachment);
+        } else {
+            return;
+        }
+
+        Debug.Log("attach end");
+        SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
+        smtpServer.Port = 587;
+        smtpServer.Credentials = new System.Net.NetworkCredential(SENDER_EMAIL, SENDER_PASSWORD) as ICredentialsByHost;
+        smtpServer.EnableSsl = true;
+        ServicePointManager.ServerCertificateValidationCallback = 
+            delegate(object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) 
+            { return true; };
+
+        try
+        {
+            smtpServer.Send(mail);
+            loadingPanel.SetActive(false);
+            offSharePanel();
+            Debug.Log("success");
+        }
+        catch (Exception e)
+        {
+            loadingPanel.SetActive(false);
+            offSharePanel();
+            Debug.Log(e);
+        }
+    }
+
+    public void SendEmailFuncENG() {
+        string email = "";
+        int option = PlayerPrefs.GetInt(DROPDOWN_KEY);
+        Debug.Log("option : " + option);
+        if (option == 5) {
+            email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@" + domainArea.GetComponent<TMPro.TMP_InputField>().text;
+        } else {
+            if (option == 0) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@daum.net";
+            } else if (option == 1) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@gmail.com";
+            } else if (option == 2) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@hanmail.net";
+            } else if (option == 3) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@naver.com";
+            } else if (option == 4) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@nate.com";
+            }
+        }
+        MailMessage mail = new MailMessage();
+        mail.From = new MailAddress(SENDER_EMAIL);
+        mail.To.Add(email);
+        mail.Subject = "정전협정문";
+        mail.Body = "전쟁기념관 정전협정문 공유메일";
+
+        if (bookNum == 0) {
+            Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/ENG/" + imageName + ".png");
+            mail.Attachments.Add(attachment);
+        } else if (bookNum == 1) {
+            Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/ENG/" + imageName + ".png");
+            mail.Attachments.Add(attachment);
+        } else if (bookNum == 2) {
+            Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MapBook/ENG/" + imageName + ".png");
             mail.Attachments.Add(attachment);
         } else {
             return;
@@ -164,12 +237,80 @@ public class ShareManager : MonoBehaviour
         {
             smtpServer.Send(mail);
             loadingPanel.SetActive(false);
+            offSharePanel();
             Debug.Log("success");
         }
         catch (Exception e)
         {
+            loadingPanel.SetActive(false);
+            offSharePanel();
             Debug.Log(e);
+        }
+    }
 
+    public void SendEmailFuncCHN() {
+        string email = "";
+        int option = PlayerPrefs.GetInt(DROPDOWN_KEY);
+        Debug.Log("option : " + option);
+        if (option == 5) {
+            email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@" + domainArea.GetComponent<TMPro.TMP_InputField>().text;
+        } else {
+            if (option == 0) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@daum.net";
+            } else if (option == 1) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@gmail.com";
+            } else if (option == 2) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@hanmail.net";
+            } else if (option == 3) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@naver.com";
+            } else if (option == 4) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@nate.com";
+            }
+        }
+        MailMessage mail = new MailMessage();
+        mail.From = new MailAddress(SENDER_EMAIL);
+        mail.To.Add(email);
+        mail.Subject = "정전협정문";
+        mail.Body = "전쟁기념관 정전협정문 공유메일";
+
+        if (bookNum == 0) {
+            Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/CHN/" + imageName + ".png");
+            mail.Attachments.Add(attachment);
+        } else if (bookNum == 1) {
+            Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/CHN/" + imageName + ".png");
+            mail.Attachments.Add(attachment);
+        } else if (bookNum == 2) {
+            Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MapBook/CHN/" + imageName + ".png");
+            mail.Attachments.Add(attachment);
+        } else {
+            return;
+        }
+
+        // Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/KOR/" + imageName + ".png");
+        // Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/KOR/" + imageName + ".png");
+        // Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MapBook/KOR/" + imageName + ".png");
+        // mail.Attachments.Add(attachment);
+
+        SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
+        smtpServer.Port = 587;
+        smtpServer.Credentials = new System.Net.NetworkCredential(SENDER_EMAIL, SENDER_PASSWORD) as ICredentialsByHost;
+        smtpServer.EnableSsl = true;
+        ServicePointManager.ServerCertificateValidationCallback = 
+            delegate(object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) 
+            { return true; };
+
+        try
+        {
+            smtpServer.Send(mail);
+            loadingPanel.SetActive(false);
+            offSharePanel();
+            Debug.Log("success");
+        }
+        catch (Exception e)
+        {
+            loadingPanel.SetActive(false);
+            offSharePanel();
+            Debug.Log(e);
         }
     }
 
