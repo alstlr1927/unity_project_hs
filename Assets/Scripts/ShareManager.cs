@@ -41,14 +41,14 @@ public class ShareManager : MonoBehaviour
 
     public void onSharePanel() {
         textArea.GetComponent<TMPro.TMP_InputField>().text = "";
-        //domainArea.GetComponent<TMPro.TMP_InputField>().text = "";
+        domainArea.GetComponent<TMPro.TMP_InputField>().text = "";
         sharePanel.SetActive(true);
     }
 
     public void offSharePanel() {
         CloseKeyboard();
         textArea.GetComponent<TMPro.TMP_InputField>().text = "";
-        //domainArea.GetComponent<TMPro.TMP_InputField>().text = "";
+        domainArea.GetComponent<TMPro.TMP_InputField>().text = "";
         sharePanel.SetActive(false);
     }
 
@@ -71,13 +71,25 @@ public class ShareManager : MonoBehaviour
 
     public void ConfirmButtomTouchedFunc() {
         string email = "";
-        if (domain == "") {
-
+        int option = PlayerPrefs.GetInt(DROPDOWN_KEY);
+        Debug.Log("option : " + option);
+        if (option == 5) {
+            email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@" + domainArea.GetComponent<TMPro.TMP_InputField>().text;
         } else {
-            email = textArea.GetComponent<TMPro.TMP_InputField>().text;
+            if (option == 0) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@daum.net";
+            } else if (option == 1) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@gmail.com";
+            } else if (option == 2) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@hanmail.net";
+            } else if (option == 3) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@naver.com";
+            } else if (option == 4) {
+                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@nate.com";
+            }
         }
         Debug.Log(email);
-
+        
         if (email.Length != 0) {
             if (!Regex.IsMatch(email, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$")) {
                 Debug.Log("이메일 형식이 아닙니다.");
