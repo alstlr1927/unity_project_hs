@@ -22,11 +22,13 @@ public class ShareManager : MonoBehaviour
     public GameObject domainArea;
     List<string> optionList = new List<string>();
     int currentOption = 0;
+    GameObject loadingPanel;
 
     // Start is called before the first frame update
     void Start()
     {
         sharePanel = GameObject.Find("ShareManager").transform.Find("SharePanel").gameObject;
+        loadingPanel = GameObject.Find("LoadingManager").transform.Find("LoadingPanel").gameObject;
     }
 
     // Update is called once per frame
@@ -103,6 +105,7 @@ public class ShareManager : MonoBehaviour
     }
 
     public void SendEmail() {
+        loadingPanel.SetActive(true);
         Invoke("SendEmailFunc", 0.5f);
     }
 
@@ -160,6 +163,7 @@ public class ShareManager : MonoBehaviour
         try
         {
             smtpServer.Send(mail);
+            loadingPanel.SetActive(false);
             Debug.Log("success");
         }
         catch (Exception e)
