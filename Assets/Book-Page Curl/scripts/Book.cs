@@ -1,4 +1,4 @@
-﻿//The implementation is based on this article:http://rbarraza.com/html5-canvas-pageflip/
+//The implementation is based on this article:http://rbarraza.com/html5-canvas-pageflip/
 //As the rbarraza.com website is not live anymore you can get an archived version from web archive 
 //or check an archived version that I uploaded on my website: https://dandarawy.com/html5-canvas-pageflip/
 
@@ -12,7 +12,9 @@ public enum FlipMode
     LeftToRight
 }
 [ExecuteInEditMode]
-public class Book : MonoBehaviour {
+public class Book : MonoBehaviour
+{
+    public GameObject pageStay;
     public Canvas canvas;
     [SerializeField]
     RectTransform BookPanel;
@@ -21,8 +23,8 @@ public class Book : MonoBehaviour {
     public Sprite[] bookPages;
     Sprite sp;
     int moveBeforeIdx;
-    public bool interactable=true;
-    public bool enableShadowEffect=true;
+    public bool interactable = true;
+    public bool enableShadowEffect = true;
     //represent the index of the sprite shown in the right page
     public int currentPage = 0;
     public float PageFlipTime = 0.01f;
@@ -47,7 +49,7 @@ public class Book : MonoBehaviour {
     {
         get
         {
-            return BookPanel.rect.height ; 
+            return BookPanel.rect.height;
         }
     }
     public Image ClippingPlane;
@@ -83,8 +85,9 @@ public class Book : MonoBehaviour {
         Init();
     }
 
-    void Init() {
-        if (!canvas) canvas=GetComponentInParent<Canvas>();
+    void Init()
+    {
+        if (!canvas) canvas = GetComponentInParent<Canvas>();
         if (!canvas) Debug.LogError("Book should be a child to canvas");
 
         // testArr = new string[] {"Agreement_KOR/01.png", "Agreement_KOR/02.png", "Agreement_KOR/03.png", "Agreement_KOR/04.png"};
@@ -118,8 +121,10 @@ public class Book : MonoBehaviour {
         ShadowLTR.rectTransform.pivot = new Vector2(0, (pageWidth / 2) / shadowPageHeight);
     }
 
-    public Sprite GetSpritefromImage(string imgPath) {
-        try {
+    public Sprite GetSpritefromImage(string imgPath)
+    {
+        try
+        {
             //Converts desired path into byte array
             byte[] pngBytes = System.IO.File.ReadAllBytes(imgPath);
 
@@ -131,7 +136,9 @@ public class Book : MonoBehaviour {
             Sprite fromTex = Sprite.Create(tex, new Rect(0.0f, 0.0f, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100.0f);
 
             return fromTex;
-        } catch (System.Exception) {
+        }
+        catch (System.Exception)
+        {
             throw;
         }
     }
@@ -182,6 +189,7 @@ public class Book : MonoBehaviour {
         {
             UpdateBook();
         }
+
     }
     public void UpdateBook()
     {
@@ -264,25 +272,25 @@ public class Book : MonoBehaviour {
 
         Shadow.rectTransform.SetParent(Right.rectTransform, true);
     }
-    private float CalcClipAngle(Vector3 c,Vector3 bookCorner,out  Vector3 t1)
+    private float CalcClipAngle(Vector3 c, Vector3 bookCorner, out Vector3 t1)
     {
         Vector3 t0 = (c + bookCorner) / 2;
         float T0_CORNER_dy = bookCorner.y - t0.y;
         float T0_CORNER_dx = bookCorner.x - t0.x;
         float T0_CORNER_Angle = Mathf.Atan2(T0_CORNER_dy, T0_CORNER_dx);
         float T0_T1_Angle = 90 - T0_CORNER_Angle;
-        
+
         float T1_X = t0.x - T0_CORNER_dy * Mathf.Tan(T0_CORNER_Angle);
         T1_X = normalizeT1X(T1_X, bookCorner, sb);
         t1 = new Vector3(T1_X, sb.y, 0);
-        
+
         //clipping plane angle=T0_T1_Angle
         float T0_T1_dy = t1.y - t0.y;
         float T0_T1_dx = t1.x - t0.x;
         T0_T1_Angle = Mathf.Atan2(T0_T1_dy, T0_T1_dx) * Mathf.Rad2Deg;
         return T0_T1_Angle;
     }
-    private float normalizeT1X(float t1,Vector3 corner,Vector3 sb)
+    private float normalizeT1X(float t1, Vector3 corner, Vector3 sb)
     {
         if (t1 > sb.x && sb.x > corner.x)
             return sb.x;
@@ -297,7 +305,7 @@ public class Book : MonoBehaviour {
         float F_SB_dy = f.y - sb.y;
         float F_SB_dx = f.x - sb.x;
         float F_SB_Angle = Mathf.Atan2(F_SB_dy, F_SB_dx);
-        Vector3 r1 = new Vector3(radius1 * Mathf.Cos(F_SB_Angle),radius1 * Mathf.Sin(F_SB_Angle), 0) + sb;
+        Vector3 r1 = new Vector3(radius1 * Mathf.Cos(F_SB_Angle), radius1 * Mathf.Sin(F_SB_Angle), 0) + sb;
 
         float F_SB_distance = Vector2.Distance(f, sb);
         if (F_SB_distance < radius1)
@@ -333,7 +341,7 @@ public class Book : MonoBehaviour {
         Left.transform.eulerAngles = new Vector3(0, 0, 0);
         Left.sprite = (currentPage < bookPages.Length) ? bookPages[currentPage] : background;
         Left.transform.SetAsFirstSibling();
-        
+
         Right.gameObject.SetActive(true);
         Right.transform.position = RightNext.transform.position;
         Right.transform.eulerAngles = new Vector3(0, 0, 0);
@@ -348,8 +356,8 @@ public class Book : MonoBehaviour {
     public void OnMouseDragRightPage()
     {
         if (interactable)
-        DragRightPageToPoint(transformPoint(Input.mousePosition));
-        
+            DragRightPageToPoint(transformPoint(Input.mousePosition));
+
     }
     public void DragLeftPageToPoint(Vector3 point)
     {
@@ -383,8 +391,8 @@ public class Book : MonoBehaviour {
     public void OnMouseDragLeftPage()
     {
         if (interactable)
-        DragLeftPageToPoint(transformPoint(Input.mousePosition));
-        
+            DragLeftPageToPoint(transformPoint(Input.mousePosition));
+
     }
     public void OnMouseRelease()
     {
@@ -424,22 +432,22 @@ public class Book : MonoBehaviour {
     Coroutine currentCoroutine;
     void UpdateSprites()
     {
-        LeftNext.sprite= (currentPage > 0 && currentPage <= bookPages.Length) ? bookPages[currentPage-1] : background;
-        RightNext.sprite=(currentPage>=0 &&currentPage<bookPages.Length) ? bookPages[currentPage] : lastPage;
+        LeftNext.sprite = (currentPage > 0 && currentPage <= bookPages.Length) ? bookPages[currentPage - 1] : background;
+        RightNext.sprite = (currentPage >= 0 && currentPage < bookPages.Length) ? bookPages[currentPage] : lastPage;
     }
     public void TweenForward()
     {
-        if(mode== FlipMode.RightToLeft)
-        currentCoroutine = StartCoroutine(TweenTo(ebl, 0.15f, () => { Flip(); }));
+        if (mode == FlipMode.RightToLeft)
+            currentCoroutine = StartCoroutine(TweenTo(ebl, 0.15f, () => { Flip(); }));
         else
-        currentCoroutine = StartCoroutine(TweenTo(ebr, 0.15f, () => { Flip(); }));
+            currentCoroutine = StartCoroutine(TweenTo(ebr, 0.15f, () => { Flip(); }));
     }
     public void MultiTweenForward()
     {
-        if(mode== FlipMode.RightToLeft)
-        currentCoroutine = StartCoroutine(TweenTo(ebl, 0.15f, () => { MultiFlip(); }));
+        if (mode == FlipMode.RightToLeft)
+            currentCoroutine = StartCoroutine(TweenTo(ebl, 0.15f, () => { MultiFlip(); }));
         else
-        currentCoroutine = StartCoroutine(TweenTo(ebr, 0.15f, () => { MultiFlip(); }));
+            currentCoroutine = StartCoroutine(TweenTo(ebr, 0.15f, () => { MultiFlip(); }));
     }
     void Flip()
     {
@@ -480,7 +488,7 @@ public class Book : MonoBehaviour {
     {
         if (mode == FlipMode.RightToLeft)
         {
-            currentCoroutine = StartCoroutine(TweenTo(ebr,0.15f,
+            currentCoroutine = StartCoroutine(TweenTo(ebr, 0.15f,
                 () =>
                 {
                     UpdateSprites();
@@ -514,10 +522,10 @@ public class Book : MonoBehaviour {
     {
         int steps = (int)(duration / 0.025f);
         Vector3 displacement = (to - f) / steps;
-        for (int i = 0; i < steps-1; i++)
+        for (int i = 0; i < steps - 1; i++)
         {
-            if(mode== FlipMode.RightToLeft)
-            UpdateBookRTLToPoint( f + displacement);
+            if (mode == FlipMode.RightToLeft)
+                UpdateBookRTLToPoint(f + displacement);
             else
                 UpdateBookLTRToPoint(f + displacement);
 
@@ -527,19 +535,32 @@ public class Book : MonoBehaviour {
             onFinish();
     }
 
-    public void SetHide() {
+    public void SetHide()
+    {
         gameObject.SetActive(false);
-    } 
+    }
 
-    public void SetView() {
+    public void SetView()
+    {
+        GameObject pageStayInstance = Instantiate(pageStay);
+        pageStayInstance.transform.SetParent(canvas.transform);
+        if(gameObject.name=="Book01") {
+            pageStayInstance.transform.localPosition = new Vector3(1472, -859, 0);
+        } else if(gameObject.name=="Book02") {
+            pageStayInstance.transform.localPosition = new Vector3(1583, -903, 0);
+        } else if(gameObject.name=="Book03") {
+            pageStayInstance.transform.localPosition = new Vector3(1732, -655, 0);
+        }
         gameObject.SetActive(true);
         currentPage = 0;
         Init();
     }
 
-    public void FlipRightMultiPage(int page) {
+    public void FlipRightMultiPage(int page)
+    {
         if (isMultiFlip == false) return;
-        if(currentPage == page) {
+        if (currentPage == page)
+        {
             return;
         }
         isMultiFlip = false;
@@ -548,14 +569,18 @@ public class Book : MonoBehaviour {
         float xl = ((EndBottomRight.x - EndBottomLeft.x) / 2) * 0.9f;
         //float h =  Height * 0.5f;
         float h = Mathf.Abs(EndBottomRight.y) * 0.9f;
-        float dx = (xl)*2 / AnimationFramesCount;
-        if (currentPage <= page) {  
+        float dx = (xl) * 2 / AnimationFramesCount;
+        if (currentPage <= page)
+        {
             if (currentPage == bookPages.Length - 2) return;
-            if (currentPage == page) {
+            if (currentPage == page)
+            {
                 sp = bookPages[currentPage + 2]; // 02
                 moveBeforeIdx = currentPage + 2; // 02
                 bookPages[currentPage + 2] = bookPages[page]; // b[2] = b [4]
-            } else {
+            }
+            else
+            {
                 // if (page - currentPage + 2 >= bookPages.Length) {
                 //     sp = bookPages[currentPage + 2]; // 02
                 //     moveBeforeIdx = currentPage + 2; // 02
@@ -566,8 +591,8 @@ public class Book : MonoBehaviour {
                 //     bookPages[page - currentPage + 2] = bookPages[page]; // b[2] = b [4]
                 // }
                 sp = bookPages[page + 2]; // 02
-                    moveBeforeIdx = page + 2; // 02
-                    bookPages[page + 2] = bookPages[page]; // b[2] = b [4]
+                moveBeforeIdx = page + 2; // 02
+                bookPages[page + 2] = bookPages[page]; // b[2] = b [4]
                 // if (page + 2 > bookPages.Length) {
                 //     sp = bookPages[currentPage + 2]; // 02
                 //     moveBeforeIdx = currentPage + 2; // 02
@@ -586,18 +611,22 @@ public class Book : MonoBehaviour {
             Debug.Log("page : " + page);
         }
 
-        if (currentPage > page) {
+        if (currentPage > page)
+        {
             currentPage = page;
             StartCoroutine(MultiFlipLTR(xc, xl, h, frameTime, dx));
             StartCoroutine(delayMultiTime(1f));
-        } else {
+        }
+        else
+        {
             currentPage = page;
             StartCoroutine(MultiFlipRTL(xc, xl, h, frameTime, dx));
             StartCoroutine(delayMultiTime(1f));
         }
     }
 
-    IEnumerator delayTime(float time) {
+    IEnumerator delayTime(float time)
+    {
         Debug.Log("check = " + check);
         yield return new WaitForSeconds(time);
         check = true;
@@ -605,7 +634,8 @@ public class Book : MonoBehaviour {
         Debug.Log("time = " + Time.time);
     }
 
-    IEnumerator delayMultiTime(float time) {
+    IEnumerator delayMultiTime(float time)
+    {
         Debug.Log("check = " + check);
         yield return new WaitForSeconds(time);
         isMultiFlip = true;
@@ -624,10 +654,10 @@ public class Book : MonoBehaviour {
         float xl = ((EndBottomRight.x - EndBottomLeft.x) / 2) * 0.9f;
         //float h =  Height * 0.5f;
         float h = Mathf.Abs(EndBottomRight.y) * 0.9f;
-        float dx = (xl)*2 / AnimationFramesCount;
+        float dx = (xl) * 2 / AnimationFramesCount;
         StartCoroutine(FlipRTL(xc, xl, h, frameTime, dx));
         StartCoroutine(delayTime(1f));
-        
+
     }
 
     public void FlipLeftPage()
@@ -661,6 +691,7 @@ public class Book : MonoBehaviour {
         }
         ReleasePage();
     }
+    
     IEnumerator FlipLTR(float xc, float xl, float h, float frameTime, float dx)
     {
         float x = xc - xl;
