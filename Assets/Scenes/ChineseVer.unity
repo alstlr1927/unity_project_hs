@@ -15744,6 +15744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb30275c4450498b9b5eaca3b2f2ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bookVer: CHN
   textArea: {fileID: 1579887333}
   domainArea: {fileID: 1063383927}
 --- !u!1 &767647485
@@ -17788,7 +17789,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 765104527}
         m_TargetAssemblyTypeName: ShareManager, Assembly-CSharp
-        m_MethodName: SendEmailCHN
+        m_MethodName: ConfirmButtomTouchedFunc
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -22,16 +22,16 @@ public class DropDownBox : MonoBehaviour
     {
         options = this.GetComponent<TMP_Dropdown>();
 
-        options.ClearOptions();
+        // options.ClearOptions();
 
-        optionList.Add("daum.net");
-        optionList.Add("gmail.com");
-        optionList.Add("hanmail.net");
-        optionList.Add("naver.com");
-        optionList.Add("nate.com");
-        optionList.Add("직접 입력");
+        // optionList.Add("daum.net");
+        // optionList.Add("gmail.com");
+        // optionList.Add("hanmail.net");
+        // optionList.Add("naver.com");
+        // optionList.Add("nate.com");
+        // optionList.Add("직접 입력");
 
-        options.AddOptions(optionList);
+        // options.AddOptions(optionList);
 
         options.value = currentOption;
 

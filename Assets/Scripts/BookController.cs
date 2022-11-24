@@ -20,8 +20,18 @@ public class BookController : MonoBehaviour, IDragHandler
     private Transform bookTransform;
     private Vector3 defaultPos;
 
+    private float size = .3f;
+    public float speed;
+    private float time;
+    private Vector2 originScale;
+
     //public ProjectManager projectManager;
     // Start is called before the first frame update
+
+    private void Awake() {
+        originScale = transform.localScale;
+    }
+
     void Start()
     {
         //projectManager = GameObject.Find("ProjectManager").GetComponent<ProjectManager>();
@@ -33,6 +43,7 @@ public class BookController : MonoBehaviour, IDragHandler
         if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonKOR.transform.position) < distance)
         {
             //projectManager.scale = 0;
+            StartCoroutine(sizeDown());
             SceneManager.LoadScene("KoreanVer");
             Debug.Log("KOR");
         }
@@ -171,5 +182,19 @@ public class BookController : MonoBehaviour, IDragHandler
         //     scaleButtonCHN.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = Color.black;
         // }
     }
+
+    IEnumerator sizeDown() {
+        while (transform.localScale.x > size) {
+            transform.localScale = originScale * (1f + time * speed);
+            time += Time.deltaTime;
+            if (transform.localScale.x <= size) {
+                time = 0;
+                break;
+            }
+            yield return null;
+        }
+    }
+
+
 
 }
