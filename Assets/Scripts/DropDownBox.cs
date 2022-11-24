@@ -45,11 +45,24 @@ public class DropDownBox : MonoBehaviour
         
     }
 
+    public void init() {
+        GameObject domainArea = GameObject.Find("ShareManager").transform.Find("SharePanel").transform.Find("CustomDomain").gameObject;
+        domainArea.SetActive(false);
+        this.gameObject.SetActive(true);
+        options.value = 0;
+        PlayerPrefs.SetInt(DROPDOWN_KEY, 0);
+    }
+
     void setDropDown(int option)
     {
         PlayerPrefs.SetInt(DROPDOWN_KEY, option);
 
         // option 관련 동작
         Debug.Log("current option : " + option);
+        if (option == 5) {
+            GameObject domainArea = GameObject.Find("ShareManager").transform.Find("SharePanel").transform.Find("CustomDomain").gameObject;
+            domainArea.SetActive(true);
+            this.gameObject.SetActive(false);
+        }
     }
 }

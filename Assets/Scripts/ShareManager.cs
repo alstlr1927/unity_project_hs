@@ -11,14 +11,15 @@ using System;
 public class ShareManager : MonoBehaviour
 {
     GameObject sharePanel;
-    // public GameObject domainDropDown;
+    string DROPDOWN_KEY = "DROPDOWN_KEY";
+
     private const string SENDER_EMAIL = "krwarmap@gmail.com";
     private const string SENDER_PASSWORD = "wisfxvdhxdldrmjv";
     string imageName = "";
     string domain = "daum.net";
     int bookNum = 0;
     public GameObject textArea;
-    //public GameObject domainArea;
+    public GameObject domainArea;
     List<string> optionList = new List<string>();
     int currentOption = 0;
 
@@ -26,17 +27,6 @@ public class ShareManager : MonoBehaviour
     void Start()
     {
         sharePanel = GameObject.Find("ShareManager").transform.Find("SharePanel").gameObject;
-        //domainDropDown = GameObject.Find("ShareManager").transform.Find("SharePanel").transform.Find("Domain").gameObject;
-
-        // optionList.Add("daum.net");
-        // optionList.Add("gmail.com");
-        // optionList.Add("hanmail.net");
-        // optionList.Add("naver.com");
-        // optionList.Add("nate.com");
-        // optionList.Add("직접 입력");
-        // domainDropDown.GetComponent<UnityEngine.UI.Dropdown>().AddOptions(optionList);
-        // domainDropDown.GetComponent<UnityEngine.UI.Dropdown>().value = currentOption;
-        // domainDropDown.GetComponent<UnityEngine.UI.Dropdown>().onValueChanged.AddListener(delegate {setDropDown(domainDropDown.GetComponent<UnityEngine.UI.Dropdown>().value);});
     }
 
     // Update is called once per frame

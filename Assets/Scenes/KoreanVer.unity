@@ -34066,8 +34066,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb30275c4450498b9b5eaca3b2f2ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  domainDropDown: {fileID: 1423696734}
   textArea: {fileID: 1869806930}
+  domainArea: {fileID: 1035692354}
 --- !u!1 &1688149544
 GameObject:
   m_ObjectHideFlags: 0
@@ -51164,6 +51164,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1423696739}
+        m_TargetAssemblyTypeName: DropDownBox, Assembly-CSharp
+        m_MethodName: init
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6030607815386452102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51176,8 +51188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb30275c4450498b9b5eaca3b2f2ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  domainDropDown: {fileID: 0}
   textArea: {fileID: 0}
+  domainArea: {fileID: 0}
 --- !u!1 &6038208833395129095
 GameObject:
   m_ObjectHideFlags: 0
