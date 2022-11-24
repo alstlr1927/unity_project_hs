@@ -7,6 +7,7 @@ using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 using System;
+using System.Threading;
 
 public class ShareManager : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class ShareManager : MonoBehaviour
     List<string> optionList = new List<string>();
     int currentOption = 0;
     GameObject loadingPanel;
+    int option = 0;
+    string emailAddress = "";
 
     // Start is called before the first frame update
     void Start()
@@ -104,43 +107,109 @@ public class ShareManager : MonoBehaviour
         }
     }
 
-    public void SendEmail() {
+    public async void SendEmail() {
+        option = PlayerPrefs.GetInt(DROPDOWN_KEY);
+        if (option == 5) {
+            emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@" + domainArea.GetComponent<TMPro.TMP_InputField>().text;
+        } else {
+            if (option == 0) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@daum.net";
+            } else if (option == 1) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@gmail.com";
+            } else if (option == 2) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@hanmail.net";
+            } else if (option == 3) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@naver.com";
+            } else if (option == 4) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@nate.com";
+            }
+        }
         loadingPanel.SetActive(true);
-        Invoke("SendEmailFunc", 0.5f);
+        Thread thread = new Thread(new ThreadStart(SendEmailFunc));
+        thread.Start();
+
+        Invoke("closeLoading", 10f);
+        //Invoke("SendEmailFunc", 0.5f);
+    }
+
+    public void closeLoading() {
+        loadingPanel.SetActive(false);
+        offSharePanel();
     }
 
     public void SendEmailENG() {
+        option = PlayerPrefs.GetInt(DROPDOWN_KEY);
+        if (option == 5) {
+            emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@" + domainArea.GetComponent<TMPro.TMP_InputField>().text;
+        } else {
+            if (option == 0) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@daum.net";
+            } else if (option == 1) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@gmail.com";
+            } else if (option == 2) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@hanmail.net";
+            } else if (option == 3) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@naver.com";
+            } else if (option == 4) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@nate.com";
+            }
+        }
         loadingPanel.SetActive(true);
-        Invoke("SendEmailFuncENG", 0.5f);
+        Thread thread = new Thread(new ThreadStart(SendEmailFuncENG));
+        thread.Start();
+
+        Invoke("closeLoading", 10f);
+        // loadingPanel.SetActive(true);
+        // Invoke("SendEmailFuncENG", 0.5f);
     }
 
     public void SendEmailCHN() {
+        option = PlayerPrefs.GetInt(DROPDOWN_KEY);
+        if (option == 5) {
+            emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@" + domainArea.GetComponent<TMPro.TMP_InputField>().text;
+        } else {
+            if (option == 0) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@daum.net";
+            } else if (option == 1) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@gmail.com";
+            } else if (option == 2) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@hanmail.net";
+            } else if (option == 3) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@naver.com";
+            } else if (option == 4) {
+                emailAddress = textArea.GetComponent<TMPro.TMP_InputField>().text + "@nate.com";
+            }
+        }
         loadingPanel.SetActive(true);
-        Invoke("SendEmailFuncCHN", 0.5f);
+        Thread thread = new Thread(new ThreadStart(SendEmailFuncCHN));
+        thread.Start();
+
+        Invoke("closeLoading", 10f);
+        // loadingPanel.SetActive(true);
+        // Invoke("SendEmailFuncCHN", 0.5f);
     }
 
     public void SendEmailFunc() {
-        string email = "";
-        int option = PlayerPrefs.GetInt(DROPDOWN_KEY);
+        //string email = "";
         Debug.Log("option : " + option);
-        if (option == 5) {
-            email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@" + domainArea.GetComponent<TMPro.TMP_InputField>().text;
-        } else {
-            if (option == 0) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@daum.net";
-            } else if (option == 1) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@gmail.com";
-            } else if (option == 2) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@hanmail.net";
-            } else if (option == 3) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@naver.com";
-            } else if (option == 4) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@nate.com";
-            }
-        }
+        // if (option == 5) {
+        //     email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@" + domainArea.GetComponent<TMPro.TMP_InputField>().text;
+        // } else {
+        //     if (option == 0) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@daum.net";
+        //     } else if (option == 1) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@gmail.com";
+        //     } else if (option == 2) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@hanmail.net";
+        //     } else if (option == 3) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@naver.com";
+        //     } else if (option == 4) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@nate.com";
+        //     }
+        // }
         MailMessage mail = new MailMessage();
         mail.From = new MailAddress(SENDER_EMAIL);
-        mail.To.Add(email);
+        mail.To.Add(emailAddress);
         mail.Subject = "정전협정문";
         mail.Body = "전쟁기념관 정전협정문 공유메일";
 
@@ -170,40 +239,40 @@ public class ShareManager : MonoBehaviour
         try
         {
             smtpServer.Send(mail);
-            loadingPanel.SetActive(false);
-            offSharePanel();
+            // loadingPanel.SetActive(false);
+            //offSharePanel();
             Debug.Log("success");
         }
         catch (Exception e)
         {
-            loadingPanel.SetActive(false);
-            offSharePanel();
+            // loadingPanel.SetActive(false);
+            // offSharePanel();
             Debug.Log(e);
         }
     }
 
     public void SendEmailFuncENG() {
-        string email = "";
-        int option = PlayerPrefs.GetInt(DROPDOWN_KEY);
-        Debug.Log("option : " + option);
-        if (option == 5) {
-            email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@" + domainArea.GetComponent<TMPro.TMP_InputField>().text;
-        } else {
-            if (option == 0) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@daum.net";
-            } else if (option == 1) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@gmail.com";
-            } else if (option == 2) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@hanmail.net";
-            } else if (option == 3) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@naver.com";
-            } else if (option == 4) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@nate.com";
-            }
-        }
+        // string email = "";
+        // int option = PlayerPrefs.GetInt(DROPDOWN_KEY);
+        // Debug.Log("option : " + option);
+        // if (option == 5) {
+        //     email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@" + domainArea.GetComponent<TMPro.TMP_InputField>().text;
+        // } else {
+        //     if (option == 0) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@daum.net";
+        //     } else if (option == 1) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@gmail.com";
+        //     } else if (option == 2) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@hanmail.net";
+        //     } else if (option == 3) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@naver.com";
+        //     } else if (option == 4) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@nate.com";
+        //     }
+        // }
         MailMessage mail = new MailMessage();
         mail.From = new MailAddress(SENDER_EMAIL);
-        mail.To.Add(email);
+        mail.To.Add(emailAddress);
         mail.Subject = "정전협정문";
         mail.Body = "전쟁기념관 정전협정문 공유메일";
 
@@ -236,37 +305,37 @@ public class ShareManager : MonoBehaviour
         try
         {
             smtpServer.Send(mail);
-            loadingPanel.SetActive(false);
-            offSharePanel();
+            // loadingPanel.SetActive(false);
+            // offSharePanel();
             Debug.Log("success");
         }
         catch (Exception e)
         {
-            loadingPanel.SetActive(false);
-            offSharePanel();
+            // loadingPanel.SetActive(false);
+            // offSharePanel();
             Debug.Log(e);
         }
     }
 
     public void SendEmailFuncCHN() {
-        string email = "";
-        int option = PlayerPrefs.GetInt(DROPDOWN_KEY);
-        Debug.Log("option : " + option);
-        if (option == 5) {
-            email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@" + domainArea.GetComponent<TMPro.TMP_InputField>().text;
-        } else {
-            if (option == 0) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@daum.net";
-            } else if (option == 1) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@gmail.com";
-            } else if (option == 2) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@hanmail.net";
-            } else if (option == 3) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@naver.com";
-            } else if (option == 4) {
-                email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@nate.com";
-            }
-        }
+        // string email = "";
+        // int option = PlayerPrefs.GetInt(DROPDOWN_KEY);
+        // Debug.Log("option : " + option);
+        // if (option == 5) {
+        //     email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@" + domainArea.GetComponent<TMPro.TMP_InputField>().text;
+        // } else {
+        //     if (option == 0) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@daum.net";
+        //     } else if (option == 1) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@gmail.com";
+        //     } else if (option == 2) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@hanmail.net";
+        //     } else if (option == 3) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@naver.com";
+        //     } else if (option == 4) {
+        //         email = textArea.GetComponent<TMPro.TMP_InputField>().text + "@nate.com";
+        //     }
+        // }
         MailMessage mail = new MailMessage();
         mail.From = new MailAddress(SENDER_EMAIL);
         mail.To.Add(email);
@@ -302,14 +371,14 @@ public class ShareManager : MonoBehaviour
         try
         {
             smtpServer.Send(mail);
-            loadingPanel.SetActive(false);
-            offSharePanel();
+            // loadingPanel.SetActive(false);
+            // offSharePanel();
             Debug.Log("success");
         }
         catch (Exception e)
         {
-            loadingPanel.SetActive(false);
-            offSharePanel();
+            // loadingPanel.SetActive(false);
+            // offSharePanel();
             Debug.Log(e);
         }
     }
