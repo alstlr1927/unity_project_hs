@@ -165,46 +165,46 @@ public class ShareManager : MonoBehaviour
         mail.Body = "전쟁기념관 정전협정문 공유메일";
 
         Debug.Log("attach start");
-        if (bookVer == "KOR") {
-            if (bookNum == 0) {
-                Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/KOR/" + imageName + ".png");
-                mail.Attachments.Add(attachment);
-            } else if (bookNum == 1) {
-                Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/KOR/" + imageName + ".png");
-                mail.Attachments.Add(attachment);
-            } else if (bookNum == 2) {
-                Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MapBook/KOR/" + imageName + ".png");
-                mail.Attachments.Add(attachment);
-            } else {
-                return;
-            }
-        } else if (bookVer == "ENG") {
-            if (bookNum == 0) {
-                Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/ENG/" + imageName + ".png");
-                mail.Attachments.Add(attachment);
-            } else if (bookNum == 1) {
-                Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/ENG/" + imageName + ".png");
-                mail.Attachments.Add(attachment);
-            } else if (bookNum == 2) {
-                Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MapBook/ENG/" + imageName + ".png");
-                mail.Attachments.Add(attachment);
-            } else {
-                return;
-            }
-        } else if (bookVer == "CHN") {
-            if (bookNum == 0) {
-                Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/CHN/" + imageName + ".png");
-                mail.Attachments.Add(attachment);
-            } else if (bookNum == 1) {
-                Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/CHN/" + imageName + ".png");
-                mail.Attachments.Add(attachment);
-            } else if (bookNum == 2) {
-                Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MapBook/CHN/" + imageName + ".png");
-                mail.Attachments.Add(attachment);
-            } else {
-                return;
-            }
-        }
+        // if (bookVer == "KOR") {
+        //     if (bookNum == 0) {
+        //         Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/KOR/" + imageName + ".png");
+        //         mail.Attachments.Add(attachment);
+        //     } else if (bookNum == 1) {
+        //         Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/KOR/" + imageName + ".png");
+        //         mail.Attachments.Add(attachment);
+        //     } else if (bookNum == 2) {
+        //         Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MapBook/KOR/" + imageName + ".png");
+        //         mail.Attachments.Add(attachment);
+        //     } else {
+        //         return;
+        //     }
+        // } else if (bookVer == "ENG") {
+        //     if (bookNum == 0) {
+        //         Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/ENG/" + imageName + ".png");
+        //         mail.Attachments.Add(attachment);
+        //     } else if (bookNum == 1) {
+        //         Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/ENG/" + imageName + ".png");
+        //         mail.Attachments.Add(attachment);
+        //     } else if (bookNum == 2) {
+        //         Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MapBook/ENG/" + imageName + ".png");
+        //         mail.Attachments.Add(attachment);
+        //     } else {
+        //         return;
+        //     }
+        // } else if (bookVer == "CHN") {
+        //     if (bookNum == 0) {
+        //         Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/CHN/" + imageName + ".png");
+        //         mail.Attachments.Add(attachment);
+        //     } else if (bookNum == 1) {
+        //         Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/CHN/" + imageName + ".png");
+        //         mail.Attachments.Add(attachment);
+        //     } else if (bookNum == 2) {
+        //         Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MapBook/CHN/" + imageName + ".png");
+        //         mail.Attachments.Add(attachment);
+        //     } else {
+        //         return;
+        //     }
+        // }
 
         Debug.Log("attach end");
         SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
