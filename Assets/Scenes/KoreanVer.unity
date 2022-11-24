@@ -11727,7 +11727,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 628795966}
   m_Direction: 2
   m_Value: 1.000001
-  m_Size: 0.722159
+  m_Size: 0.7221591
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -21936,7 +21936,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1687310911}
         m_TargetAssemblyTypeName: ShareManager, Assembly-CSharp
         m_MethodName: offSharePanel
         m_Mode: 1
@@ -30451,6 +30451,7 @@ GameObject:
   - component: {fileID: 1423696738}
   - component: {fileID: 1423696737}
   - component: {fileID: 1423696736}
+  - component: {fileID: 1423696739}
   m_Layer: 5
   m_Name: Domain
   m_TagString: Untagged
@@ -30585,6 +30586,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423696734}
   m_CullTransparentMesh: 1
+--- !u!114 &1423696739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423696734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145e786a26b1840deaa9c864543d826f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1427765425
 GameObject:
   m_ObjectHideFlags: 0
@@ -34055,7 +34068,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   domainDropDown: {fileID: 1423696734}
   textArea: {fileID: 1869806930}
-  domainArea: {fileID: 1035692354}
 --- !u!1 &1688149544
 GameObject:
   m_ObjectHideFlags: 0
@@ -34391,7 +34403,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1687310911}
         m_TargetAssemblyTypeName: ShareManager, Assembly-CSharp
         m_MethodName: ConfirmButtomTouchedFunc
         m_Mode: 1
@@ -45366,7 +45378,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1687310911}
         m_TargetAssemblyTypeName: ShareManager, Assembly-CSharp
         m_MethodName: setBookNum
         m_Mode: 3
@@ -45670,7 +45682,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1687310911}
         m_TargetAssemblyTypeName: ShareManager, Assembly-CSharp
         m_MethodName: setBookNum
         m_Mode: 3
@@ -49415,7 +49427,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1687310911}
         m_TargetAssemblyTypeName: ShareManager, Assembly-CSharp
         m_MethodName: setBookNum
         m_Mode: 3
@@ -51128,7 +51140,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1687310911}
         m_TargetAssemblyTypeName: ShareManager, Assembly-CSharp
         m_MethodName: onSharePanel
         m_Mode: 1
@@ -51140,7 +51152,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1687310911}
         m_TargetAssemblyTypeName: ShareManager, Assembly-CSharp
         m_MethodName: getCurrentImage
         m_Mode: 1
@@ -51166,7 +51178,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   domainDropDown: {fileID: 0}
   textArea: {fileID: 0}
-  domainArea: {fileID: 0}
 --- !u!1 &6038208833395129095
 GameObject:
   m_ObjectHideFlags: 0

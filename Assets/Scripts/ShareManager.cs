@@ -11,14 +11,14 @@ using System;
 public class ShareManager : MonoBehaviour
 {
     GameObject sharePanel;
-    //public GameObject domainDropDown;
+    // public GameObject domainDropDown;
     private const string SENDER_EMAIL = "krwarmap@gmail.com";
     private const string SENDER_PASSWORD = "wisfxvdhxdldrmjv";
     string imageName = "";
     string domain = "daum.net";
     int bookNum = 0;
     public GameObject textArea;
-    public GameObject domainArea;
+    //public GameObject domainArea;
     List<string> optionList = new List<string>();
     int currentOption = 0;
 
@@ -51,14 +51,14 @@ public class ShareManager : MonoBehaviour
 
     public void onSharePanel() {
         textArea.GetComponent<TMPro.TMP_InputField>().text = "";
-        domainArea.GetComponent<TMPro.TMP_InputField>().text = "";
+        //domainArea.GetComponent<TMPro.TMP_InputField>().text = "";
         sharePanel.SetActive(true);
     }
 
     public void offSharePanel() {
         CloseKeyboard();
         textArea.GetComponent<TMPro.TMP_InputField>().text = "";
-        domainArea.GetComponent<TMPro.TMP_InputField>().text = "";
+        //domainArea.GetComponent<TMPro.TMP_InputField>().text = "";
         sharePanel.SetActive(false);
     }
 
