@@ -6,6 +6,7 @@ public class MapManager : MonoBehaviour
 {
     string imageName = "";
     public string bookVer = "";
+    public GameObject imagePanel;
 
     // Start is called before the first frame update
     void Start()
@@ -20,11 +21,15 @@ public class MapManager : MonoBehaviour
     }
 
     public void SetHide() {
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        GameObject backPanel = GameObject.Find("PopupManager").transform.Find("BackPanel").gameObject;
+        backPanel.SetActive(false);
     }
 
     public void SetView() {
-        gameObject.SetActive(true);
+        GameObject backPanel = GameObject.Find("PopupManager").transform.Find("BackPanel").gameObject;
+        backPanel.SetActive(true);
+        // gameObject.SetActive(true);
     }
 
     public void getCurrentImage() {
@@ -36,11 +41,11 @@ public class MapManager : MonoBehaviour
     public void setImage() {
         getCurrentImage();
         if (bookVer == "KOR") {
-            GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/KOR/" + imageName + ".png");
+            imagePanel.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/KOR/" + imageName + ".png");
         } else if (bookVer == "ENG") {
-            GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/ENG/" + imageName + ".png");
+            imagePanel.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/ENG/" + imageName + ".png");
         } else if (bookVer == "CHN") {
-            GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/CHN/" + imageName + ".png");
+            imagePanel.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/CHN/" + imageName + ".png");
         }
     }
 
