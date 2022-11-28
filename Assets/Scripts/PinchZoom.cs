@@ -22,6 +22,10 @@ public class PinchZoom : MonoBehaviour
         }
     }
 
+    public void OnPinchZoom(float scale) {
+        
+    }
+
     private void ZoomAndPan() {
         if (_isZooming == false) {
             _isZooming = true;

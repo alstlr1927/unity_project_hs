@@ -20,10 +20,12 @@ public class BookController : MonoBehaviour, IDragHandler
     private Transform bookTransform;
     private Vector3 defaultPos;
 
-    private float size = .3f;
+    private float size = 0f;
     public float speed;
     private float time;
     private Vector2 originScale;
+    private bool isSelect = false;
+    private string selectLang = "";
 
     //public ProjectManager projectManager;
     // Start is called before the first frame update
@@ -42,21 +44,26 @@ public class BookController : MonoBehaviour, IDragHandler
     {
         if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonKOR.transform.position) < distance)
         {
-            //projectManager.scale = 0;
+            isSelect = true;
+            selectLang = "KOR";
+            StartCoroutine(delayMultiTime(1f));
             StartCoroutine(sizeDown());
-            SceneManager.LoadScene("KoreanVer");
             Debug.Log("KOR");
         }
         if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonENG.transform.position) < distance)
         {
-            //projectManager.scale = 1;
-            SceneManager.LoadScene("EnglishVer");
+            isSelect = true;
+            selectLang = "ENG";
+            StartCoroutine(delayMultiTime(1f));
+            StartCoroutine(sizeDown());
             Debug.Log("ENG");
         }
         if (Input.GetMouseButtonUp(0) && Vector2.Distance(book.transform.position, scaleButtonCHN.transform.position) < distance)
         {
-            //projectManager.scale = 2;
-            SceneManager.LoadScene("ChineseVer");
+            isSelect = true;
+            selectLang = "CHN";
+            StartCoroutine(delayMultiTime(1f));
+            StartCoroutine(sizeDown());
             Debug.Log("CHN");
         }
 
@@ -64,17 +71,18 @@ public class BookController : MonoBehaviour, IDragHandler
         // Debug.Log("ENG" + Vector2.Distance(book.transform.position, scaleButtonENG.transform.position));
         // Debug.Log("CHN" + Vector2.Distance(book.transform.position, scaleButtonCHN.transform.position));
 
-
-        if (Input.GetMouseButton(0) == false)
-        {
-            book.transform.localPosition = Vector3.Lerp(book.transform.localPosition, defaultPos, Time.deltaTime * 1.2f);
-            bookShadow.transform.localPosition = Vector3.Lerp(bookShadow.transform.localPosition, defaultPos, Time.deltaTime * 1.2f);
-            bookbody.transform.localScale = Vector3.Lerp(bookbody.transform.localScale, new Vector3(1f, 1f, 1f), Time.deltaTime * 1.2f);
-        }
-        else
-        {
-            bookShadow.transform.localPosition = Vector3.Lerp(bookShadow.transform.localPosition, new Vector3(100, -100, 0), Time.deltaTime * 1.2f);
-            bookbody.transform.localScale = Vector3.Lerp(bookbody.transform.localScale, new Vector3(1.1f, 1.1f, 1.1f), Time.deltaTime * 1.2f);
+        if (!isSelect) {
+            if (Input.GetMouseButton(0) == false)
+            {
+                book.transform.localPosition = Vector3.Lerp(book.transform.localPosition, defaultPos, Time.deltaTime * 1.2f);
+                bookShadow.transform.localPosition = Vector3.Lerp(bookShadow.transform.localPosition, defaultPos, Time.deltaTime * 1.2f);
+                bookbody.transform.localScale = Vector3.Lerp(bookbody.transform.localScale, new Vector3(1f, 1f, 1f), Time.deltaTime * 1.2f);
+            }
+            else
+            {
+                bookShadow.transform.localPosition = Vector3.Lerp(bookShadow.transform.localPosition, new Vector3(100, -100, 0), Time.deltaTime * 1.2f);
+                bookbody.transform.localScale = Vector3.Lerp(bookbody.transform.localScale, new Vector3(1.1f, 1.1f, 1.1f), Time.deltaTime * 1.2f);
+            }
         }
 
         // if (Input.GetMouseButton(0) == false)
@@ -89,6 +97,26 @@ public class BookController : MonoBehaviour, IDragHandler
         //     bookShadow.transform.localPosition = Vector3.Lerp(bookShadow.transform.localPosition, new Vector3(100, -100, 0), Time.deltaTime * 1.2f);
         //     bookbody.transform.localScale = Vector3.Lerp(bookbody.transform.localScale, new Vector3(1.1f, 1.1f, 1.1f), Time.deltaTime * 1.2f);
         // }
+    }
+
+    IEnumerator delayMultiTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        switch (selectLang)
+        {
+            case "KOR":
+                SceneManager.LoadScene("KoreanVer");
+                break;
+            case "ENG":
+                SceneManager.LoadScene("EnglishVer");
+                break;
+            case "CHN":
+                SceneManager.LoadScene("ChineseVer");
+                break;
+            default:
+                break;
+        }
+        //SceneManager.LoadScene("KoreanVer");
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -185,9 +213,9 @@ public class BookController : MonoBehaviour, IDragHandler
 
     IEnumerator sizeDown() {
         while (transform.localScale.x > size) {
-            transform.localScale = originScale * (1f + time * speed);
+            transform.localScale = originScale / (1f + time * speed);
             time += Time.deltaTime;
-            if (transform.localScale.x <= size) {
+            if (transform.localScale.x <= 0) {
                 time = 0;
                 break;
             }

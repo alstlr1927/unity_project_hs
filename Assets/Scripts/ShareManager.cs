@@ -235,19 +235,13 @@ public class ShareManager : MonoBehaviour
     }
 
     public void OnInputTouch() {
-        if (System.Diagnostics.Process.GetProcessesByName("OSK.exe").Length > 0) {
-            System.Diagnostics.Process.GetProcessesByName("OSK.exe")[0].MainWindowHandle.ToInt32();
-        } else {
-            System.Diagnostics.Process.Start("OSK.exe");
-        }
+        TotalManager.osk = System.Diagnostics.Process.Start("osk.exe");
     }
 
     public void CloseKeyboard() {
-        //OSK.exe dispose
-        System.Diagnostics.Process[] osk = System.Diagnostics.Process.GetProcessesByName("OSK.exe");
-
-        foreach (System.Diagnostics.Process p in osk) {
-            p.Kill();
+        if (TotalManager.osk != null) {
+            TotalManager.osk.Kill();
+            TotalManager.osk = null;
         }
     }
 

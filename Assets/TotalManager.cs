@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Diagnostics;
 
-public class ProjectManager : MonoBehaviour
+public class TotalManager : MonoBehaviour
 {
-    public static ProjectManager instance;
+    public static TotalManager instance;
 
     public AudioClip bookCatch;
     public AudioClip bookDrop;
     public AudioClip bookOpen;
 
+    public static Process osk;
+
 
     // Start is called before the first frame update
     void Start()
     {
-       // DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this.gameObject);
         instance = this;
     }
 
