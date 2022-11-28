@@ -53,6 +53,11 @@ public class ShareManager : MonoBehaviour
         sharePanel.SetActive(true);
     }
 
+    public void resetEmail() {
+        textArea.GetComponent<TMPro.TMP_InputField>().text = "";
+        domainArea.GetComponent<TMPro.TMP_InputField>().text = "";
+    }
+
     public void offSharePanel() {
         CloseKeyboard();
         textArea.GetComponent<TMPro.TMP_InputField>().text = "";

@@ -62,7 +62,10 @@ public class DropDownBox : MonoBehaviour
         if (option == 5) {
             GameObject domainArea = GameObject.Find("ShareManager").transform.Find("SharePanel").transform.Find("CustomDomain").gameObject;
             domainArea.SetActive(true);
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
+        } else {
+            GameObject domainArea = GameObject.Find("ShareManager").transform.Find("SharePanel").transform.Find("CustomDomain").gameObject;
+            domainArea.SetActive(false);
         }
     }
 }
