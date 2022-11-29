@@ -6,7 +6,7 @@ public class MapManager : MonoBehaviour
 {
     string imageName = "";
     public string bookVer = "";
-    public GameObject imagePanel;
+    public SpriteRenderer imagePanel;
 
     // Start is called before the first frame update
     void Start()
@@ -23,18 +23,19 @@ public class MapManager : MonoBehaviour
     public void SetHide() {
         //gameObject.SetActive(false);
         // GameObject backPanel = GameObject.Find("PopupManager").transform.Find("BackPanel").gameObject;
-        // GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
-        GameObject backPanel = GameObject.Find("PopUp").transform.Find("BackPanel").gameObject;
-        GameObject closeBtn = GameObject.Find("PopUp").transform.Find("CloseBtn").gameObject;
+        GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
+        GameObject backPanel = GameObject.Find("PopUp").transform.Find("MapPanel").gameObject;
+        //GameObject closeBtn = GameObject.Find("PopUp").transform.Find("CloseBtn").gameObject;
+        Debug.Log("close");
         backPanel.SetActive(false);
         closeBtn.SetActive(false);
     }
 
     public void SetView() {
         // GameObject backPanel = GameObject.Find("PopupManager").transform.Find("BackPanel").gameObject;;
-        // GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
-        GameObject backPanel = GameObject.Find("PopUp").transform.Find("BackPanel").gameObject;
-        GameObject closeBtn = GameObject.Find("PopUp").transform.Find("CloseBtn").gameObject;
+        GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
+        GameObject backPanel = GameObject.Find("PopUp").transform.Find("MapPanel").gameObject;
+        //GameObject closeBtn = GameObject.Find("PopUp").transform.Find("CloseBtn").gameObject;
         backPanel.SetActive(true);
         closeBtn.SetActive(true);
     }
@@ -48,11 +49,14 @@ public class MapManager : MonoBehaviour
     public void setImage() {
         getCurrentImage();
         if (bookVer == "KOR") {
-            imagePanel.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/KOR/" + imageName + ".png");
+            //imagePanel.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/KOR/" + imageName + ".png");
+            imagePanel.sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/KOR/" + imageName + ".png");
         } else if (bookVer == "ENG") {
-            imagePanel.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/ENG/" + imageName + ".png");
+            //imagePanel.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/ENG/" + imageName + ".png");
+            imagePanel.sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/ENG/" + imageName + ".png");
         } else if (bookVer == "CHN") {
-            imagePanel.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/CHN/" + imageName + ".png");
+            //imagePanel.GetComponent<UnityEngine.UI.Image>().sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/CHN/" + imageName + ".png");
+            imagePanel.sprite = GetSpritefromImage(Application.streamingAssetsPath + "/BookImage/MapBook/CHN/" + imageName + ".png");
         }
     }
 
