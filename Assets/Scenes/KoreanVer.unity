@@ -49766,9 +49766,9 @@ MonoBehaviour:
   interactable: 1
   enableShadowEffect: 1
   currentPage: 0
-  PageFlipTime: 0.01
-  AnimationFramesCount: 60
-  AnimationSpeed: 0.01
+  PageFlipTime: 0.001
+  AnimationFramesCount: 3
+  AnimationSpeed: 0.001
   check: 1
   isMultiFlip: 1
   ClippingPlane: {fileID: 3627697348715091291}
