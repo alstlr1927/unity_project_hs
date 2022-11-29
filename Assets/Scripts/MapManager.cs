@@ -22,15 +22,19 @@ public class MapManager : MonoBehaviour
 
     public void SetHide() {
         //gameObject.SetActive(false);
-        GameObject backPanel = GameObject.Find("PopupManager").transform.Find("BackPanel").gameObject;
-        GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
+        // GameObject backPanel = GameObject.Find("PopupManager").transform.Find("BackPanel").gameObject;
+        // GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
+        GameObject backPanel = GameObject.Find("PopUp").transform.Find("BackPanel").gameObject;
+        GameObject closeBtn = GameObject.Find("PopUp").transform.Find("CloseBtn").gameObject;
         backPanel.SetActive(false);
         closeBtn.SetActive(false);
     }
 
     public void SetView() {
-        GameObject backPanel = GameObject.Find("PopupManager").transform.Find("BackPanel").gameObject;;
-        GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
+        // GameObject backPanel = GameObject.Find("PopupManager").transform.Find("BackPanel").gameObject;;
+        // GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
+        GameObject backPanel = GameObject.Find("PopUp").transform.Find("BackPanel").gameObject;
+        GameObject closeBtn = GameObject.Find("PopUp").transform.Find("CloseBtn").gameObject;
         backPanel.SetActive(true);
         closeBtn.SetActive(true);
     }
