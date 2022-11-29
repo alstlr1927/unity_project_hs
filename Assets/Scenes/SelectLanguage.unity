@@ -1813,4 +1813,4 @@ MonoBehaviour:
   scaleButtonENG: {fileID: 880302979}
   scaleButtonCHN: {fileID: 123911466}
   distance: 300
-  speed: 5
+  speed: 2

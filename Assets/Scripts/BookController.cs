@@ -46,7 +46,7 @@ public class BookController : MonoBehaviour, IDragHandler
         {
             isSelect = true;
             selectLang = "KOR";
-            StartCoroutine(delayMultiTime(1f));
+            StartCoroutine(delayMultiTime(.5f));
             StartCoroutine(sizeDown());
             Debug.Log("KOR");
         }
@@ -54,7 +54,7 @@ public class BookController : MonoBehaviour, IDragHandler
         {
             isSelect = true;
             selectLang = "ENG";
-            StartCoroutine(delayMultiTime(1f));
+            StartCoroutine(delayMultiTime(.5f));
             StartCoroutine(sizeDown());
             Debug.Log("ENG");
         }
@@ -62,7 +62,7 @@ public class BookController : MonoBehaviour, IDragHandler
         {
             isSelect = true;
             selectLang = "CHN";
-            StartCoroutine(delayMultiTime(1f));
+            StartCoroutine(delayMultiTime(.5f));
             StartCoroutine(sizeDown());
             Debug.Log("CHN");
         }
@@ -215,7 +215,7 @@ public class BookController : MonoBehaviour, IDragHandler
         while (transform.localScale.x > size) {
             transform.localScale = originScale / (1f + time * speed);
             time += Time.deltaTime;
-            if (transform.localScale.x <= 0) {
+            if (transform.localScale.x <= .3f) {
                 time = 0;
                 break;
             }
