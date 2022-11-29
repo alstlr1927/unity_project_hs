@@ -170,6 +170,8 @@ public class ShareManager : MonoBehaviour
         mail.Body = "다운로드 링크 (download link) : https://drive.google.com/drive/folders/1lUFW_foL2TU1iNZ0mOjhKUnjgh5Y6qsP?usp=sharing";
 
         Debug.Log("attach start");
+        Attachment attachment = new Attachment(Application.persistentDataPath + "/" + imageName + ".png");
+        mail.Attachments.Add(attachment);
         // if (bookVer == "KOR") {
         //     if (bookNum == 0) {
         //         Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/MainBook/KOR/" + imageName + ".png");
