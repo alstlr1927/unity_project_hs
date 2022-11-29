@@ -167,7 +167,7 @@ public class ShareManager : MonoBehaviour
         mail.From = new MailAddress(SENDER_EMAIL);
         mail.To.Add(emailAddress);
         mail.Subject = "정전협정문";
-        mail.Body = "전쟁기념관 정전협정문 공유메일";
+        mail.Body = "다운로드 링크 (download link) : https://drive.google.com/drive/folders/1lUFW_foL2TU1iNZ0mOjhKUnjgh5Y6qsP?usp=sharing";
 
         Debug.Log("attach start");
         // if (bookVer == "KOR") {
