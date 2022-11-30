@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 5816026}
   - component: {fileID: 5816024}
   - component: {fileID: 5816025}
+  - component: {fileID: 5816027}
   m_Layer: 7
   m_Name: MapPanel
   m_TagString: Untagged
@@ -431,6 +432,20 @@ RectTransform:
   m_AnchoredPosition: {x: 4.3208, y: -0.5174}
   m_SizeDelta: {x: 14.15, y: 11.15}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5816027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5816023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c30cb799864694bac8d9ca48a312ffa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  perspectiveZoomSpeed: 0.5
+  orthoZoomSpeed: 0.5
 --- !u!1 &7581629
 GameObject:
   m_ObjectHideFlags: 0
@@ -33010,7 +33025,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1624000838}
   - component: {fileID: 1624000839}
-  - component: {fileID: 1624000840}
   m_Layer: 5
   m_Name: ProjectManager
   m_TagString: Untagged
@@ -33054,19 +33068,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786ea316272cf488899f88d1ec5e6dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1624000840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624000837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c30cb799864694bac8d9ca48a312ffa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _zoomTargetRt: {fileID: 5816026}
 --- !u!1 &1626627061
 GameObject:
   m_ObjectHideFlags: 0

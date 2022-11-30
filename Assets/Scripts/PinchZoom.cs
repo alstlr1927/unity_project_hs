@@ -4,83 +4,35 @@ using UnityEngine;
 
 public class PinchZoom : MonoBehaviour
 {
-    [SerializeField] private RectTransform _zoomTargetRt;
-
-    private readonly float _ZOOM_IN_MAX = 16f;
-    private readonly float _ZOOM_OUT_MAX = 1f;
-    private readonly float _ZOOM_SPEED = 1.5f; 
-
-    private bool _isZooming = false;
+    public float perspectiveZoomSpeed = 0.5f;
+    public float orthoZoomSpeed = 0.5f;
 
     // Update is called once per frame
     void Update()
     {  
         if (Input.touchCount == 2) {
-            ZoomAndPan();
-        } else {
-            _isZooming = false;
+            Touch touchZero = Input.GetTouch(0);
+            Touch touchOne = Input.GetTouch(1);
+
+            // deltaposition = delta 만큼 시간동안 움직인 거리
+            // 현재 position - 이전 delta 값 빼주면 움직이기전 손가락 위치
+            Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
+            Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
+
+            // 현재와 과거값 움직임 크기 get
+            float prevTouchDeltaMag = (touchZeroPrevPos - touchOnePrevPos).magnitude;
+            float touchDeltaMag = (touchZero.position - touchOne.position).magnitude;
+
+            // 두 값의 차이는 얼마나 확대 또는 축소 되는지 결정
+            float deltaMagnitudeDiff = prevTouchDeltaMag - touchDeltaMag;
+
+            if (GetComponent<Camera>().orthographic) {
+                GetComponent<Camera>().orthographicSize += deltaMagnitudeDiff * orthoZoomSpeed;
+                GetComponent<Camera>().orthographicSize = Mathf.Max(GetComponent<Camera>().orthographicSize, 0.1f);
+            } else {
+                GetComponent<Camera>().fieldOfView += deltaMagnitudeDiff * perspectiveZoomSpeed;
+                GetComponent<Camera>().fieldOfView = Mathf.Clamp(GetComponent<Camera>().fieldOfView, 0.1f, 179.9f);
+            }
         }
-    }
-
-    public void OnPinchZoom(float scale) {
-        
-    }
-
-    private void ZoomAndPan() {
-        if (_isZooming == false) {
-            _isZooming = true;
-        }
-
-        // get zoomAmount
-        var prevTouchAPos = Input.GetTouch(0).position - Input.GetTouch(0).deltaPosition;
-        var prevTouchBPos = Input.GetTouch(1).position - Input.GetTouch(1).deltaPosition;
-        var curTouchAPos = Input.GetTouch(0).position;
-        var curTouchBPos = Input.GetTouch(1).position;
-        var deltaDistance = Vector2.Distance(Normalize(curTouchAPos), Normalize(curTouchBPos)) - Vector2.Distance(Normalize(prevTouchAPos), Normalize(prevTouchBPos));
-        var currentScale = _zoomTargetRt.localScale.x;
-        var zoomAmount = deltaDistance * currentScale * _ZOOM_SPEED; // zoomAmount == deltaScale
-
-        // clamp & zoom
-        var zoomedScale = currentScale + zoomAmount;
-        if (zoomedScale < _ZOOM_OUT_MAX) {
-            zoomedScale = _ZOOM_OUT_MAX;
-        }
-        if (_ZOOM_IN_MAX < zoomedScale)
-        {
-            zoomedScale = _ZOOM_IN_MAX;
-            zoomAmount = 0f;
-        }
-        _zoomTargetRt.localScale = zoomedScale * Vector3.one;
-
-        /* apply offset */
-        // offset is a value against movement caused by scale up & down
-        var pivotPos = _zoomTargetRt.anchoredPosition;
-        var fromCenterToInputPos = new Vector2(
-                Input.mousePosition.x - Screen.width * 0.5f,
-                Input.mousePosition.y - Screen.height * 0.5f);
-        var fromPivotToInputPos = fromCenterToInputPos - pivotPos;
-        var offsetX = (fromPivotToInputPos.x / zoomedScale) * zoomAmount;
-        var offsetY = (fromPivotToInputPos.y / zoomedScale) * zoomAmount;
-        _zoomTargetRt.anchoredPosition -= new Vector2(offsetX, offsetY);
- 
-        /* get moveAmount */
-        var deltaPosTouchA = Input.GetTouch(0).deltaPosition;
-        var deltaPosTouchB = Input.GetTouch(1).deltaPosition;
-        var deltaPosTotal = (deltaPosTouchA + deltaPosTouchB) * 0.5f;
-        var moveAmount = new Vector2(deltaPosTotal.x, deltaPosTotal.y);
- 
-        /* clamp & pan */
-        var clampX = (Screen.width * zoomedScale - Screen.width) * 0.5f;
-        var clampY = (Screen.height * zoomedScale - Screen.height) * 0.5f;
-        var clampedPosX = Mathf.Clamp(_zoomTargetRt.localPosition.x + moveAmount.x, -clampX, clampX);
-        var clampedPosY = Mathf.Clamp(_zoomTargetRt.localPosition.y + moveAmount.y, -clampY, clampY);
-        _zoomTargetRt.anchoredPosition = new Vector3(clampedPosX, clampedPosY);
-    }
-
-    private Vector2 Normalize(Vector2 position) {
-        var normlizedPos = new Vector2(
-            (position.x - Screen.width * 0.5f) / (Screen.width * 0.5f),
-            (position.y - Screen.height * 0.5f) / (Screen.height * 0.5f));
-        return normlizedPos;
     }
 }
