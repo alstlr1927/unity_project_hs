@@ -343,7 +343,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5816026}
   - component: {fileID: 5816024}
-  - component: {fileID: 5816025}
   - component: {fileID: 5816027}
   m_Layer: 7
   m_Name: MapPanel
@@ -404,14 +403,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!222 &5816025
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5816023}
-  m_CullTransparentMesh: 1
 --- !u!224 &5816026
 RectTransform:
   m_ObjectHideFlags: 0

@@ -21414,7 +21414,6 @@ GameObject:
   - component: {fileID: 1066796464}
   - component: {fileID: 1066796462}
   - component: {fileID: 1066796465}
-  - component: {fileID: 1066796463}
   m_Layer: 7
   m_Name: MapPanel
   m_TagString: Untagged
@@ -21474,14 +21473,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!222 &1066796463
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066796461}
-  m_CullTransparentMesh: 1
 --- !u!224 &1066796464
 RectTransform:
   m_ObjectHideFlags: 0
