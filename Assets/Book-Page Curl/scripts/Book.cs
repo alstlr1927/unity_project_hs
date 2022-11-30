@@ -691,7 +691,6 @@ public class Book : MonoBehaviour
         }
         ReleasePage();
     }
-    
     IEnumerator FlipLTR(float xc, float xl, float h, float frameTime, float dx)
     {
         float x = xc - xl;

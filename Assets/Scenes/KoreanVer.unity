@@ -12182,7 +12182,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 628795966}
   m_Direction: 2
   m_Value: 1.000001
-  m_Size: 0.7221591
+  m_Size: 0.722159
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -27300,8 +27300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c30cb799864694bac8d9ca48a312ffa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  perspectiveZoomSpeed: 0.5
-  orthoZoomSpeed: 0.5
+  zoomSpeed: 0.01
 --- !u!1 &1277495718
 GameObject:
   m_ObjectHideFlags: 0

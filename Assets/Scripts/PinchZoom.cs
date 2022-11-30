@@ -4,35 +4,85 @@ using UnityEngine;
 
 public class PinchZoom : MonoBehaviour
 {
-    public float perspectiveZoomSpeed = 0.5f;
-    public float orthoZoomSpeed = 0.5f;
+    public float zoomSpeed = 0.5f;
 
+    private float preDistance;
+    private Vector3 prePosition;
+
+    private Vector3 baseSize = Vector3.one;
+    private Vector3 basePosition = Vector3.zero;
+
+    private float zoomFactor = 1.0f;
+
+    private void Start()
+    {
+    }
+    private void OnEnable()
+    {
+        print("Awake");
+        if (baseSize == Vector3.one)
+        {
+            baseSize = transform.localScale;
+        }
+        else
+        {
+            transform.localScale = baseSize;
+        }
+        if (basePosition == Vector3.zero)
+        {
+            basePosition = transform.localPosition;
+        }
+        else
+        {
+            transform.localPosition = basePosition;
+        }
+
+        zoomFactor = 1.0f;
+    }
     // Update is called once per frame
-    void Update()
-    {  
-        if (Input.touchCount == 2) {
+    void LateUpdate()
+    {
+        if (Input.touchCount == 2)
+        {
             Touch touchZero = Input.GetTouch(0);
             Touch touchOne = Input.GetTouch(1);
+            float currentDistance = Vector2.Distance(touchZero.position, touchOne.position);
 
-            // deltaposition = delta 만큼 시간동안 움직인 거리
-            // 현재 position - 이전 delta 값 빼주면 움직이기전 손가락 위치
-            Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
-            Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
-
-            // 현재와 과거값 움직임 크기 get
-            float prevTouchDeltaMag = (touchZeroPrevPos - touchOnePrevPos).magnitude;
-            float touchDeltaMag = (touchZero.position - touchOne.position).magnitude;
-
-            // 두 값의 차이는 얼마나 확대 또는 축소 되는지 결정
-            float deltaMagnitudeDiff = prevTouchDeltaMag - touchDeltaMag;
-
-            if (GetComponent<Camera>().orthographic) {
-                GetComponent<Camera>().orthographicSize += deltaMagnitudeDiff * orthoZoomSpeed;
-                GetComponent<Camera>().orthographicSize = Mathf.Max(GetComponent<Camera>().orthographicSize, 0.1f);
-            } else {
-                GetComponent<Camera>().fieldOfView += deltaMagnitudeDiff * perspectiveZoomSpeed;
-                GetComponent<Camera>().fieldOfView = Mathf.Clamp(GetComponent<Camera>().fieldOfView, 0.1f, 179.9f);
+            if (preDistance == 0)
+            {
+                preDistance = currentDistance;
+                return;
             }
+
+            print("currentDistance: " + currentDistance);
+            float deltaDistance = currentDistance - preDistance;
+            print("deltaDistance : " + deltaDistance);
+
+            zoomFactor += deltaDistance * zoomSpeed;
+
+            if (zoomFactor < 1.0f)
+            {
+                zoomFactor = 1.0f;
+            }
+            else if (zoomFactor > 5.0f)
+            {
+                zoomFactor = 5.0f;
+            }
+
+            transform.localScale = baseSize * zoomFactor;
+
+
+            preDistance = currentDistance;
+
+        }
+        else if (Input.touchCount == 1)
+        {
+
+        }
+
+        else if (Input.touchCount == 0)
+        {
+            preDistance = 0;
         }
     }
 }
