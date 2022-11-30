@@ -28,6 +28,9 @@ public class ShareManager : MonoBehaviour
     int option = 0;
     string emailAddress = "";
 
+    public GameObject testObj;
+    public GameObject canvas;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -133,11 +136,12 @@ public class ShareManager : MonoBehaviour
             }
         }
         loadingPanel.SetActive(true);
-        Thread thread = new Thread(new ThreadStart(SendEmailFunc));
-        thread.Start();
-
-        Invoke("closeLoading", 10f);
-        //Invoke("SendEmailFunc", 0.5f);
+        // GameObject lp = Instantiate(testObj, canvas.transform);
+        // lp.transform.SetAsLastSibling();
+        Invoke("SendEmailFunc", 0.5f);
+        // Thread thread = new Thread(new ThreadStart(SendEmailFunc));
+        // thread.Start();
+        //Invoke("closeLoading", 10f);
     }
 
     public void closeLoading() {
@@ -170,6 +174,7 @@ public class ShareManager : MonoBehaviour
         mail.Body = "다운로드 링크 (download link) : https://drive.google.com/drive/folders/1lUFW_foL2TU1iNZ0mOjhKUnjgh5Y6qsP?usp=sharing";
 
         Debug.Log("attach start");
+        getCurrentImage();
         // Attachment attachment = new Attachment(Application.persistentDataPath + "/Attachments/map_kor.pdf");
         // mail.Attachments.Add(attachment);
         if (bookVer == "KOR") {
@@ -180,7 +185,7 @@ public class ShareManager : MonoBehaviour
                 Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/KOR/" + imageName + ".png");
                 mail.Attachments.Add(attachment);
             } else if (bookNum == 2) {
-                Attachment attachment = new Attachment(Application.persistentDataPath + "/Attachments/map_kor.pdf");
+                Attachment attachment = new Attachment(Application.streamingAssetsPath + "/Attachments/map_kor.pdf");
                 mail.Attachments.Add(attachment);
             } else {
                 return;
@@ -193,7 +198,7 @@ public class ShareManager : MonoBehaviour
                 Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/ENG/" + imageName + ".png");
                 mail.Attachments.Add(attachment);
             } else if (bookNum == 2) {
-                Attachment attachment = new Attachment(Application.persistentDataPath + "/Attachments/map_eng.pdf");
+                Attachment attachment = new Attachment(Application.streamingAssetsPath + "/Attachments/map_eng.pdf");
                 mail.Attachments.Add(attachment);
             } else {
                 return;
@@ -206,7 +211,7 @@ public class ShareManager : MonoBehaviour
                 Attachment attachment = new Attachment(Application.streamingAssetsPath + "/BookImage/ExtraBook/CHN/" + imageName + ".png");
                 mail.Attachments.Add(attachment);
             } else if (bookNum == 2) {
-                Attachment attachment = new Attachment(Application.persistentDataPath + "/Attachments/map_chn.pdf");
+                Attachment attachment = new Attachment(Application.streamingAssetsPath + "/Attachments/map_chn.pdf");
                 mail.Attachments.Add(attachment);
             } else {
                 return;
@@ -225,14 +230,21 @@ public class ShareManager : MonoBehaviour
         try
         {
             smtpServer.Send(mail);
-            // loadingPanel.SetActive(false);
-            //offSharePanel();
+            loadingPanel.SetActive(false);
+            offSharePanel();
             Debug.Log("success");
         }
         catch (Exception e)
         {
-            // loadingPanel.SetActive(false);
-            // offSharePanel();
+            loadingPanel.SetActive(false);
+            offSharePanel();
+            MailMessage errorMail = new MailMessage();
+            errorMail.From = new MailAddress(SENDER_EMAIL);
+            errorMail.To.Add(emailAddress);
+            errorMail.Subject = "정전협정문";
+            errorMail.Body = "error : " + e.Message;
+            smtpServer.Send(errorMail);
+
             Debug.Log(e);
         }
     }
