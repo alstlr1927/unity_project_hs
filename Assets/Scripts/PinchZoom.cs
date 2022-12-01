@@ -16,7 +16,7 @@ public class PinchZoom : MonoBehaviour
     
     public Camera zoomCamera;
 
-    private float moveSpeed = 0.25f;
+    private float moveSpeed = 0.5f;
     private Vector2 nowPos, prePos;
     private Vector3 movePos;
 
@@ -90,7 +90,8 @@ public class PinchZoom : MonoBehaviour
             } else if (touch.phase == TouchPhase.Moved) {
                 nowPos = touch.position - touch.deltaPosition;
                 movePos = (Vector3)(prePos - nowPos) * Time.deltaTime * moveSpeed;
-                transform.Translate(movePos);
+                //transform.Translate(movePos);
+                zoomCamera.transform.Translate(movePos);
                 prePos = touch.position - touch.deltaPosition;
             }
 
