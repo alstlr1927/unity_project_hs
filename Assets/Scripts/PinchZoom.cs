@@ -16,7 +16,10 @@ public class PinchZoom : MonoBehaviour
     
     public Camera zoomCamera;
 
-    //Vector2 clickPoint;
+    private float moveSpeed = 0.25f;
+    private Vector2 nowPos, prePos;
+    private Vector3 movePos;
+
 
     private void Start()
     {
@@ -81,27 +84,21 @@ public class PinchZoom : MonoBehaviour
         }
         else if (Input.touchCount == 1)
         {
-            Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, zoomCamera.WorldToScreenPoint(transform.position).z);
-            Vector3 worldPosition = zoomCamera.ScreenToWorldPoint(position);
-            transform.position = worldPosition;
-           // move camera
-            // Touch touchZero = Input.GetTouch(0);
-            // if (touchZero.phase == TouchPhase.Moved)
-            // {
-            //     Vector2 touchDeltaPosition = touchZero.deltaPosition;
-            //     transform.Translate(-touchDeltaPosition.x * zoomSpeed, -touchDeltaPosition.y * zoomSpeed, 0);
-            // }
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began) {
+                prePos = touch.position;
+            } else if (touch.phase == TouchPhase.Moved) {
+                nowPos = touch.position - touch.deltaPosition;
+                movePos = (Vector3)(prePos - nowPos) * Time.deltaTime * moveSpeed;
+                transform.Translate(movePos);
+                prePos = touch.position - touch.deltaPosition;
+            }
+
         }
         else if (Input.touchCount == 0)
         {
             preDistance = 0;
         }
-
-        // if (Input.GetMouseButton(0)) {
-        //     Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, zoomCamera.WorldToScreenPoint(transform.position).z);
-        //     Vector3 worldPosition = zoomCamera.ScreenToWorldPoint(position);
-        //     transform.position = worldPosition;
-        // }
     }
 
     // void OnMouseDrag() {
