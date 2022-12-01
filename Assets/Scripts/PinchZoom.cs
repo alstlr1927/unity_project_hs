@@ -77,12 +77,22 @@ public class PinchZoom : MonoBehaviour
         }
         else if (Input.touchCount == 1)
         {
+            Touch touchZero = Input.GetTouch(0);
+            if (prePosition == Vector3.zero)
+            {
+                prePosition = touchZero.position;
+                return;
+            }
 
+            Vector3 deltaPosition = new Vector3(touchZero.position.x, touchZero.position.y, 0) - prePosition;
+            transform.localPosition = basePosition + deltaPosition * zoomFactor;
+
+            prePosition = touchZero.position;
         }
-
         else if (Input.touchCount == 0)
         {
             preDistance = 0;
+            prePosition = Vector3.zero;
         }
     }
 }
