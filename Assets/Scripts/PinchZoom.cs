@@ -100,10 +100,4 @@ public class PinchZoom : MonoBehaviour
             preDistance = 0;
         }
     }
-
-    // void OnMouseDrag() {
-    //     Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, zoomCamera.WorldToScreenPoint(transform.position).z);
-    //     Vector3 worldPosition = zoomCamera.ScreenToWorldPoint(position);
-    //     transform.position = worldPosition;
-    // }
 }

@@ -21,23 +21,26 @@ public class MapManager : MonoBehaviour
     }
 
     public void SetHide() {
-        //gameObject.SetActive(false);
-        // GameObject backPanel = GameObject.Find("PopupManager").transform.Find("BackPanel").gameObject;
         GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
         GameObject backPanel = GameObject.Find("PopUp").transform.Find("MapPanel").gameObject;
-        //GameObject closeBtn = GameObject.Find("PopUp").transform.Find("CloseBtn").gameObject;
+        GameObject prev = GameObject.Find("Canvas").transform.Find("PrevBtn").gameObject;
+        GameObject next = GameObject.Find("Canvas").transform.Find("NextBtn").gameObject;
         Debug.Log("close");
         backPanel.SetActive(false);
         closeBtn.SetActive(false);
+        prev.SetActive(true);
+        next.SetActive(true);
     }
 
     public void SetView() {
-        // GameObject backPanel = GameObject.Find("PopupManager").transform.Find("BackPanel").gameObject;;
         GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
         GameObject backPanel = GameObject.Find("PopUp").transform.Find("MapPanel").gameObject;
-        //GameObject closeBtn = GameObject.Find("PopUp").transform.Find("CloseBtn").gameObject;
+        GameObject prev = GameObject.Find("Canvas").transform.Find("PrevBtn").gameObject;
+        GameObject next = GameObject.Find("Canvas").transform.Find("NextBtn").gameObject;
         backPanel.SetActive(true);
         closeBtn.SetActive(true);
+        prev.SetActive(false);
+        next.SetActive(false);
     }
 
     public void getCurrentImage() {
