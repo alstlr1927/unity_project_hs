@@ -16,7 +16,7 @@ public class PinchZoom : MonoBehaviour
     
     public Camera zoomCamera;
 
-    Vector2 clickPoint;
+    //Vector2 clickPoint;
 
     private void Start()
     {
@@ -81,33 +81,30 @@ public class PinchZoom : MonoBehaviour
         }
         else if (Input.touchCount == 1)
         {
-            if (Input.GetTouch(0).phase == TouchPhase.Began)
-            {
-                clickPoint = Input.GetTouch(0).position;
-            }
-            else if (Input.GetTouch(0).phase == TouchPhase.Moved)
-            {
-                Vector2 delta = Input.GetTouch(0).deltaPosition;
-                Vector3 pos = transform.localPosition;
-                pos.x += delta.x * zoomFactor;
-                pos.y += delta.y * zoomFactor;
-                transform.localPosition = pos;
-            }
+            
+           // move camera
             // Touch touchZero = Input.GetTouch(0);
-            // if (prePosition == Vector3.zero)
+            // if (touchZero.phase == TouchPhase.Moved)
             // {
-            //     prePosition = touchZero.position;
-            //     return;
+            //     Vector2 touchDeltaPosition = touchZero.deltaPosition;
+            //     transform.Translate(-touchDeltaPosition.x * zoomSpeed, -touchDeltaPosition.y * zoomSpeed, 0);
             // }
-
-            // Vector3 deltaPosition = new Vector3(touchZero.position.x, touchZero.position.y, 0) - prePosition;
-            // transform.localPosition = basePosition + deltaPosition * zoomFactor;
-
-            // prePosition = touchZero.position;
         }
         else if (Input.touchCount == 0)
         {
             preDistance = 0;
         }
+
+        if (Input.GetMouseButton(0)) {
+            Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, zoomCamera.WorldToScreenPoint(transform.position).z);
+            Vector3 worldPosition = zoomCamera.ScreenToWorldPoint(position);
+            transform.position = worldPosition;
+        }
     }
+
+    // void OnMouseDrag() {
+    //     Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, zoomCamera.WorldToScreenPoint(transform.position).z);
+    //     Vector3 worldPosition = zoomCamera.ScreenToWorldPoint(position);
+    //     transform.position = worldPosition;
+    // }
 }
