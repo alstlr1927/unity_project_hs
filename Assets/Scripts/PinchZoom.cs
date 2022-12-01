@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
 
 public class PinchZoom : MonoBehaviour
@@ -7,12 +8,15 @@ public class PinchZoom : MonoBehaviour
     public float zoomSpeed = 0.5f;
 
     private float preDistance;
-    private Vector3 prePosition;
 
     private Vector3 baseSize = Vector3.one;
     private Vector3 basePosition = Vector3.zero;
 
     private float zoomFactor = 1.0f;
+    
+    public Camera zoomCamera;
+
+    Vector2 clickPoint;
 
     private void Start()
     {
@@ -77,22 +81,33 @@ public class PinchZoom : MonoBehaviour
         }
         else if (Input.touchCount == 1)
         {
-            Touch touchZero = Input.GetTouch(0);
-            if (prePosition == Vector3.zero)
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
-                prePosition = touchZero.position;
-                return;
+                clickPoint = Input.GetTouch(0).position;
             }
+            else if (Input.GetTouch(0).phase == TouchPhase.Moved)
+            {
+                Vector2 delta = Input.GetTouch(0).deltaPosition;
+                Vector3 pos = transform.localPosition;
+                pos.x += delta.x * zoomFactor;
+                pos.y += delta.y * zoomFactor;
+                transform.localPosition = pos;
+            }
+            // Touch touchZero = Input.GetTouch(0);
+            // if (prePosition == Vector3.zero)
+            // {
+            //     prePosition = touchZero.position;
+            //     return;
+            // }
 
-            Vector3 deltaPosition = new Vector3(touchZero.position.x, touchZero.position.y, 0) - prePosition;
-            transform.localPosition = basePosition + deltaPosition * zoomFactor;
+            // Vector3 deltaPosition = new Vector3(touchZero.position.x, touchZero.position.y, 0) - prePosition;
+            // transform.localPosition = basePosition + deltaPosition * zoomFactor;
 
-            prePosition = touchZero.position;
+            // prePosition = touchZero.position;
         }
         else if (Input.touchCount == 0)
         {
             preDistance = 0;
-            prePosition = Vector3.zero;
         }
     }
 }

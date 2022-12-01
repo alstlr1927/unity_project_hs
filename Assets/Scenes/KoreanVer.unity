@@ -27301,6 +27301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSpeed: 0.01
+  zoomCamera: {fileID: 768592279}
 --- !u!1 &1277495718
 GameObject:
   m_ObjectHideFlags: 0
