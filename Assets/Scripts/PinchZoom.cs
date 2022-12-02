@@ -20,6 +20,10 @@ public class PinchZoom : MonoBehaviour
     private Vector2 nowPos, prePos;
     private Vector3 movePos;
 
+    public float doubleClickSecond = 0.25f;
+    private bool isOneClick = false;
+    private double timer = 0;
+
 
     private void Start()
     {
@@ -46,6 +50,24 @@ public class PinchZoom : MonoBehaviour
 
         zoomFactor = 1.0f;
     }
+
+    private void Update() {
+        if (isOneClick && ((Time.time - timer) > doubleClickSecond)) {
+            isOneClick = false;
+        }
+
+        if (Input.GetMouseButtonDown(0)) {
+            if (!isOneClick) {
+                timer = Time.time;
+                isOneClick = true;
+            } else if (isOneClick && ((Time.time - timer) < doubleClickSecond)) {
+                isOneClick = false;
+                MapManager.SetHide();
+                Debug.Log("double click");
+            }
+        }
+    }
+
     // Update is called once per frame
     void LateUpdate()
     {

@@ -20,25 +20,25 @@ public class MapManager : MonoBehaviour
         
     }
 
-    public void SetHide() {
-        GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
+    public static void SetHide() {
+        //GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
         GameObject backPanel = GameObject.Find("PopUp").transform.Find("MapPanel").gameObject;
         GameObject prev = GameObject.Find("Canvas").transform.Find("PrevBtn").gameObject;
         GameObject next = GameObject.Find("Canvas").transform.Find("NextBtn").gameObject;
         Debug.Log("close");
         backPanel.SetActive(false);
-        closeBtn.SetActive(false);
+        //closeBtn.SetActive(false);
         prev.SetActive(true);
         next.SetActive(true);
     }
 
     public void SetView() {
-        GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
+        //GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
         GameObject backPanel = GameObject.Find("PopUp").transform.Find("MapPanel").gameObject;
         GameObject prev = GameObject.Find("Canvas").transform.Find("PrevBtn").gameObject;
         GameObject next = GameObject.Find("Canvas").transform.Find("NextBtn").gameObject;
         backPanel.SetActive(true);
-        closeBtn.SetActive(true);
+        //closeBtn.SetActive(true);
         prev.SetActive(false);
         next.SetActive(false);
     }

@@ -18684,7 +18684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookVer: CHN
-  imagePanel: {fileID: 932600347}
+  imagePanel: {fileID: 1066796462}
 --- !u!1 &932600347
 GameObject:
   m_ObjectHideFlags: 0
@@ -21455,6 +21455,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSpeed: 0.5
+  zoomCamera: {fileID: 0}
+  doubleClickSecond: 0.25
 --- !u!1 &1068348235
 GameObject:
   m_ObjectHideFlags: 0
@@ -44809,6 +44811,7 @@ GameObject:
   - component: {fileID: 4300819459854617183}
   - component: {fileID: 5496162327355033778}
   - component: {fileID: 6194407941016955757}
+  - component: {fileID: 6194407941016955758}
   m_Layer: 5
   m_Name: RightNext
   m_TagString: Untagged
@@ -49551,31 +49554,21 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5496162327355033778}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1456828381}
-        m_TargetAssemblyTypeName: MapManager, Assembly-CSharp
-        m_MethodName: setImage
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1456828381}
-        m_TargetAssemblyTypeName: MapManager, Assembly-CSharp
-        m_MethodName: SetView
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &6194407941016955758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152897288791474288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e29e9f9c81c254e3dbf6a56fc98b8581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapManager: {fileID: 890161711}
+  doubleClickSecond: 0.25
 --- !u!1 &6229128738056102534
 GameObject:
   m_ObjectHideFlags: 0
