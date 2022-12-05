@@ -1835,7 +1835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &57163403
 Transform:
   m_ObjectHideFlags: 0
@@ -2886,6 +2886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 113843089}
   - component: {fileID: 113843090}
+  - component: {fileID: 113843091}
   m_Layer: 5
   m_Name: ProjectManager
   m_TagString: Untagged
@@ -2930,6 +2931,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoTimer: 600
+  autoGuideTimer: 4
+--- !u!114 &113843091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113843088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92540e22cac641fe98c87a8cf7a5ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bookTap: {fileID: 828490537}
+  mapDoubleTap: {fileID: 1227012320}
+  bookFlip: {fileID: 538938310}
+  mapMove: {fileID: 579702906}
+  mapPinch: {fileID: 1562131992}
+  bookLong: {fileID: 57163402}
+  autoTimer: 10
 --- !u!1 &116936215
 GameObject:
   m_ObjectHideFlags: 0
@@ -11850,7 +11871,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &538938311
 Transform:
   m_ObjectHideFlags: 0
@@ -12951,7 +12972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &579702907
 Transform:
   m_ObjectHideFlags: 0
@@ -17548,7 +17569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &828490538
 Transform:
   m_ObjectHideFlags: 0
@@ -25849,7 +25870,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1227012321
 Transform:
   m_ObjectHideFlags: 0
@@ -32960,7 +32981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1562131993
 Transform:
   m_ObjectHideFlags: 0
@@ -44525,7 +44546,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1210395752}
         m_TargetAssemblyTypeName: ShareManager, Assembly-CSharp
         m_MethodName: setBookNum
         m_Mode: 3
@@ -44541,6 +44562,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: MapManager, Assembly-CSharp
         m_MethodName: SetHide
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 113843091}
+        m_TargetAssemblyTypeName: GestureIcon, Assembly-CSharp
+        m_MethodName: setMap
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -44841,7 +44874,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1210395752}
         m_TargetAssemblyTypeName: ShareManager, Assembly-CSharp
         m_MethodName: setBookNum
         m_Mode: 3
@@ -44864,6 +44897,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 113843091}
+        m_TargetAssemblyTypeName: GestureIcon, Assembly-CSharp
+        m_MethodName: setMap
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &411717739169967116
 GameObject:
@@ -48320,7 +48365,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1210395752}
         m_TargetAssemblyTypeName: ShareManager, Assembly-CSharp
         m_MethodName: setBookNum
         m_Mode: 3
@@ -48336,6 +48381,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: MapManager, Assembly-CSharp
         m_MethodName: SetHide
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 113843091}
+        m_TargetAssemblyTypeName: GestureIcon, Assembly-CSharp
+        m_MethodName: setMap
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
