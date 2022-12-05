@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class KORManager : MonoBehaviour
@@ -8,6 +9,9 @@ public class KORManager : MonoBehaviour
     bool isWholeOpen = false;
     bool isGuideOpen = false;
     int guideNum = 1;
+
+    private float curTimer = 0.0f;
+    public float autoTimer = 600.0f;
 
     GameObject one, two, three, four, five, six;
     GameObject select, index, share, whole, next, prev;
@@ -41,7 +45,20 @@ public class KORManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        curTimer += Time.deltaTime;
+        if (curTimer >= autoTimer) {
+            Debug.Log("timer out");
+            curTimer = 0.0f;
+            SceneManager.LoadScene("SelectLanguage");
+        }
+    }
+
+    public void ResetTimer() {
+        curTimer = 0.0f;
+    }
+
+    public void touchTest() {
+        Debug.Log("touch");
     }
 
     public void SetBookNum(int num) {
