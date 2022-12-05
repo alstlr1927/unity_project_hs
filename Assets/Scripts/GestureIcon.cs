@@ -12,7 +12,7 @@ public class GestureIcon : MonoBehaviour
     public GameObject bookLong;
 
     float curTimer = 0.0f;
-    public float autoTimer = 10.0f;
+    public float autoTimer = 30.0f;
     int gestureIdx = 0;
     bool isMap = false;
 

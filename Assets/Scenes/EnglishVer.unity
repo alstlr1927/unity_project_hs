@@ -10282,7 +10282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469707835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.27, y: 0.77, z: 0}
+  m_LocalPosition: {x: -4.83, y: 1.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29569,7 +29569,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454666499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.67, y: 0.81, z: 0}
+  m_LocalPosition: {x: -5.26, y: 0.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33808,7 +33808,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601652398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.38, y: 1.92, z: -67.776436}
+  m_LocalPosition: {x: 7.83, y: 1.92, z: -67.776436}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34129,7 +34129,7 @@ MonoBehaviour:
   mapMove: {fileID: 1601652398}
   mapPinch: {fileID: 663350607}
   bookLong: {fileID: 501388574}
-  autoTimer: 10
+  autoTimer: 30
 --- !u!1 &1626627061
 GameObject:
   m_ObjectHideFlags: 0
