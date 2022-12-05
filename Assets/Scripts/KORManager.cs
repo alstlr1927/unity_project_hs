@@ -13,6 +13,9 @@ public class KORManager : MonoBehaviour
     private float curTimer = 0.0f;
     public float autoTimer = 600.0f;
 
+    private float curGuideTimer = 0.0f;
+    public float autoGuideTimer = 4.0f;
+
     GameObject one, two, three, four, five, six;
     GameObject select, index, share, whole, next, prev;
     GameObject selectText, indexText, shareText, wholeText, nextText, prevText;
@@ -50,6 +53,13 @@ public class KORManager : MonoBehaviour
             Debug.Log("timer out");
             curTimer = 0.0f;
             SceneManager.LoadScene("SelectLanguage");
+        }
+        if (guideNum != 6 && isGuideOpen) {
+            curGuideTimer += Time.deltaTime;
+            if (curGuideTimer >= autoGuideTimer) {
+                curGuideTimer = 0.0f;
+                ClickNextGuideBtn();
+            }
         }
     }
 
@@ -128,6 +138,7 @@ public class KORManager : MonoBehaviour
 
     public void ClickNextGuideBtn() {
         if (guideNum != 6) {
+            curGuideTimer = 0.0f;
             guideNum++;
             SetGuideNum(guideNum);
         }
@@ -135,6 +146,7 @@ public class KORManager : MonoBehaviour
 
     public void ClickPrevGuideBtn() {
         if (guideNum != 1) {
+            curGuideTimer = 0.0f;
             guideNum--;
             SetGuideNum(guideNum);
         }
