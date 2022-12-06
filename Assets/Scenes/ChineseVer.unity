@@ -7586,7 +7586,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 415578659}
   m_Direction: 2
   m_Value: 1.000001
-  m_Size: 0.7022099
+  m_Size: 0.70220995
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -22022,8 +22022,8 @@ RectTransform:
   m_GameObject: {fileID: 1066796461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -90.01225}
-  m_LocalScale: {x: 0.5216105, y: 0.76234585, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.1, y: 0.14615232, z: 0.19171393}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1456828382}
   m_RootOrder: 0
@@ -49486,6 +49486,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: MapManager, Assembly-CSharp
         m_MethodName: SetHide
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 113843090}
+        m_TargetAssemblyTypeName: KORManager, Assembly-CSharp
+        m_MethodName: SetBookNum
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
