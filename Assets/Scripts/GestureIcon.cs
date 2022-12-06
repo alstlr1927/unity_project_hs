@@ -37,13 +37,13 @@ public class GestureIcon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mapGestureList.Add(mapDoubleTap);
-        mapGestureList.Add(mapMove);
-        mapGestureList.Add(mapPinch);
+        // mapGestureList.Add(mapDoubleTap);
+        // mapGestureList.Add(mapMove);
+        // mapGestureList.Add(mapPinch);
 
-        bookGestureList.Add(bookTap);
-        bookGestureList.Add(bookFlip);
-        bookGestureList.Add(bookLong);
+        // bookGestureList.Add(bookTap);
+        // bookGestureList.Add(bookFlip);
+        // bookGestureList.Add(bookLong);
     }
 
     // Update is called once per frame
@@ -66,45 +66,45 @@ public class GestureIcon : MonoBehaviour
         // }
     }
 
-    public void setGestureActive() {
-        if (isMap) {
-            for (int i = 0; i < mapGestureList.Count;i++) {
-                if (i == gestureIdx) {
-                    mapGestureList[i].SetActive(true);
-                } else {
-                    mapGestureList[i].SetActive(false);
-                }
-            }
-        } else {
-            for (int i = 0;i < bookGestureList.Count;i++) {
-                if (i == gestureIdx) {
-                    bookGestureList[i].SetActive(true);
-                } else {
-                    bookGestureList[i].SetActive(false);
-                }
-            }
-        }
-    }
+    // public void setGestureActive() {
+    //     if (isMap) {
+    //         for (int i = 0; i < mapGestureList.Count;i++) {
+    //             if (i == gestureIdx) {
+    //                 mapGestureList[i].SetActive(true);
+    //             } else {
+    //                 mapGestureList[i].SetActive(false);
+    //             }
+    //         }
+    //     } else {
+    //         for (int i = 0;i < bookGestureList.Count;i++) {
+    //             if (i == gestureIdx) {
+    //                 bookGestureList[i].SetActive(true);
+    //             } else {
+    //                 bookGestureList[i].SetActive(false);
+    //             }
+    //         }
+    //     }
+    // }
 
-    public void setGestureDeactive() {
-        if (isMap) {
-            mapGestureList[gestureIdx].SetActive(false);
-        } else {
-            bookGestureList[gestureIdx].SetActive(false);
-        }
-    }
+    // public void setGestureDeactive() {
+    //     if (isMap) {
+    //         mapGestureList[gestureIdx].SetActive(false);
+    //     } else {
+    //         bookGestureList[gestureIdx].SetActive(false);
+    //     }
+    // }
 
-    public void setMap(bool flag) {
-        if (isMap != flag) {
-            isMap = flag;
-            mapGestureList[gestureIdx].SetActive(false);
-            bookGestureList[gestureIdx].SetActive(false);
-            curTimer = 0.0f;
-            gestureIdx = 0;
-        } else {
-            return;
-        }
-    }
+    // public void setMap(bool flag) {
+    //     if (isMap != flag) {
+    //         isMap = flag;
+    //         mapGestureList[gestureIdx].SetActive(false);
+    //         bookGestureList[gestureIdx].SetActive(false);
+    //         curTimer = 0.0f;
+    //         gestureIdx = 0;
+    //     } else {
+    //         return;
+    //     }
+    // }
 
     public void flipGestureOn() {
         bookFlip.SetActive(true);

@@ -20554,7 +20554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookVer: ENG
   imagePanel: {fileID: 5816024}
-  mapPinchZoom: {fileID: 0}
+  mapPinchZoom: {fileID: 663350607}
 --- !u!4 &934292220
 Transform:
   m_ObjectHideFlags: 0
@@ -50525,7 +50525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMap: 1
-  mapDoubleTap: {fileID: 0}
+  mapDoubleTap: {fileID: 1661625541}
   pageStay: {fileID: 2792342670463979801, guid: cf9df7b6667844c41907015a92928548, type: 3}
   canvas: {fileID: 8989942469870008554}
   BookPanel: {fileID: 6546275005793751058}

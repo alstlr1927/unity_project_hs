@@ -19969,7 +19969,7 @@ GameObject:
   - component: {fileID: 980211393}
   - component: {fileID: 980211395}
   - component: {fileID: 980211394}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: map_pinch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30204,7 +30204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookVer: CHN
   imagePanel: {fileID: 1066796462}
-  mapPinchZoom: {fileID: 0}
+  mapPinchZoom: {fileID: 980211392}
 --- !u!4 &1456828382
 Transform:
   m_ObjectHideFlags: 0
@@ -32831,7 +32831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1552598778}
   - component: {fileID: 1552598779}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50163,7 +50163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMap: 1
-  mapDoubleTap: {fileID: 0}
+  mapDoubleTap: {fileID: 344028747}
   pageStay: {fileID: 2792342670463979801, guid: cf9df7b6667844c41907015a92928548, type: 3}
   canvas: {fileID: 8989942469870008554}
   BookPanel: {fileID: 6546275005793751058}
