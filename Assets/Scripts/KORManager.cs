@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class KORManager : MonoBehaviour
 {
-    static int bookNum = 0;
+    int bookNum = 0;
     bool isWholeOpen = false;
     bool isGuideOpen = false;
     int guideNum = 1;
@@ -15,6 +15,13 @@ public class KORManager : MonoBehaviour
 
     private float curGuideTimer = 0.0f;
     public float autoGuideTimer = 4.0f;
+
+    public GameObject tapGesture, flipGesture;
+
+    bool gestureOn = true;
+
+    float gestureTimer = 0.0f;
+    float autoGestureTimer = 30.0f;
 
     GameObject one, two, three, four, five, six;
     GameObject select, index, share, whole, next, prev;
@@ -60,6 +67,22 @@ public class KORManager : MonoBehaviour
                 ClickNextGuideBtn();
             }
         }
+        if (!gestureOn) {
+            Debug.Log("gestureTimer: " + gestureTimer);
+            gestureTimer += Time.deltaTime;
+            if (gestureTimer >= autoGestureTimer) {
+                gestureOn = true;
+                tapGesture.SetActive(true);
+                flipGesture.SetActive(true);
+            }
+        }
+    }
+
+    public void hideGesture() {
+        gestureTimer = 0.0f;
+        gestureOn = false;
+        tapGesture.SetActive(false);
+        flipGesture.SetActive(false);
     }
 
     public void ResetTimer() {
