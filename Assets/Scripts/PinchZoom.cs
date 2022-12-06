@@ -30,6 +30,8 @@ public class PinchZoom : MonoBehaviour
     private float positionX = 5.191388f;
     private float positionY = -0.3071103f;
 
+    public GameObject pinchGesture;
+
 
     private void Start()
     {
@@ -75,6 +77,7 @@ public class PinchZoom : MonoBehaviour
             if (!isOneClick) {
                 timer = Time.time;
                 isOneClick = true;
+                pinchGesture.SetActive(false);
             } else if (isOneClick && ((Time.time - timer) < doubleClickSecond)) {
                 isOneClick = false;
                 mapManager.GetComponent<MapManager>().SetHide();

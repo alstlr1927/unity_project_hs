@@ -113,4 +113,8 @@ public class GestureIcon : MonoBehaviour
     public void flipGestureOff() {
         bookFlip.SetActive(false);
     }
+
+    public void pinchGestureOff() {
+        mapPinch.SetActive(false);
+    }
 }

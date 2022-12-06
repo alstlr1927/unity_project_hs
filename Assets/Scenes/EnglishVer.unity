@@ -439,6 +439,7 @@ MonoBehaviour:
   zoomSpeed: 0.5
   zoomCamera: {fileID: 1116311621}
   doubleClickSecond: 0.25
+  pinchGesture: {fileID: 663350607}
 --- !u!1 &7581629
 GameObject:
   m_ObjectHideFlags: 0
@@ -27961,7 +27962,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 346620425}
   m_HandleRect: {fileID: 346620424}
   m_Direction: 2
-  m_Value: 1.0000005
+  m_Value: 1.0000006
   m_Size: 0.5340336
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -51535,7 +51536,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -51559,7 +51560,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5496162327355033778}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5719263473069921139}
+        m_TargetAssemblyTypeName: Book, Assembly-CSharp
+        m_MethodName: doubleTapHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6194407941016955758
 MonoBehaviour:
   m_ObjectHideFlags: 0
