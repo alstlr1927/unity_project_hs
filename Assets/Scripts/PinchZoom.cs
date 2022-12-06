@@ -24,6 +24,9 @@ public class PinchZoom : MonoBehaviour
     private bool isOneClick = false;
     private double timer = 0;
 
+    private float positionX = 5.191388f;
+    private float positionY = -0.3071103f;
+
 
     private void Start()
     {
@@ -52,6 +55,8 @@ public class PinchZoom : MonoBehaviour
     }
 
     private void Update() {
+        Debug.Log("position x : " + transform.position.x + " y : " + transform.position.y + " z : " + transform.position.z);
+
         if (isOneClick && ((Time.time - timer) > doubleClickSecond)) {
             isOneClick = false;
         }
@@ -63,6 +68,7 @@ public class PinchZoom : MonoBehaviour
             } else if (isOneClick && ((Time.time - timer) < doubleClickSecond)) {
                 isOneClick = false;
                 MapManager.SetHide();
+                transform.position = new Vector3(positionX, positionY, 0);
                 Debug.Log("double click");
             }
         }

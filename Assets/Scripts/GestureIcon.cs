@@ -50,7 +50,7 @@ public class GestureIcon : MonoBehaviour
     void Update()
     {
         curTimer += Time.deltaTime;
-        Debug.Log("curTimer: " + curTimer);
+        //Debug.Log("curTimer: " + curTimer);
         if (curTimer >= autoTimer) {
             // gesture active
             setGestureActive();
