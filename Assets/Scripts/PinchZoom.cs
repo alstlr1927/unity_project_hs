@@ -11,6 +11,7 @@ public class PinchZoom : MonoBehaviour
 
     private Vector3 baseSize = Vector3.one;
     private Vector3 basePosition = Vector3.zero;
+    private Vector3 camerabasePosition = Vector3.zero;
 
     private float zoomFactor = 1.0f;
     
@@ -50,12 +51,19 @@ public class PinchZoom : MonoBehaviour
         {
             transform.localPosition = basePosition;
         }
+        if (camerabasePosition == Vector3.zero)
+        {
+            camerabasePosition = zoomCamera.transform.localPosition;
+        }
+        else
+        {
+            zoomCamera.transform.localPosition = camerabasePosition;
+        }
 
         zoomFactor = 1.0f;
     }
 
     private void Update() {
-        Debug.Log("position x : " + transform.position.x + " y : " + transform.position.y + " z : " + transform.position.z);
 
         if (isOneClick && ((Time.time - timer) > doubleClickSecond)) {
             isOneClick = false;
