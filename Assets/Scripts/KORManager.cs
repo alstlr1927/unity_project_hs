@@ -67,7 +67,7 @@ public class KORManager : MonoBehaviour
                 ClickNextGuideBtn();
             }
         }
-        if (!gestureOn) {
+        if (!gestureOn && bookNum != 2) {
             Debug.Log("gestureTimer: " + gestureTimer);
             gestureTimer += Time.deltaTime;
             if (gestureTimer >= autoGestureTimer) {
