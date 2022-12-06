@@ -34955,7 +34955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookVer: KOR
   imagePanel: {fileID: 1272832102}
-  mapPinchZoom: {fileID: 0}
+  mapPinchZoom: {fileID: 1565853620}
 --- !u!1 &1622689025
 GameObject:
   m_ObjectHideFlags: 0

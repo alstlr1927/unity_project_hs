@@ -20554,7 +20554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookVer: ENG
   imagePanel: {fileID: 5816024}
-  mapPinchZoom: {fileID: 0}
+  mapPinchZoom: {fileID: 663350607}
 --- !u!4 &934292220
 Transform:
   m_ObjectHideFlags: 0
