@@ -7,6 +7,8 @@ public class MapManager : MonoBehaviour
     string imageName = "";
     public string bookVer = "";
     public SpriteRenderer imagePanel;
+    public GameObject mapPinchZoom;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +22,7 @@ public class MapManager : MonoBehaviour
         
     }
 
-    public static void SetHide() {
+    public void SetHide() {
         //GameObject closeBtn = GameObject.Find("PopupManager").transform.Find("CloseBtn").gameObject;
         GameObject backPanel = GameObject.Find("PopUp").transform.Find("MapPanel").gameObject;
         GameObject prev = GameObject.Find("Canvas").transform.Find("PrevBtn").gameObject;
@@ -30,6 +32,7 @@ public class MapManager : MonoBehaviour
         //closeBtn.SetActive(false);
         prev.SetActive(true);
         next.SetActive(true);
+        mapPinchZoom.SetActive(false);
     }
 
     public void SetView() {
@@ -41,6 +44,7 @@ public class MapManager : MonoBehaviour
         //closeBtn.SetActive(true);
         prev.SetActive(false);
         next.SetActive(false);
+        mapPinchZoom.SetActive(true);
     }
 
     public void getCurrentImage() {
