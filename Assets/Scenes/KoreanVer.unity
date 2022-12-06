@@ -10204,13 +10204,13 @@ GameObject:
   m_Component:
   - component: {fileID: 389058091}
   - component: {fileID: 389058092}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &389058091
 Transform:
   m_ObjectHideFlags: 0
@@ -17737,7 +17737,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599273417}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &768592279
 Camera:
@@ -28658,7 +28658,7 @@ Transform:
   m_Children:
   - {fileID: 868963065}
   m_Father: {fileID: 1367857133}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1309621607
 GameObject:
@@ -30883,7 +30883,6 @@ RectTransform:
   - {fileID: 841598620}
   - {fileID: 1528566675}
   - {fileID: 877365825}
-  - {fileID: 1565853621}
   - {fileID: 1309433488}
   m_Father: {fileID: 1762044446}
   m_RootOrder: 0
@@ -34725,7 +34724,7 @@ GameObject:
   - component: {fileID: 1565853621}
   - component: {fileID: 1565853623}
   - component: {fileID: 1565853622}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: map_pinch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34740,13 +34739,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565853620}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.38, y: 2.13, z: -67.776436}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalPosition: {x: 4.4331965, y: 0.47418022, z: -95.78}
+  m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 389058091}
-  m_Father: {fileID: 1367857133}
-  m_RootOrder: 4
+  m_Father: {fileID: 1599273417}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1565853622
 Animator:
@@ -35143,6 +35142,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1272832105}
+  - {fileID: 1565853621}
   - {fileID: 768592278}
   m_Father: {fileID: 0}
   m_RootOrder: 3
