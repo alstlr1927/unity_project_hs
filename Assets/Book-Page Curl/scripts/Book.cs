@@ -767,4 +767,10 @@ public class Book : MonoBehaviour
         pageDragging = false;
         MultiTweenForward();
     }
+
+    public void doubleTapHide() {
+        if (isMap) {
+            mapDoubleTap.SetActive(false);
+        }
+    }
 }

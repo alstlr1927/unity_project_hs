@@ -12362,7 +12362,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 628795966}
   m_Direction: 2
   m_Value: 1.000001
-  m_Size: 0.722159
+  m_Size: 0.7221591
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -54488,7 +54488,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5496162327355033778}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5719263473069921139}
+        m_TargetAssemblyTypeName: Book, Assembly-CSharp
+        m_MethodName: doubleTapHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6194407941016955758
 MonoBehaviour:
   m_ObjectHideFlags: 0
