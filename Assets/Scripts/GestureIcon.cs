@@ -49,38 +49,19 @@ public class GestureIcon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        curTimer += Time.deltaTime;
-        //Debug.Log("curTimer: " + curTimer);
-        if (curTimer >= autoTimer) {
-            // gesture active
-            setGestureActive();
-            if (curTimer >= autoTimer + 10.0f) {
-                // gesture deactive
-                setGestureDeactive();
-                curTimer = 0.0f;
-                if (gestureIdx >= 2) {
-                    gestureIdx = 0;
-                } else {
-                    gestureIdx++;
-                }
-            }
-        }
-
-        // curBookFlipTime += Time.deltaTime;
-        // if (curBookFlipTime >= autoBookFlipTime) {
-        //     bookFlip.SetActive(true);
-        //     if (curBookFlipTime >= autoBookFlipTime + 10.0f) {
-        //         bookFlip.SetActive(false);
-        //         curBookFlipTime = 0.0f;
-        //     }
-        // }
-
-        // curMapDoubleTapTime += Time.deltaTime;
-        // if (curMapDoubleTapTime >= autoMapDoubleTapTime) {
-        //     bookFlip.SetActive(true);
-        //     if (curMapDoubleTapTime >= autoMapDoubleTapTime + 10.0f) {
-        //         bookFlip.SetActive(false);
-        //         curBookFlipTime = 0.0f;
+        // curTimer += Time.deltaTime;
+        // if (curTimer >= autoTimer) {
+        //     // gesture active
+        //     setGestureActive();
+        //     if (curTimer >= autoTimer + 10.0f) {
+        //         // gesture deactive
+        //         setGestureDeactive();
+        //         curTimer = 0.0f;
+        //         if (gestureIdx >= 2) {
+        //             gestureIdx = 0;
+        //         } else {
+        //             gestureIdx++;
+        //         }
         //     }
         // }
     }
@@ -123,5 +104,13 @@ public class GestureIcon : MonoBehaviour
         } else {
             return;
         }
+    }
+
+    public void flipGestureOn() {
+        bookFlip.SetActive(true);
+    }
+
+    public void flipGestureOff() {
+        bookFlip.SetActive(false);
     }
 }

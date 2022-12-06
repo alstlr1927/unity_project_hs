@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PinchZoom : MonoBehaviour
 {
+    public GameObject mapManager;
+
     public float zoomSpeed = 0.5f;
 
     private float preDistance;
@@ -55,8 +57,6 @@ public class PinchZoom : MonoBehaviour
     }
 
     private void Update() {
-        Debug.Log("position x : " + transform.position.x + " y : " + transform.position.y + " z : " + transform.position.z);
-
         if (isOneClick && ((Time.time - timer) > doubleClickSecond)) {
             isOneClick = false;
         }
@@ -67,7 +67,7 @@ public class PinchZoom : MonoBehaviour
                 isOneClick = true;
             } else if (isOneClick && ((Time.time - timer) < doubleClickSecond)) {
                 isOneClick = false;
-                MapManager.SetHide();
+                mapManager.GetComponent<MapManager>().SetHide();
                 transform.position = new Vector3(positionX, positionY, 0);
                 Debug.Log("double click");
             }

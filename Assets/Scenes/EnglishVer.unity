@@ -435,8 +435,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c30cb799864694bac8d9ca48a312ffa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapManager: {fileID: 1369346693}
   zoomSpeed: 0.5
-  zoomCamera: {fileID: 0}
+  zoomCamera: {fileID: 1116311621}
   doubleClickSecond: 0.25
 --- !u!1 &7581629
 GameObject:
@@ -722,7 +723,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 39247724524ec4234857537dedb8e575, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2004,7 +2005,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 62fbfedd68a044054b6b6a74dee88e54, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3448,7 +3449,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9dd664870fa14e15bf7b9ad3aef1e09, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10179,7 +10180,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a3289c894c4d54e1e823778ac35524b7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10734,7 +10735,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 64f2c91dbc727423a82ecf07aadff5aa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15309,7 +15310,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2903e272d4bae47c3b02a2b6a39612e6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20553,6 +20554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookVer: ENG
   imagePanel: {fileID: 5816024}
+  mapPinchZoom: {fileID: 0}
 --- !u!4 &934292220
 Transform:
   m_ObjectHideFlags: 0
@@ -26954,7 +26956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1344242547
 Transform:
   m_ObjectHideFlags: 0
@@ -27033,7 +27035,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b9bc7141d9fbc4349a415a78e24181d4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27090,7 +27092,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345201900}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6cb704987fdcff44877234db6b29b81, type: 3}
   m_Name: 
@@ -27339,6 +27341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookVer: ENG
   imagePanel: {fileID: 5816024}
+  mapPinchZoom: {fileID: 663350607}
 --- !u!1 &1372009896
 GameObject:
   m_ObjectHideFlags: 0
@@ -28526,7 +28529,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0948a5112778441bebee81870d43e67b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29465,7 +29468,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b61576d00bfe44edaaa27d14cf51cc3b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30461,7 +30464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1489682096
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33725,7 +33728,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 37494962fd37743cb81b0bac8f04ffc6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -35220,7 +35223,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e6ca35b066958430ea003c5b1e5adcbb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -41026,7 +41029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1945393567
 Transform:
   m_ObjectHideFlags: 0
@@ -41105,7 +41108,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a28a292b6ffeb464fac8e904ff4c19c8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -45363,8 +45366,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1624000840}
         m_TargetAssemblyTypeName: GestureIcon, Assembly-CSharp
-        m_MethodName: setMap
-        m_Mode: 6
+        m_MethodName: flipGestureOn
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -45691,15 +45694,15 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1624000840}
         m_TargetAssemblyTypeName: GestureIcon, Assembly-CSharp
-        m_MethodName: setMap
-        m_Mode: 6
+        m_MethodName: flipGestureOff
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &411717739169967116
 GameObject:
@@ -48252,6 +48255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4446b7192d8bf914ebaf797b64fe8b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMap: 0
+  mapDoubleTap: {fileID: 0}
   pageStay: {fileID: 2792342670463979801, guid: cf9df7b6667844c41907015a92928548, type: 3}
   canvas: {fileID: 8989942469870008554}
   BookPanel: {fileID: 4730252783882965978}
@@ -49186,8 +49191,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1624000840}
         m_TargetAssemblyTypeName: GestureIcon, Assembly-CSharp
-        m_MethodName: setMap
-        m_Mode: 6
+        m_MethodName: flipGestureOn
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -49920,6 +49925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4446b7192d8bf914ebaf797b64fe8b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMap: 0
+  mapDoubleTap: {fileID: 0}
   pageStay: {fileID: 2792342670463979801, guid: cf9df7b6667844c41907015a92928548, type: 3}
   canvas: {fileID: 8989942469870008554}
   BookPanel: {fileID: 695745127204824662}
@@ -50517,6 +50524,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4446b7192d8bf914ebaf797b64fe8b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMap: 1
+  mapDoubleTap: {fileID: 0}
   pageStay: {fileID: 2792342670463979801, guid: cf9df7b6667844c41907015a92928548, type: 3}
   canvas: {fileID: 8989942469870008554}
   BookPanel: {fileID: 6546275005793751058}

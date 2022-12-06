@@ -14,6 +14,11 @@ public enum FlipMode
 [ExecuteInEditMode]
 public class Book : MonoBehaviour
 {
+    public bool isMap = false;
+    public GameObject mapDoubleTap; // map
+    float doubleTapTimer = 0.0f;
+    float autoTimer = 6.0f;
+
     public GameObject pageStay;
     public Canvas canvas;
     [SerializeField]
@@ -616,12 +621,20 @@ public class Book : MonoBehaviour
             currentPage = page;
             StartCoroutine(MultiFlipLTR(xc, xl, h, frameTime, dx));
             StartCoroutine(delayMultiTime(1f));
+            if (isMap) {
+                mapDoubleTap.SetActive(true);
+                StartCoroutine(delayGesutre(6.0f));
+            }
         }
         else
         {
             currentPage = page;
             StartCoroutine(MultiFlipRTL(xc, xl, h, frameTime, dx));
             StartCoroutine(delayMultiTime(1f));
+            if (isMap) {
+                mapDoubleTap.SetActive(true);
+                StartCoroutine(delayGesutre(6.0f));
+            }
         }
     }
 
@@ -643,6 +656,15 @@ public class Book : MonoBehaviour
         Debug.Log("time = " + Time.time);
     }
 
+    IEnumerator delayGesutre(float time)
+    {
+        Debug.Log("check = " + check);
+        yield return new WaitForSeconds(time);
+        mapDoubleTap.SetActive(false);
+        Debug.Log("check = " + check);
+        Debug.Log("time = " + Time.time);
+    }
+
     public void FlipRightPage()
     {
         if (gameObject.activeSelf == false) return;
@@ -657,7 +679,10 @@ public class Book : MonoBehaviour
         float dx = (xl) * 2 / AnimationFramesCount;
         StartCoroutine(FlipRTL(xc, xl, h, frameTime, dx));
         StartCoroutine(delayTime(1f));
-
+        if (isMap) {
+                mapDoubleTap.SetActive(true);
+                StartCoroutine(delayGesutre(6.0f));
+            }
     }
 
     public void FlipLeftPage()
@@ -674,6 +699,10 @@ public class Book : MonoBehaviour
         float dx = (xl) * 2 / AnimationFramesCount;
         StartCoroutine(FlipLTR(xc, xl, h, frameTime, dx));
         StartCoroutine(delayTime(1f));
+        if (isMap) {
+                mapDoubleTap.SetActive(true);
+                StartCoroutine(delayGesutre(6.0f));
+            }
     }
 
     IEnumerator FlipRTL(float xc, float xl, float h, float frameTime, float dx)
