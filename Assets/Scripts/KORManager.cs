@@ -32,7 +32,6 @@ public class KORManager : MonoBehaviour
 
         select = GameObject.Find("ProjectManager").transform.Find("Guide").transform.Find("SelectTouchIcon").gameObject;
         index = GameObject.Find("ProjectManager").transform.Find("Guide").transform.Find("IndexTouchIcon").gameObject;
-        share = GameObject.Find("ProjectManager").transform.Find("Guide").transform.Find("ShareTouchIcon").gameObject;
         whole = GameObject.Find("ProjectManager").transform.Find("Guide").transform.Find("WholeTouchIcon").gameObject;
         next = GameObject.Find("ProjectManager").transform.Find("Guide").transform.Find("NextTouchIcon").gameObject;
         prev = GameObject.Find("ProjectManager").transform.Find("Guide").transform.Find("PrevTouchIcon").gameObject;
@@ -166,7 +165,7 @@ public class KORManager : MonoBehaviour
                 selectText.SetActive(true);
                 index.SetActive(false);
                 indexText.SetActive(false);
-                share.SetActive(false);
+                //share.SetActive(false);
                 shareText.SetActive(false);
                 whole.SetActive(false);
                 wholeText.SetActive(false);
@@ -187,7 +186,7 @@ public class KORManager : MonoBehaviour
                 selectText.SetActive(false);
                 index.SetActive(true);
                 indexText.SetActive(true);
-                share.SetActive(false);
+                //share.SetActive(false);
                 shareText.SetActive(false);
                 whole.SetActive(false);
                 wholeText.SetActive(false);
@@ -208,7 +207,7 @@ public class KORManager : MonoBehaviour
                 selectText.SetActive(false);
                 index.SetActive(false);
                 indexText.SetActive(false);
-                share.SetActive(true);
+                //share.SetActive(true);
                 shareText.SetActive(true);
                 whole.SetActive(false);
                 wholeText.SetActive(false);
@@ -229,7 +228,7 @@ public class KORManager : MonoBehaviour
                 selectText.SetActive(false);
                 index.SetActive(false);
                 indexText.SetActive(false);
-                share.SetActive(false);
+                //share.SetActive(false);
                 shareText.SetActive(false);
                 whole.SetActive(true);
                 wholeText.SetActive(true);
@@ -250,7 +249,7 @@ public class KORManager : MonoBehaviour
                 selectText.SetActive(false);
                 index.SetActive(false);
                 indexText.SetActive(false);
-                share.SetActive(false);
+                //share.SetActive(false);
                 shareText.SetActive(false);
                 whole.SetActive(false);
                 wholeText.SetActive(false);
@@ -271,7 +270,7 @@ public class KORManager : MonoBehaviour
                 selectText.SetActive(false);
                 index.SetActive(false);
                 indexText.SetActive(false);
-                share.SetActive(false);
+                //share.SetActive(false);
                 shareText.SetActive(false);
                 whole.SetActive(false);
                 wholeText.SetActive(false);
