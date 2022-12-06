@@ -81,6 +81,7 @@ public class MapManager : MonoBehaviour
 
             return fromTex;
         } catch (System.Exception) {
+            SetHide();
             throw;
         }
     }
