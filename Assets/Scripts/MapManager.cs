@@ -12,6 +12,8 @@ public class MapManager : MonoBehaviour
     float curTimer = 0.0f;
     float autoTimer = 8.0f;
 
+    public GameObject doubleGesture;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,7 @@ public class MapManager : MonoBehaviour
         prev.SetActive(true);
         next.SetActive(true);
         mapPinchZoom.SetActive(false);
+        doubleGesture.SetActive(true);
         mapPinchZoomOn = false;
     }
 
@@ -55,6 +58,7 @@ public class MapManager : MonoBehaviour
         prev.SetActive(false);
         next.SetActive(false);
         mapPinchZoom.SetActive(true);
+        doubleGesture.SetActive(false);
         mapPinchZoomOn = true;
         curTimer = 0.0f;
     }

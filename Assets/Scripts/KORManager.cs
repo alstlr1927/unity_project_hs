@@ -16,7 +16,7 @@ public class KORManager : MonoBehaviour
     private float curGuideTimer = 0.0f;
     public float autoGuideTimer = 4.0f;
 
-    public GameObject tapGesture, flipGesture;
+    public GameObject tapGesture, flipGesture, mapFlipGesture, mapDoubleTap;
 
     bool gestureOn = true;
 
@@ -67,13 +67,17 @@ public class KORManager : MonoBehaviour
                 ClickNextGuideBtn();
             }
         }
-        if (!gestureOn && bookNum != 2) {
+        if (!gestureOn) {
             Debug.Log("gestureTimer: " + gestureTimer);
             gestureTimer += Time.deltaTime;
             if (gestureTimer >= autoGestureTimer) {
                 gestureOn = true;
                 tapGesture.SetActive(true);
-                flipGesture.SetActive(true);
+                if (bookNum == 2) {
+                    mapFlipGesture.SetActive(true);
+                } else {
+                    flipGesture.SetActive(true);
+                }
             }
         }
     }
@@ -83,6 +87,21 @@ public class KORManager : MonoBehaviour
         gestureOn = false;
         tapGesture.SetActive(false);
         flipGesture.SetActive(false);
+        mapFlipGesture.SetActive(false);
+    }
+
+    public void viewGesture() {
+        gestureOn = true;
+        tapGesture.SetActive(true);
+        if (bookNum == 2) {
+            flipGesture.SetActive(false);
+            mapFlipGesture.SetActive(true);
+            mapDoubleTap.SetActive(true);
+        } else {
+            mapFlipGesture.SetActive(false);
+            mapDoubleTap.SetActive(false);
+            flipGesture.SetActive(true);
+        }
     }
 
     public void ResetTimer() {

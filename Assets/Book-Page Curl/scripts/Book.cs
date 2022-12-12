@@ -679,10 +679,10 @@ public class Book : MonoBehaviour
         float dx = (xl) * 2 / AnimationFramesCount;
         StartCoroutine(FlipRTL(xc, xl, h, frameTime, dx));
         StartCoroutine(delayTime(1f));
-        if (isMap) {
-            mapDoubleTap.SetActive(true);
-            StartCoroutine(delayGesutre(6.0f));
-        }
+        // if (isMap) {
+        //     mapDoubleTap.SetActive(true);
+        //     StartCoroutine(delayGesutre(6.0f));
+        // }
     }
 
     public void FlipLeftPage()
