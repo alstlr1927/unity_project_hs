@@ -46,7 +46,7 @@ public class BookController : MonoBehaviour, IDragHandler
         {
             isSelect = true;
             selectLang = "KOR";
-            StartCoroutine(delayMultiTime(.5f));
+            StartCoroutine(delayMultiTime(1f));
             StartCoroutine(sizeDown());
             Debug.Log("KOR");
         }
@@ -54,7 +54,7 @@ public class BookController : MonoBehaviour, IDragHandler
         {
             isSelect = true;
             selectLang = "ENG";
-            StartCoroutine(delayMultiTime(.5f));
+            StartCoroutine(delayMultiTime(1f));
             StartCoroutine(sizeDown());
             Debug.Log("ENG");
         }
@@ -62,7 +62,7 @@ public class BookController : MonoBehaviour, IDragHandler
         {
             isSelect = true;
             selectLang = "CHN";
-            StartCoroutine(delayMultiTime(.5f));
+            StartCoroutine(delayMultiTime(1f));
             StartCoroutine(sizeDown());
             Debug.Log("CHN");
         }
@@ -213,9 +213,15 @@ public class BookController : MonoBehaviour, IDragHandler
 
     IEnumerator sizeDown() {
         while (transform.localScale.x > size) {
-            transform.localScale = originScale / (1f + time * speed);
-            time += Time.deltaTime;
-            if (transform.localScale.x <= .3f) {
+            transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(0.00f, 0.00f, 0.00f), 3f * Time.deltaTime);
+            if(selectLang=="KOR") {
+                transform.position = Vector3.Lerp(transform.position, scaleButtonKOR.transform.position + new Vector3(-25,40,0), Time.deltaTime * 4f);
+            } else if(selectLang=="ENG") {
+                transform.position = Vector3.Lerp(transform.position, scaleButtonENG.transform.position + new Vector3(-25,40,0), Time.deltaTime * 4f);
+            } else if(selectLang=="CHN") {
+                transform.position = Vector3.Lerp(transform.position, scaleButtonCHN.transform.position + new Vector3(-25,40,0), Time.deltaTime * 4f);
+            }
+            if (transform.localScale.x <= .0f) {
                 time = 0;
                 break;
             }
